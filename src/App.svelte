@@ -1,31 +1,16 @@
 <script>
   import { viviendas } from "./stores.js";
   import Categorias from "./Categorias.svelte";
+  import Opcienos from "./Opciones.svelte";
 </script>
 
-<main>
+<div class="main-app">
   <div class="col-left">
     <Categorias />
+    <Opcienos />
   </div>
   <div class="col-right" />
-</main>
+</div>
 
 <style>
-  main {
-    width: 100%;
-    background: white;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas: ". .";
-  }
-
-  .col-left {
-    background: orange;
-  }
-
-  .col-right {
-    background: green;
-  }
 </style>
