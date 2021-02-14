@@ -5,6 +5,8 @@ export const viviendas = writable([]);
 
 export const opciones = writable(null);
 
+export const atributos = writable([]);
+
 export const categorias = writable({
   diversion: false,
   seguridad: false,
