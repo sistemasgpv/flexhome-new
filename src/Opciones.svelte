@@ -1,10 +1,9 @@
 <script>
-  import { access } from "fs";
-
   import { opciones } from "./stores.js";
 </script>
 
-<!-- markup (zero or more items) goes here -->
+<h1>Opciones</h1>
+
 <style>
   /* your styles go here */
 </style>

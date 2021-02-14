@@ -7,7 +7,7 @@
 <div class="main-app">
   <div class="col-left">
     <Categorias />
-    <Opcienos />
+
   </div>
   <div class="col-right" />
 </div>
