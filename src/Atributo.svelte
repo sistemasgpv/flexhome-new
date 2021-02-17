@@ -42,10 +42,4 @@
 <Opciones opciones={$opcionesByAtributo[atributo.fields.Nombre]} {isOpen} />
 
 <style>
-  .atributo-title {
-    background: green;
-  }
-  .isDisabled {
-    background: red;
-  }
 </style>
