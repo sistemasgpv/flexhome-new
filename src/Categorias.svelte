@@ -9,6 +9,9 @@
       class="switch"
       on:click={() => {
         $categorias[categoria] = !$categorias[categoria];
+        if (categoria != "all") {
+          $categorias.all = false;
+        }
       }}
     >
       <div class="switch-bg" class:switch-bg-on={$categorias[categoria]}>
