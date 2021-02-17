@@ -4,7 +4,7 @@
   import { onMount } from "svelte";
 
   onMount(() => {
-    console.log(2);
+    console.log(4);
   });
 </script>
 

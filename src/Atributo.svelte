@@ -4,21 +4,19 @@
 
   export let atributo;
 
-  //   $: console.log(atributo);
-
-  let isDisabled;
+  let disabled;
   let isOpen;
 
   $: {
     if ($categorias.all) {
-      isDisabled = false;
+      disabled = false;
     } else if (atributo.fields.Categoría) {
-      isDisabled = atributo.fields.Categoría.some((cat) => !$categorias[cat]);
+      disabled = atributo.fields.Categoría.some((cat) => !$categorias[cat]);
     } else {
-      isDisabled = true;
+      disabled = true;
     }
 
-    if (isDisabled) {
+    if (disabled) {
       $menuState[atributo.fields.Nombre] = false;
     }
   }
@@ -30,10 +28,9 @@
 
 <div
   class="atributo-title"
-  class:isDisabled
+  class:disabled
   on:click={() => {
-    console.log(isDisabled);
-    if (isDisabled) return;
+    if (disabled) return;
     $menuState[atributo.fields.Nombre] = !$menuState[atributo.fields.Nombre];
   }}
 >
