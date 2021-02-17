@@ -4,9 +4,9 @@
   function switchClicked(categoria) {
     $categorias[categoria] = !$categorias[categoria];
     if (categoria != "all") {
-      //if user turned all categories off we switch all on, otherwise switch off all
-      $categorias.all = !Object.keys($categorias).some(
-        (cat) => $categorias[cat]
+      //if user turned all categories (execpt for all) off we switch all on, otherwise switch all off
+      $categorias.all = !Object.keys($categorias).some((cat) =>
+        cat != "all" ? $categorias[cat] : false
       );
     }
   }
