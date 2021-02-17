@@ -4,7 +4,7 @@
 
   export let atributo;
 
-  $: console.log(atributo);
+  //   $: console.log(atributo);
 
   let isDisabled;
   let isOpen;
