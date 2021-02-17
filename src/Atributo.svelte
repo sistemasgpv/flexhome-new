@@ -32,6 +32,7 @@
   class="atributo-title"
   class:isDisabled
   on:click={() => {
+    console.log("clicked");
     if (isDisabled) return;
     $menuState[atributo.fields.Nombre] = !$menuState[atributo.fields.Nombre];
   }}
