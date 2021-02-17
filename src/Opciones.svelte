@@ -14,6 +14,7 @@
   });
 
   $: {
+    console.log(isOpen, opcionesDiv);
     if (opcionesDiv) {
       opcionesDiv.style.maxHeight = isOpen ? maxHeight + "px" : "0px";
     }
