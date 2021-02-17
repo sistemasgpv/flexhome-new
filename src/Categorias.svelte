@@ -1,5 +1,15 @@
 <script>
   import { categorias } from "./stores.js";
+
+  function switchClicked(categoria) {
+    $categorias[categoria] = !$categorias[categoria];
+    if (categoria != "all") {
+      //if user turned all categories off we switch all on, otherwise switch off all
+      $categorias.all = !Object.keys($categorias).some(
+        (cat) => $categorias[cat]
+      );
+    }
+  }
 </script>
 
 <div class="categorias-title">Categoias</div>
@@ -8,10 +18,7 @@
     <div
       class="switch"
       on:click={() => {
-        $categorias[categoria] = !$categorias[categoria];
-        if (categoria != "all") {
-          $categorias.all = false;
-        }
+        switchClicked(categoria);
       }}
     >
       <div class="switch-bg" class:switch-bg-on={$categorias[categoria]}>
