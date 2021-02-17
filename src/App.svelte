@@ -1,6 +1,11 @@
 <script>
   import Categorias from "./Categorias.svelte";
   import Atributos from "./Atributos.svelte";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    console.log(1);
+  });
 </script>
 
 <div class="main-app">
