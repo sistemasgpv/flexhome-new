@@ -4,29 +4,35 @@
 
   export let atributo;
 
-  $: console.log(isDisabled);
+  $: console.log(atributo);
 
   let isDisabled;
+  let isOpen;
 
   $: {
     if ($categorias.all) {
       isDisabled = false;
     } else if (atributo.fields.Categoría) {
-      isDisabled = atributo.fields.Categoría.some((cat) => {
-        return !$categorias[cat];
-      });
+      isDisabled = atributo.fields.Categoría.some((cat) => !$categorias[cat]);
     } else {
       isDisabled = true;
     }
+
+    if (isDisabled) {
+      $menuState[atributo.fields.Nombre] = false;
+    }
   }
 
-  $: isOpen = $menuState[atributo.fields.Nombre];
+  $: {
+    isOpen = $menuState[atributo.fields.Nombre];
+  }
 </script>
 
 <div
   class="atributo-title"
   class:isDisabled
   on:click={() => {
+    if (isDisabled) return;
     $menuState[atributo.fields.Nombre] = !$menuState[atributo.fields.Nombre];
   }}
 >
