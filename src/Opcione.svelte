@@ -1,9 +1,13 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+
+  const dispatch = createEventDispatcher();
   export let opcione;
 </script>
 
 <div class="opcione">
   <img
+    on:loaded={dispatch("calcHeight")}
     class="opcione-img"
     src={opcione.fields.Render[0].thumbnails.large.url}
     alt=""
