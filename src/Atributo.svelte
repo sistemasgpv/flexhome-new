@@ -6,11 +6,25 @@
 
   let disabled;
   let isOpen;
+  let isEmpty;
 
   $: {
-    if ($categorias.all) {
+    isOpen = $menuState[atributo.fields.Nombre];
+  }
+
+  $: {
+    isEmpty =
+      !$opcionesByAtributo[atributo.fields.Nombre] ||
+      $opcionesByAtributo[atributo.fields.Nombre].length == 0;
+  }
+
+  $: {
+    if (isEmpty) {
+      disabled = true;
+    } else if ($categorias.all) {
       disabled = false;
     } else if (atributo.fields.Categoría) {
+      //check if at least 1 category of the attribute is switched on in $categories
       disabled = atributo.fields.Categoría.some((cat) => !$categorias[cat]);
     } else {
       disabled = true;
@@ -19,10 +33,6 @@
     if (disabled) {
       $menuState[atributo.fields.Nombre] = false;
     }
-  }
-
-  $: {
-    isOpen = $menuState[atributo.fields.Nombre];
   }
 </script>
 

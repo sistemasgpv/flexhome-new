@@ -20,6 +20,11 @@ export const atributos = writable([]);
 
 export const menuState = writable({}); //atrributes open or closed
 
+export const currentSelection = writable({
+  proyect: null,
+  model: null,
+});
+
 export const opcionesByAtributo = derived(opciones, ($opciones) => {
   let byAtr = {};
   $opciones.map((o) => {
@@ -69,13 +74,24 @@ export function getProyectos() {
   //local
   if (window.location.hostname == "localhost") {
     proyectos.set(mock_proyectos);
-    getModelos();
+
+    if (!get(currentSelection).proyect) {
+      currentSelection.update((cs) => {
+        cs.proyect = mock_proyectos[0];
+        return cs;
+      });
+    }
     return;
   }
 
   axios.get("https://en57ds8aebutpuq.m.pipedream.net").then((res) => {
     proyectos.set(res.data);
-    getModelos();
+    if (!get(currentSelection).proyect) {
+      currentSelection.update((cs) => {
+        cs.proyect = res.data[0];
+        return cs;
+      });
+    }
   });
 }
 
@@ -83,13 +99,11 @@ export function getModelos() {
   //local
   if (window.location.hostname == "localhost") {
     modelos.set(mock_modelos);
-    getOpciones(mock_modelos[0].fields.Nombre);
     return;
   }
 
   axios.get("https://enw9gnpjz0b6y3s.m.pipedream.net").then((res) => {
     modelos.set(res.data);
-    getOpciones(res.data[0].fields.Nombre);
   });
 }
 
@@ -107,5 +121,6 @@ export function getOpciones(vivienda) {
     });
 }
 
-getAtributos();
 getProyectos();
+getAtributos();
+getModelos();
