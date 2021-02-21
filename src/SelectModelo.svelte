@@ -15,16 +15,31 @@
 <div class="mi-casa">
   <div class="mi-casa-title">Mi Casa</div>
   {#if $currentSelection.proyect}
-    <div class="mi-casa-proyect">
-      <div class="mi-casa-proyect-img" />
-      <div class="mi-casa-proyect-title">
-        Proyect: {$currentSelection.proyect.fields.Nombre}
+    <div class="mi-casa-select">
+      <div class="mi-casa-select-img" />
+      <div>
+        <div class="select-cat">Proyect</div>
+        <div class="mi-casa-select-title">
+          {$currentSelection.proyect.fields.Nombre}
+        </div>
+      </div>
+    </div>
+  {/if}
+
+  {#if $currentSelection.modelo}
+    <div class="mi-casa-select">
+      <div class="mi-casa-select-img" />
+      <div>
+        <div class="select-cat">Modelo</div>
+        <div class="mi-casa-select-title">
+          Model: {$currentSelection.modelo.fields.Nombre}
+        </div>
       </div>
     </div>
   {/if}
 </div>
 
-{#if showSelect || $opciones.length == 0}
+{#if showSelect || ($opciones && $opciones.length == 0)}
   <div
     class="select-modal"
     on:click={() => {
@@ -55,7 +70,7 @@
             class:selected={modelo == $currentSelection.modelo}
             on:click|stopPropagation={() => {
               $currentSelection.modelo = modelo;
-              getOpciones(modelo.fields.Nomre);
+              getOpciones(modelo.fields.Nombre);
               showSelect = false;
             }}
           >
@@ -73,56 +88,4 @@
 {/if}
 
 <style>
-  .select-modal {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background: #00000087;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .select-modal-bg {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .select-proyectos,
-  .select-modelos {
-    display: flex;
-  }
-
-  .select-modelo,
-  .select-proyect {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 10px;
-    box-shadow: 0 5px 10px -8px;
-  }
-
-  .proyect-img,
-  .modelo-img {
-    background: lightgrey;
-    padding: 10px;
-    width: 140px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .selected {
-    border: 4px solid #6caaff;
-  }
 </style>

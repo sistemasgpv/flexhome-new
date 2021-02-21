@@ -8,6 +8,9 @@ import { writable, derived } from "svelte/store";
 import axios from "axios";
 import { get } from "svelte/store";
 
+let useLocal = true;
+// let useLocal = false;
+
 export const proyectos = writable([]);
 
 export const modelos = writable([]);
@@ -22,7 +25,7 @@ export const menuState = writable({}); //atrributes open or closed
 
 export const currentSelection = writable({
   proyect: null,
-  model: null,
+  modelo: null,
 });
 
 export const opcionesByAtributo = derived(opciones, ($opciones) => {
@@ -58,7 +61,7 @@ function getCategoriasFromAtributos() {
 
 export function getAtributos() {
   //local
-  if (window.location.hostname == "localhost") {
+  if (window.location.hostname == "localhost" && useLocal) {
     atributos.set(mock_atributos);
     getCategoriasFromAtributos();
     return;
@@ -72,7 +75,7 @@ export function getAtributos() {
 
 export function getProyectos() {
   //local
-  if (window.location.hostname == "localhost") {
+  if (window.location.hostname == "localhost" && useLocal) {
     proyectos.set(mock_proyectos);
 
     if (!get(currentSelection).proyect) {
@@ -97,7 +100,7 @@ export function getProyectos() {
 
 export function getModelos() {
   //local
-  if (window.location.hostname == "localhost") {
+  if (window.location.hostname == "localhost" && useLocal) {
     modelos.set(mock_modelos);
     return;
   }
@@ -109,7 +112,7 @@ export function getModelos() {
 
 export function getOpciones(vivienda) {
   //local
-  if (window.location.hostname == "localhost") {
+  if (window.location.hostname == "localhost" && useLocal) {
     opciones.set(mock_opciones);
     return;
   }
