@@ -7,35 +7,37 @@
     getOpciones,
   } from "./stores.js";
 
+  import SideItem from "./SideItem.svelte";
+
   let showSelect = true;
 
   $: console.log($opciones);
 </script>
 
 <div class="mi-casa">
-  <div class="mi-casa-title">Mi Casa</div>
+  <div
+    class="editar"
+    on:click={() => {
+      showSelect = true;
+    }}
+  >
+    Editar
+  </div>
+  <div class="select-section-title">Mi Casa</div>
   {#if $currentSelection.proyect}
-    <div class="mi-casa-select">
-      <div class="mi-casa-select-img" />
-      <div>
-        <div class="select-cat">Proyect</div>
-        <div class="mi-casa-select-title">
-          {$currentSelection.proyect.fields.Nombre}
-        </div>
-      </div>
-    </div>
+    <SideItem
+      imgUrl={""}
+      cat={"Proyect"}
+      title={$currentSelection.proyect.fields.Nombre}
+    />
   {/if}
 
   {#if $currentSelection.modelo}
-    <div class="mi-casa-select">
-      <div class="mi-casa-select-img" />
-      <div>
-        <div class="select-cat">Modelo</div>
-        <div class="mi-casa-select-title">
-          Model: {$currentSelection.modelo.fields.Nombre}
-        </div>
-      </div>
-    </div>
+    <SideItem
+      imgUrl={""}
+      cat={"Modelo"}
+      title={$currentSelection.modelo.fields.Nombre}
+    />
   {/if}
 </div>
 

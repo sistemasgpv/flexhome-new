@@ -1,11 +1,17 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  import { cart } from "./stores.js";
 
   const dispatch = createEventDispatcher();
   export let opcione;
 </script>
 
-<div class="opcione">
+<div
+  class="opcione"
+  on:click={() => {
+    $cart.atributo_nombre = opcione;
+  }}
+>
   <img
     on:loaded={dispatch("calcHeight")}
     class="opcione-img"

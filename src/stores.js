@@ -23,10 +23,14 @@ export const atributos = writable([]);
 
 export const menuState = writable({}); //atrributes open or closed
 
+//proyect and modelo selection
 export const currentSelection = writable({
   proyect: null,
   modelo: null,
 });
+
+//user selected attributes
+export const cart = writable({});
 
 export const opcionesByAtributo = derived(opciones, ($opciones) => {
   let byAtr = {};
