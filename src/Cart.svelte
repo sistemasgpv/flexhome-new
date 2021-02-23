@@ -3,6 +3,10 @@
   import SideItem from "./SideItem.svelte";
 
   $: console.log($cart);
+
+  $: total = Object.keys($cart).reduce((acc, item) => {
+    return acc + $cart[item].fields.precio;
+  }, 0);
 </script>
 
 <div class="select-section-title">Mis Atributos</div>
@@ -16,4 +20,10 @@
       price={$cart[item].fields.precio}
     />
   {/each}
+</div>
+
+<div class="cart-sum">
+  <div class="cart-total">Total</div>
+  <div class="cart-sum-num">{total}</div>
+  <div class="listo-btn">Listo →</div>
 </div>

@@ -8,7 +8,9 @@
 <div class="select-item">
   <div
     class="select-img"
-    style="background: {imgUrl ? 'url(' + imgUrl + ')' : 'grey'}"
+    style="background: {imgUrl
+      ? 'url(' + imgUrl + ')'
+      : 'grey'}; background-size:cover"
   />
   <div>
     <div class="select-cat">{cat}</div>
