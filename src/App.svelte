@@ -3,6 +3,7 @@
   import Atributos from "./Atributos.svelte";
   import SelectModelo from "./SelectModelo.svelte";
   import { onMount } from "svelte";
+  import Cart from "./Cart.svelte";
 
   onMount(() => {
     console.log(5);
@@ -16,6 +17,7 @@
   </div>
   <div class="col-right">
     <SelectModelo />
+    <Cart />
   </div>
 </div>
 

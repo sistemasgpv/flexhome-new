@@ -9,11 +9,13 @@
 <div
   class="opcione"
   on:click={() => {
-    $cart.atributo_nombre = opcione;
+    $cart[opcione.fields.atributo_nombre] = opcione;
   }}
 >
   <img
-    on:loaded={dispatch("calcHeight")}
+    on:load={() => {
+      dispatch("img-loaded");
+    }}
     class="opcione-img"
     src={opcione.fields.Render[0].thumbnails.large.url}
     alt=""

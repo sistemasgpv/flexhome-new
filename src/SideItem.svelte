@@ -8,10 +8,10 @@
 <div class="select-item">
   <div
     class="select-img"
-    style="background: {imgUrl ? 'url({imgUrl})' : 'grey'}"
+    style="background: {imgUrl ? 'url(' + imgUrl + ')' : 'grey'}"
   />
   <div>
-    <div class="select-cat">{cat ? cat : ""}</div>
+    <div class="select-cat">{cat}</div>
     <div class="select-title">
       {title ? title : ""}
     </div>

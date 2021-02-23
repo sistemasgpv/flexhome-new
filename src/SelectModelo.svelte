@@ -10,8 +10,6 @@
   import SideItem from "./SideItem.svelte";
 
   let showSelect = true;
-
-  $: console.log($opciones);
 </script>
 
 <div class="mi-casa">
@@ -29,6 +27,7 @@
       imgUrl={""}
       cat={"Proyect"}
       title={$currentSelection.proyect.fields.Nombre}
+      price={""}
     />
   {/if}
 
@@ -37,10 +36,12 @@
       imgUrl={""}
       cat={"Modelo"}
       title={$currentSelection.modelo.fields.Nombre}
+      price={""}
     />
   {/if}
 </div>
 
+<!-- Overlay modal-->
 {#if showSelect || ($opciones && $opciones.length == 0)}
   <div
     class="select-modal"
@@ -89,5 +90,6 @@
   </div>
 {/if}
 
+<!-- Overlay modal-->
 <style>
 </style>
