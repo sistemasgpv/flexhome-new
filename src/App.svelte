@@ -16,10 +16,16 @@
     <Atributos />
   </div>
   <div class="col-right">
-    <SelectModelo />
-    <Cart />
+    <div class="col-right-sticky">
+      <SelectModelo />
+      <Cart />
+    </div>
   </div>
 </div>
 
 <style>
+  .col-right-sticky {
+    position: sticky;
+    top: 0;
+  }
 </style>

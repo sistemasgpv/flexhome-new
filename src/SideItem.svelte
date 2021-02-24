@@ -3,6 +3,8 @@
   export let cat;
   export let title;
   export let price;
+
+  $: console.log(price != "" ? "$" + price : "");
 </script>
 
 <div class="select-item">
@@ -18,7 +20,7 @@
       {title ? title : ""}
     </div>
     <div class="select-price">
-      {price ? price : ""}
+      {Number.isInteger(price) ? "$" + price : ""}
     </div>
   </div>
 </div>
