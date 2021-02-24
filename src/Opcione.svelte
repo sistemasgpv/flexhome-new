@@ -8,6 +8,7 @@
 
 <div
   class="opcione"
+  class:selected={$cart[opcione.fields.atributo_nombre] == opcione}
   on:click={() => {
     $cart[opcione.fields.atributo_nombre] = opcione;
   }}
