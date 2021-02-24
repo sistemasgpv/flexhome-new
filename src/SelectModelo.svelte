@@ -50,6 +50,7 @@
     }}
   >
     <div class="select-modal-bg">
+      <div class="modal-title">Select Project</div>
       <div class="select-proyectos">
         {#each $proyectos as proyect}
           <div
@@ -66,6 +67,7 @@
         {/each}
       </div>
 
+      <div class="modal-title">Select Model</div>
       <div class="select-modelos">
         {#each $modelos as modelo}
           <div

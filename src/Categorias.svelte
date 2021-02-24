@@ -12,7 +12,7 @@
   }
 </script>
 
-<div class="categorias-title">Categoias</div>
+<div class="categorias-title">Categorias</div>
 <div class="categorias">
   {#each Object.keys($categorias) as categoria}
     <div
