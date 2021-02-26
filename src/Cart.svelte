@@ -1,6 +1,8 @@
 <script>
   import { cart } from "./stores.js";
+  import { createEventDispatcher } from "svelte";
   import SideItem from "./SideItem.svelte";
+  const dispatch = createEventDispatcher();
 
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -35,5 +37,12 @@
 <div class="cart-sum">
   <div class="cart-total">Total</div>
   <div class="cart-sum-num">{totalFormatted}</div>
-  <div class="listo-btn">Listo →</div>
+  <div
+    class="listo-btn"
+    on:click={() => {
+      dispatch("showListo");
+    }}
+  >
+    Listo →
+  </div>
 </div>
