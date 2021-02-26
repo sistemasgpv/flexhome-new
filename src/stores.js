@@ -118,7 +118,6 @@ export function getOpciones(vivienda) {
   //local
   if (window.location.hostname == "localhost" && useLocal) {
     opciones.set(mock_opciones);
-    cart.set({});
     return;
   }
 
@@ -126,7 +125,6 @@ export function getOpciones(vivienda) {
     .get(`https://enombb1z99rtf6o.m.pipedream.net?vivienda=${vivienda}`)
     .then((res) => {
       opciones.set(res.data);
-      cart.set({});
     });
 }
 
