@@ -35,8 +35,4 @@
 {/if}
 
 <style>
-  .col-right-sticky {
-    position: sticky;
-    top: 0;
-  }
 </style>
