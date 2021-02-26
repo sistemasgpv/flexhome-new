@@ -3,7 +3,6 @@
   import Atributos from "./Atributos.svelte";
   import SelectModelo from "./SelectModelo.svelte";
   import Listo from "./Listo.svelte";
-  import { onMount } from "svelte";
   import Cart from "./Cart.svelte";
 
   let showListo = false;

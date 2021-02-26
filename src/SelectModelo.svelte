@@ -7,6 +7,8 @@
     getOpciones,
   } from "./stores.js";
 
+  import { fade } from "svelte/transition";
+
   import SideItem from "./SideItem.svelte";
 
   let showSelect = true;
@@ -48,6 +50,7 @@
     on:click={() => {
       showSelect = false;
     }}
+    transition:fade={{ duration: 150 }}
   >
     <div class="select-modal-bg">
       <div class="modal-title">Select Project</div>

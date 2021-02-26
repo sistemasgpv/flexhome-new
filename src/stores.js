@@ -7,6 +7,7 @@ import {
 import { writable, derived } from "svelte/store";
 import axios from "axios";
 import { get } from "svelte/store";
+import { debug } from "svelte/internal";
 
 let useLocal = true;
 // let useLocal = false;
@@ -22,6 +23,18 @@ export const opciones = writable([]);
 export const atributos = writable([]);
 
 export const menuState = writable({}); //atrributes open or closed
+
+export function showAttribute(atr) {
+  menuState.update((ms) => {
+    Object.keys(ms).forEach((_atr) => {
+      ms[_atr] = atr == _atr;
+    });
+    return ms;
+  });
+
+  //scroll into view
+  document.getElementById(atr).scrollIntoView(true, { behavior: "smooth" });
+}
 
 //proyect and modelo selection
 export const currentSelection = writable({
