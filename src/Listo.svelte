@@ -1,7 +1,8 @@
 <script>
-  import { cart } from "./stores.js";
+  import { cart, showAttribute } from "./stores.js";
   import { createEventDispatcher } from "svelte";
   import { formatCurrency } from "./utils.js";
+  import { fade } from "svelte/transition";
 
   const dispatch = createEventDispatcher();
 
@@ -10,14 +11,26 @@
   }, 0);
 </script>
 
-<div class="listo">
-  <div class="listo-bg">
+<div
+  class="listo"
+  on:click={() => {
+    dispatch("closeListo");
+  }}
+  transition:fade={{ duration: 150 }}
+>
+  <div class="listo-bg" on:click|stopPropagation>
     <div class="listo-title">COSTO ESTIMADO DE ATRIBUTOS</div>
     <div class="listo-total">{formatCurrency(total)}</div>
     {#if Object.keys($cart).length > 0}
       <div class="listo-items">
         {#each Object.keys($cart) as item, idx}
-          <div class="listo-item">
+          <div
+            class="listo-item"
+            on:click={() => {
+              showAttribute(item);
+              dispatch("closeListo");
+            }}
+          >
             <div class="listo-item-atributo">
               {`${idx}.${item}:`}
             </div>

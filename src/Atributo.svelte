@@ -37,6 +37,7 @@
 </script>
 
 <div
+  id={atributo.fields.Nombre}
   class="atributo-title"
   class:disabled
   on:click={() => {
