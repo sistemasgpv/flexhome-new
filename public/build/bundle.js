@@ -1,2 +1,7252 @@
-var app=function(){"use strict";function e(){}function t(e){return e()}function a(){return Object.create(null)}function i(e){e.forEach(t)}function r(e){return"function"==typeof e}function n(e,t){return e!=e?t==t:e!==t||e&&"object"==typeof e||"function"==typeof e}function c(t,...a){if(null==t)return e;const i=t.subscribe(...a);return i.unsubscribe?()=>i.unsubscribe():i}function s(e){let t;return c(e,(e=>t=e))(),t}function l(e,t,a){e.$$.on_destroy.push(c(t,a))}function d(e,t,a=t){return e.set(a),t}function o(e,t){e.appendChild(t)}function u(e,t,a){e.insertBefore(t,a||null)}function m(e){e.parentNode.removeChild(e)}function f(e,t){for(let a=0;a<e.length;a+=1)e[a]&&e[a].d(t)}function h(e){return document.createElement(e)}function p(e){return document.createTextNode(e)}function b(){return p(" ")}function g(e,t,a,i){return e.addEventListener(t,a,i),()=>e.removeEventListener(t,a,i)}function T(e,t,a){null==a?e.removeAttribute(t):e.getAttribute(t)!==a&&e.setAttribute(t,a)}function y(e,t){t=""+t,e.wholeText!==t&&(e.data=t)}function A(e,t,a,i){e.style.setProperty(t,a,i?"important":"")}function v(e,t,a){e.classList[a?"add":"remove"](t)}let E;function R(e){E=e}function w(){if(!E)throw new Error("Function called outside component initialization");return E}function C(){const e=w();return(t,a)=>{const i=e.$$.callbacks[t];if(i){const r=function(e,t){const a=document.createEvent("CustomEvent");return a.initCustomEvent(e,!1,!1,t),a}(t,a);i.slice().forEach((t=>{t.call(e,r)}))}}}const N=[],O=[],S=[],P=[],z=Promise.resolve();let D=!1;function _(){D||(D=!0,z.then(Z))}function L(e){S.push(e)}let j=!1;const I=new Set;function Z(){if(!j){j=!0;do{for(let e=0;e<N.length;e+=1){const t=N[e];R(t),B(t.$$)}for(R(null),N.length=0;O.length;)O.pop()();for(let e=0;e<S.length;e+=1){const t=S[e];I.has(t)||(I.add(t),t())}S.length=0}while(N.length);for(;P.length;)P.pop()();D=!1,j=!1,I.clear()}}function B(e){if(null!==e.fragment){e.update(),i(e.before_update);const t=e.dirty;e.dirty=[-1],e.fragment&&e.fragment.p(e.ctx,t),e.after_update.forEach(L)}}const G=new Set;let x;function $(){x={r:0,c:[],p:x}}function U(){x.r||i(x.c),x=x.p}function M(e,t){e&&e.i&&(G.delete(e),e.i(t))}function k(e,t,a,i){if(e&&e.o){if(G.has(e))return;G.add(e),x.c.push((()=>{G.delete(e),i&&(a&&e.d(1),i())})),e.o(t)}}function q(e){e&&e.c()}function V(e,a,n){const{fragment:c,on_mount:s,on_destroy:l,after_update:d}=e.$$;c&&c.m(a,n),L((()=>{const a=s.map(t).filter(r);l?l.push(...a):i(a),e.$$.on_mount=[]})),d.forEach(L)}function Q(e,t){const a=e.$$;null!==a.fragment&&(i(a.on_destroy),a.fragment&&a.fragment.d(t),a.on_destroy=a.fragment=null,a.ctx=[])}function F(t,r,n,c,s,l,d=[-1]){const o=E;R(t);const u=t.$$={fragment:null,ctx:null,props:l,update:e,not_equal:s,bound:a(),on_mount:[],on_destroy:[],before_update:[],after_update:[],context:new Map(o?o.$$.context:[]),callbacks:a(),dirty:d,skip_bound:!1};let f=!1;if(u.ctx=n?n(t,r.props||{},((e,a,...i)=>{const r=i.length?i[0]:a;return u.ctx&&s(u.ctx[e],u.ctx[e]=r)&&(!u.skip_bound&&u.bound[e]&&u.bound[e](r),f&&function(e,t){-1===e.$$.dirty[0]&&(N.push(e),_(),e.$$.dirty.fill(0)),e.$$.dirty[t/31|0]|=1<<t%31}(t,e)),a})):[],u.update(),f=!0,i(u.before_update),u.fragment=!!c&&c(u.ctx),r.target){if(r.hydrate){const e=function(e){return Array.from(e.childNodes)}(r.target);u.fragment&&u.fragment.l(e),e.forEach(m)}else u.fragment&&u.fragment.c();r.intro&&M(t.$$.fragment),V(t,r.target,r.anchor),Z()}R(o)}class J{$destroy(){Q(this,1),this.$destroy=e}$on(e,t){const a=this.$$.callbacks[e]||(this.$$.callbacks[e]=[]);return a.push(t),()=>{const e=a.indexOf(t);-1!==e&&a.splice(e,1)}}$set(e){var t;this.$$set&&(t=e,0!==Object.keys(t).length)&&(this.$$.skip_bound=!0,this.$$set(e),this.$$.skip_bound=!1)}}const H=[{id:"rec0WG26BqJMhyDZu",fields:{"opción_nombre":"Básico","descripción":"Mantén el espacio libre para hacer la instalación de la cocina de tu preferencia.",Render:[{id:"att8CpVlHSeM28Kgl",url:"https://dl.airtable.com/.attachments/da73fe0cadd5492dffc4977c4ce9630d/c14c7c28/greenlanesolo.bmp",filename:"greenlane solo.bmp",size:6684438,type:"image/bmp",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/f80f02fd15ff2c1a5009e4caae6a3a6a/5fb54a9a.png",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/fe0bead3b67616defaf2f847f26d44af/f63342ce.png",width:769,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/ac1785092776b59ef7eacd5f88e9337c/32e403d3.png",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Cocinas"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"rec2ogQicdcDdofK7",fields:{"opción_nombre":"Básico","descripción":"Transforma tu hogar en un espacio inteligente. Equípalo con elementos básicos de tecnología para aumentar la seguridad de tu vivienda y para controlar tus diferentes dispositivos electrónicos.",Render:[{id:"attwdZvP0ZFNTjRZd",url:"https://dl.airtable.com/.attachments/e4ad57b80bf4669235a0cad52ee923e4/968ea934/GREEPAQBASE.jpg",filename:"GREE PAQ BASE.jpg",size:421273,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/cdb323d5ebd9032b613948c3deca8327/7125b3b8",width:58,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/d129ecf1fe6ee17f154bcfbd4f66dec6/23d641bb",width:827,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/342f256702b02961fae374a59cdc235a/1154be9e",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Domótica"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"rec38nRWZ6nrH0io1",fields:{"opción_nombre":"Opción B + Extra","descripción":"Descubre al parrillero experto que tienes dentro con un asador Napoleón y organiza las mejores reuniones. Haz de esas carnes asadas del fin de semana momentos inolvidables con tus familiares y amigos.",Render:[{id:"attrif5lYgZwC9L4B",url:"https://dl.airtable.com/.attachments/4048dd81d2871678b38f22fdd2f6d726/f04a8767/27_AREADEASADORBLANCOCONASADOR.png",filename:"27_AREA DE ASADOR BLANCO CON ASADOR.png",size:15826562,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/ac127b556915217ed49918ddbef435b6/255f31b5",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/06fc802945a093b1152400e1c2c1bf93/8ddd58fb",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/98ba672822678c74b553c86c8754a5a7/27a367e8",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:13e4,atributo_nombre:"Asadores"},createdTime:"2020-11-04T20:18:29.000Z"},{id:"rec3XTdCpHmE4mbNk",fields:{"opción_nombre":"Básico","descripción":"Mantén el espacio de tu alacena libre para instalar los muebles de tu preferencia.\n",Render:[{id:"att8CpVlHSeM28Kgl",url:"https://dl.airtable.com/.attachments/da73fe0cadd5492dffc4977c4ce9630d/c14c7c28/greenlanesolo.bmp",filename:"greenlane solo.bmp",size:6684438,type:"image/bmp",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/f80f02fd15ff2c1a5009e4caae6a3a6a/5fb54a9a.png",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/fe0bead3b67616defaf2f847f26d44af/f63342ce.png",width:769,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/ac1785092776b59ef7eacd5f88e9337c/32e403d3.png",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Muebles de Cocina"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"rec5NZFeWXxkoNFfi",fields:{"opción_nombre":"Opción C","descripción":"Transforma tu hogar en un espacio inteligente. Equípalo con los elementos de tecnología más avanzados para aumentar la seguridad de tu vivienda y para controlar tus diferentes dispositivos electrónicos.",Render:[{id:"attY2aqEl1533NmwO",url:"https://dl.airtable.com/.attachments/b9b6a29961830ae4901a89143f5f9f58/1efc0de7/GREEPAQC.jpg",filename:"GREE PAQ C.jpg",size:437075,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/bcb5736dac343079b0cc62a19237943f/a76e30dd",width:58,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/0d3930e472827d3887a9eb22736dbfe9/4b805f23",width:827,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/bad637ec54aef7282c3414b9f5e8cdfe/9bfd5d9b",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:6e4,atributo_nombre:"Domótica"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"rec6Ubsef3hF6Xmen",fields:{"opción_nombre":"Opción B","descripción":"Integra un portón automático con diseño lineal contemporáneo y vistas en madera al acceso principal de tu hogar brindando mayor protección.",Render:[{id:"atthaF0jNiJ1qEu4H",url:"https://dl.airtable.com/.attachments/7e45f92e8d259541e0014777ce4598fe/4809ef64/07_INLANDPORTONCERCACASA011.png",filename:"07_INLAND PORTON CERCA CASA 01 (1).png",size:18130424,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/ee99e13172c17de9ab84cac353fac78d/4c5c1c65",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/37cb00c85d8743396be93114dcf7aa5b/2a098fee",width:795,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/700d2e6c07c89cf743db65d0d4653270/0643aa4f",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:65e3,atributo_nombre:"Portones"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"rec85GQVDovPXdrgb",fields:{"opción_nombre":"Opción A","descripción":"Mantén todo organizado y a la mano al preparar tus mejores platillos y atender a tus visitas. Lógralo agregando divisores y estantes a tu despensa.",Render:[{id:"att1Dz3GzR8IzaCP5",url:"https://dl.airtable.com/.attachments/8ead6304a0d5f5886f4d4b2a350421d2/971eaee0/GREENLANEDESPENSA.jpg",filename:"GREENLANE DESPENSA.jpg",size:4924547,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/0298c688fc7c1bf9391cf73539b8f10a/e9dca8d9",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/7c2a8b779913193dcd005430c62b3276/b61a284a",width:768,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/43b6467e36881a50a817f34a26f80efd/9417464c",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:65e3,atributo_nombre:"Despensa"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"rec96MUTG1JQ2qwC8",fields:{"opción_nombre":"Básico","descripción":"Mantén tu espacio libre y listo para la instalación de tu cancelería. \n",Render:[{id:"attDzJujkDVJceXWJ",url:"https://dl.airtable.com/.attachments/4f387a7f0cd767ba51226275459f5aea/2b530dc0/2020-07-10_14h44_11.png",filename:"2020-07-10_14h44_11.png",size:2310121,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/1b7ee48b70af9dcb6020ef41c71125a0/4e1fb8c8",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/eb95262ae73be0714dfea90bda27bd08/ad3157f5",width:796,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/fa93eb35804e459e180a3a47f8f6afc4/1a73f577",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Cancelería"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"rec9RJpH8hsUvUJOF",fields:{"opción_nombre":"Opción A","descripción":"Reviste con tonalidades claras y dale un estilo único a tu cocina con un ambiente más cálido para ti y tus invitados.",Render:[{id:"attmk50dTHjGzFP2d",url:"https://dl.airtable.com/.attachments/546b6f53f69b5503f433cdddc8d938c0/b9477aa2/GREENLANEMONARCABASALTOSINFIJOS.jpg",filename:"GREENLANE MONARCA BASALTO SIN FIJOS.jpg",size:4315384,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/cb58bd84af9ca4dfc21b1f95f1e29335/3250e6c7",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/15299a8f421c8819468a7fd365070273/4ec73d58",width:768,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/41290e919c601a4d74c0a39b96b3311f/15de2801",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Tonalidades de Cocina"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recBcf7zBVagUYLcR",fields:{"opción_nombre":"Opción C","descripción":"Reviste con las tonalidades medias y dale un estilo único a tu cocina con un ambiente más cálido para ti y tus invitados.",Render:[{id:"att9aMAw1xsgVpwvX",url:"https://dl.airtable.com/.attachments/df040d41f166ea2a8dde8578b3859ea4/f3e0f0d7/GREENLANEBAGNOLACASHMIRESINFIJOS.jpg",filename:"GREENLANE BAGNOLA CASHMIRE SIN FIJOS.jpg",size:4624802,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/90b8dbbf54371efdb3b279a86cd8e0d8/c344ada0",width:58,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/78877e73a4814b6f7a7250ab05eedffc/bf9c0d65",width:824,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/f04d506cd6aaf3e61997d77dc9c7d820/ef9d7686",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Tonalidades de Cocina"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recCuJ9xom75psGSY",fields:{"opción_nombre":"Opción B","descripción":"Lleva un estilo único a cada nivel de tu hogar  integrando duela en tono greige como parte de los acabados de tus pisos.",Render:[{id:"attTq6Y8fXuBGvfNM",url:"https://dl.airtable.com/.attachments/d3eec337d392e5b57976feca69cf2f77/fa88202f/Group44.jpg",filename:"Group 44.jpg",size:2231495,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/723d3f460e2c6fe6b7b630291c35a1e6/118897c6",width:67,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/d61f3bb9e36131cdb49731d1d77ab818/c22f9b8a",width:946,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/fbb00d27c05e713c5929caedb7eb274c/59940561",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:32e3,atributo_nombre:"Piso"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recGGflV5I3rCxqrf",fields:{"opción_nombre":"Básico","descripción":"Mantén tu espacio de despensa libre y listo para modularlo a tu preferencia.",Render:[{id:"att8CpVlHSeM28Kgl",url:"https://dl.airtable.com/.attachments/da73fe0cadd5492dffc4977c4ce9630d/c14c7c28/greenlanesolo.bmp",filename:"greenlane solo.bmp",size:6684438,type:"image/bmp",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/f80f02fd15ff2c1a5009e4caae6a3a6a/5fb54a9a.png",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/fe0bead3b67616defaf2f847f26d44af/f63342ce.png",width:769,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/ac1785092776b59ef7eacd5f88e9337c/32e403d3.png",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Despensa"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recGtM08bT1k95A8S",fields:{"opción_nombre":"Opción B","descripción":"¡La mejor forma de enriquecer tu cocina! Si lo que buscas es potenciar tu espacio, compleméntalo con un refrigerador y una elegante campana  de diseñador.\n",Render:[{id:"attBwRMegJyXc0djD",url:"https://dl.airtable.com/.attachments/8e8d2c32d3d66a6718454e4949c97991/0d46dfbd/greenlaneequipos.bmp",filename:"greenlane equipos.bmp",size:3275574,type:"image/bmp",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/d8564b43e1065f393c6a6e27b42b57c1/173d3ea3.png",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/f69256ec661d2caa3bfb6fa66441580a/c67bb9c3.png",width:768,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/42c5c4843c89da623694021b6486c3e2/99ca836b.png",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:7e4,atributo_nombre:"Equipamiento de Cocinas"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recHcPkUGmGmzuVQ1",fields:{"opción_nombre":"Opción B","descripción":"Organiza las mejores reuniones y haz de esas carnes asadas del fin de semana momentos inolvidables con tus familiares y amigos. ¡Descubre al parrillero experto que tienes dentro!",Render:[{id:"atthDJVZTKHsat8K5",url:"https://dl.airtable.com/.attachments/b44f4035842ace9cb913419d5df5aa88/f679dd19/28_AREADEASADORBLANCOSINASADOR.png",filename:"28_AREA DE ASADOR BLANCO SIN ASADOR.png",size:15813363,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/d4d1304b2d7bae576007152af1298c44/ae16c6f4",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/fc2edf0851d97283ce25d1373bd2edff/e3da48cc",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/47a0038e75ff36c22f5969a8da344b14/57051404",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:92e3,atributo_nombre:"Asadores"},createdTime:"2020-11-04T20:15:02.000Z"},{id:"recIGiwHZfqLsm3nM",fields:{"opción_nombre":"Básico","descripción":"Haz de tu nueva casa un hogar sustentable y ahorra en tu recibo de luz instalando paneles solares. El solo instalar 4 paneles solares, aproximadamente te permite mantener fresca una recpamara las 24 horas del día.",Render:[{id:"attAcPsMYzUzL3d5A",url:"https://dl.airtable.com/.attachments/cc5a59174e70f2618cdf7140d8625668/195cb051/31_AZOTEA4PANELES.png",filename:"31_AZOTEA 4 PANELES.png",size:15617947,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/20a5ae10538b021a0f78cb451ba63ce8/a130dda1",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/924ba327adf3c68c515cd9f366a536b9/e7a9b161",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/5d03ae27826ef5ba396577074929dcf8/f3d4f2ce",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Paneles Solares"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recKf115tTXz19wJK",fields:{"opción_nombre":"Opción C","descripción":"Integra un portón automático con diseño cuadricular al acceso principal de tu hogar brindando mayor protección.\n",Render:[{id:"attuN6Ej2NeS6PM1L",url:"https://dl.airtable.com/.attachments/b4640b02d59270d21b95b698976a0e5d/79833c2e/08_INLANDPORTONCERCACASA021.png",filename:"08_INLAND PORTON CERCA CASA 02 (1).png",size:16284033,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/4dddcf0f8ab700c36484787a12e58c6d/19e304ab",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/2d569b9fe527014147e6a32e87a38fee/f26d5d3e",width:795,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/7edca58cd8aa648d2866ea9990949e5c/ad22e58c",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:65e3,atributo_nombre:"Portones"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recKs0T8A9tffhFSR",fields:{"opción_nombre":"Opción B","descripción":"Transforma tu hogar en un espacio inteligente. Equípalo con elementos de tecnología avanzados para aumentar la seguridad de tu vivienda y para controlar tus diferentes dispositivos electrónicos.",Render:[{id:"attL8JEa3ut7SOUFj",url:"https://dl.airtable.com/.attachments/cb3c4611d41c2dfa2144bced8b0aaf22/68fbbdcb/GREEPAQB.jpg",filename:"GREE PAQ B.jpg",size:434740,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/9610d0a95e730746d7ee2d3b19f7dd2b/e1f7fbea",width:58,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/6a5854cac1cac15a217b9e94a7760bb1/5e966976",width:827,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/dffc0b1ffe94464b5d6d779f590f8a5e/f534fa8e",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:45e3,atributo_nombre:"Domótica"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recN5oEXgpe6POkG3",fields:{"opción_nombre":"Opción B","descripción":"Reviste con tonalidades oscuras y dale un estilo único a tu cocina con un ambiente más cálido para ti y tus invitados.",Render:[{id:"attJTA8CeWoiRcB9W",url:"https://dl.airtable.com/.attachments/483ed1317181f083f0e1e99c91fa68f6/7f859cc3/GREENLANEMARALUNGAANTRACITASINFIJOS.jpg",filename:"GREENLANE MARALUNGA ANTRACITA SIN FIJOS.jpg",size:4222801,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/a620de3821afb205aa4c0a02a2ab58ef/ffe3bc5d",width:58,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/06a045a29d6797dfe07d6163c2bd7479/d7c6ea55",width:824,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/89ce5583a9f488d1927ca593167f65cb/55d4ec16",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Tonalidades de Cocina"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recNCpKJxNxJBgoPy",fields:{"opción_nombre":"Opción A","descripción":"Incluye un clóset y vestidor color nogal con un diseño elegante y funcional para poner en orden tu habitación organizando tus prendas, zapatos y artículos de higiene personal.",Render:[{id:"attCLQ7qGD5vqt4w7",url:"https://dl.airtable.com/.attachments/c91aad2192feb1c8515ffbc04cadc9e0/7cb7281d/19_CLOSETSECRECSECNOGAL.png",filename:"19_CLOSET SEC REC SEC NOGAL.png",size:13326231,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/ab457e941861e0faa0dc7f73fbc6ec72/d15c4872",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/fd6d17b27950326acec064f3d596d5d3/bb7a8252",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/d5b8ad4bf1b3601d6aff5c1720ebac02/cdeb9a47",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:185e3,atributo_nombre:"Clósets"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recNyXiZ5XS9wdYkJ",fields:{"opción_nombre":"Opción A","descripción":"Si lo que buscas es potenciar tu cocina, compleméntala con un refrigerador y una elegante campana.\n",Render:[{id:"attOGVG1IAWqdEqnp",url:"https://dl.airtable.com/.attachments/6f43e79ad6dadd88b779c1a7a280ba56/57a6c701/greenlaneequipos.bmp",filename:"greenlane equipos.bmp",size:3275574,type:"image/bmp",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/c49bc6c1e9173715ace43206e78ee526/0a7fb188.png",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/326daab562925299a6c5d0261aa9bd08/5baf221c.png",width:768,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/c957d5877831bafae57295131fd61d8b/38e8827f.png",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:5e4,atributo_nombre:"Equipamiento de Cocinas"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recOuIEIkD7wJyM6G",fields:{"opción_nombre":"Básico","descripción":"Mantén tu fachada limpia y el acceso principal sin restricción para tus vehículos. \n",Render:[{id:"attcETXKS542ReyfP",url:"https://dl.airtable.com/.attachments/3265fda32e5405a49c86d45089fc5687/b9b5b42a/35_INLANDFACHADASINPORTON.png",filename:"35_INLAND FACHADA SIN PORTON.png",size:17255386,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/8c3344f5460b5b151674c5f6ecbdf5fd/0b959b3a",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/31777bca86e73d362724228e745bd740/ebf7cfc0",width:795,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/62fdc3510cf07e53d29f44a95ad636ef/af5b13b6",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Portones"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recP4ep8oFVZnVZ6Y",fields:{"opción_nombre":"Básico","descripción":"Mantén los espacios en tu cocina libres para instalar el refrigerador y campana de tu preferencia.",Render:[{id:"att8CpVlHSeM28Kgl",url:"https://dl.airtable.com/.attachments/da73fe0cadd5492dffc4977c4ce9630d/c14c7c28/greenlanesolo.bmp",filename:"greenlane solo.bmp",size:6684438,type:"image/bmp",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/f80f02fd15ff2c1a5009e4caae6a3a6a/5fb54a9a.png",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/fe0bead3b67616defaf2f847f26d44af/f63342ce.png",width:769,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/ac1785092776b59ef7eacd5f88e9337c/32e403d3.png",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Equipamiento de Cocinas"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recPt6cInNE8haIbo",fields:{"opción_nombre":"Opción A","descripción":"Haz de tu nueva casa un hogar sustentable y ahorra en tu recibo de luz instalando paneles solares. El solo instalar 6 paneles solares, aproximadamente te permite mantener fresca una recámara las 24 horas del día.",Render:[{id:"atteUVUzfQnrhejGz",url:"https://dl.airtable.com/.attachments/35a137ffbc1dd9ac9dc2f87d71842480/74a7ceba/32_AZOTEA6PANELES.png",filename:"32_AZOTEA 6 PANELES.png",size:15881750,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/b0d0dc2ee5ea0f671af464b07c006db9/93f0d854",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/44a68c0a686c285ed8d91d51f7feb536/796cd3c5",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/5bc08e13e208d3e616280ef03777ec3d/7e56ad9a",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:2e4,atributo_nombre:"Paneles Solares"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recQpdkX7SnTQrQWC",fields:{"opción_nombre":"Opción A","descripción":"Complementa tu escalera con un increíble barandal de cristal para darle un toque elegante a tu espacio y la seguridad que necesitas.",Render:[{id:"att0gYnDlb4OYe1AW",url:"https://dl.airtable.com/.attachments/301ba860c5145b468561388052624fe9/c1f42f2d/11_ESCALERASBARANDALDECRISTAL.png",filename:"11_ESCALERAS BARANDAL DE CRISTAL.png",size:17727974,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/ce1e232c08d22450585c6d67608e72f1/7ca54d0e",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/407247670b124f97203da2cee750c077/2734b7cc",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/3fdb2d2cebdd9bbb2b4014bc3216bc24/ba123504",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:6e4,atributo_nombre:"Barandales"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recQtgk8pQTcFEfe5",fields:{"opción_nombre":"Opción B","descripción":"Incluye un clóset y vestidor color monarca con un diseño elegante y funcional para poner en orden tu habitación organizando tus prendas, zapatos y artículos de higiene personal.",Render:[{id:"attRRtfH1a555Hxk3",url:"https://dl.airtable.com/.attachments/0666270de7593096422943b94530bfaf/c6479279/18_CLOSETRECSEC.png",filename:"18_CLOSET REC SEC.png",size:13794994,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/2b82cadff30e5fc712cdb1621df84f90/21528a58",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/60c6cf669740aa1703a2ca47140e0abf/4317c325",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/a4341b53844a9c31dd1b2da1f9d88f55/09ad0c11",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:185e3,atributo_nombre:"Clósets"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recUZYYQH85e3OsVY",fields:{"opción_nombre":"Opción A","descripción":"¡Haz que el diseño de tu cocina no tenga comparación! Lógralo agregando unos muebles fijos decorativos a tu alacena.",Render:[{id:"attu16zSl5HJu17eI",url:"https://dl.airtable.com/.attachments/656849d821560c32ddb36249e1cd642b/be60c002/GREENLANEMONARCABASALTOCONFIJOS.jpg",filename:"GREENLANE MONARCA BASALTO CON FIJOS.jpg",size:4377828,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/f4507d721708f4bb7e1c99646e35c97b/def37721",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/e5213ed6f7287f237470e99f907622f5/fe0de6c8",width:768,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/2802ff0cd8408dfd98667339cf27162c/845aebf6",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:4e4,atributo_nombre:"Muebles de Cocina"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recVWsERfw49CkFlp",fields:{"opción_nombre":"Básico","descripción":"Mantén el espacio libre para instalar un clóset a la medida y aprovechar tu espacio personal. ",Render:[{id:"att9ftGPl3PS5fAJl",url:"https://dl.airtable.com/.attachments/a55ac548bb37c47443021e156be63d21/623ec4e4/20_CLOSETRECSECSINMUEBLE_RGB.png",filename:"20_CLOSET REC SEC SIN MUEBLE_RGB.png",size:12359500,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/8b624c8c96ebba2444431369032c0c99/41bb51c7",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/0d5057f7690b87f0d08167bad8d0ac53/cecf4928",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/62333ceb4c15d668fb1fc7cec8997b5e/7e50fd4d",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Clósets"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recW4CSec0elskXRn",fields:{"opción_nombre":"Opción A","descripción":"Lleva un estilo único a cada nivel de tu hogar  integrando duela en tono natural como parte de los acabados de tus pisos.",Render:[{id:"attTKxUR0TPTTV6VW",url:"https://dl.airtable.com/.attachments/3c6f0621510e1740d18137cae5eaa68b/8b67074c/Group43.jpg",filename:"Group 43.jpg",size:2338381,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/dd96480542c57e25ca200a504b453643/ad92fb44",width:67,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/3a278fb02c7cce862abcdc866db4d6be/397c0e4d",width:946,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/aeda9465f44ffc4eac009b1602d78664/8101e0ae",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:32e3,atributo_nombre:"Piso"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recXrKeQ39QTIL2sG",fields:{"opción_nombre":"Básico","descripción":"Complementa tu escalera con un barandal de herrería para darle un toque elegante a tu espacio y la seguridad que necesitas.",Render:[{id:"attvIB3uUpey1TSnm",url:"https://dl.airtable.com/.attachments/280ae1fc4c6e45638fc86a845f4a56da/ec5f2fce/10_ESCALERASBARANDALMETALICO.png",filename:"10_ESCALERAS BARANDAL METALICO.png",size:15720925,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/a8202308f0671c37f51c678302c32044/47b554a6",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/e07e822209907913c11f4fcf70db6089/571e26e4",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/6ffae98ea23e11135f7b05cff98b0f69/316aa174",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Barandales"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recZeKER0w1GQ5WLo",fields:{"opción_nombre":"Opción B","descripción":"La cocina es un lugar muy importante en tu casa, hazlo más cálido y funcional. Intégrala a tu casa con la propuesta más equipada y expresa el amor a tus seres queridos en tus platillos con deliciosas creaciones culinarias.",Render:[{id:"attnZGNIfQY5aML7t",url:"https://dl.airtable.com/.attachments/55da8258b94bc6250632c826bc8a0c75/b50f6dc1/2020-07-07_16h00_50.png",filename:"2020-07-07_16h00_50.png",size:2068142,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/3ae98522f5c936231a1656c13f9f311a/8f52a26f",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/a8557a3b616076a64d0b2fb2c9315db0/40a71313",width:770,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/f599da9dc356e705c4ab593317119058/e0a27ec3",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:465e3,atributo_nombre:"Cocinas"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recbVvlPeOSQEe577",fields:{"opción_nombre":"Básico","descripción":"Dale un estilo único a tu hogar con diferentes acabados en pisos.",Render:[{id:"attQF4iVRo0p0ElGc",url:"https://dl.airtable.com/.attachments/125f82797241874e1c95b338844f6b73/8839f26c/Group422.jpg",filename:"Group 42 (2).jpg",size:2314678,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/db30ca250b5a359ef1aa8ea5f2d26445/d7ee51d3",width:66,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/9e77f09d2f46788716da15d1027e9dc7/f56335c3",width:945,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/d68749ddf6a920e013700d6017c82a7f/6f8ab294",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Piso"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recdB7pLEC2Uh1TpO",fields:{"opción_nombre":"Opción A","descripción":"Extiende la naturaleza a tu patio sin necesidad de regarlo día con día. Decóralo con la instalación de un muro verde artificial y obtén un espacio agradable para reunirte con tus seres queridos.",Render:[{id:"att6pGUMWwRohQUSq",url:"https://dl.airtable.com/.attachments/f0058ffcd97ff3e0797e14660ae6467b/a1a5a318/30_PATIOCONMUROVERDE.png",filename:"30_PATIO CON MURO VERDE.png",size:26015188,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/a6ae035e4957e5b06fbc4f5f8f479931/66065a41",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/80146ade999b67060f24c5120c69e766/d226e378",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/9ef8c44ba6e8b704efd9032a3764548f/67c8e39b",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:72e3,atributo_nombre:"Muro Verde"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recdSEQaV8QrRHuPE",fields:{"opción_nombre":"Opción A","descripción":"Integra un portón automático con diseño lineal contemporáneo al acceso principal de tu hogar brindando mayor protección.",Render:[{id:"att3QqU7uMvP1JYWk",url:"https://dl.airtable.com/.attachments/e24dfff0e4570ba5c718616e6112fdc4/3bfaecc7/09_INLANDCOCHERACERCACASA03.png",filename:"09_INLAND COCHERA CERCA CASA 03.png",size:11971479,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/d21acaca67def097a16a8f20d2227cda/ab7f4523",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/78084a7cc2ce387fcebd38a1420aaac7/c2af870a",width:795,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/a4e9783a2c3eb6a9593f5cb000a44838/9894136f",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:65e3,atributo_nombre:"Portones"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"receUFRxTCZSqav5r",fields:{"opción_nombre":"Opción B","descripción":"Haz de tu nueva casa un hogar sustentable y ahorra en tu recibo de luz instalando paneles solares. El solo instalar 8 paneles solares, aproximadamente te permite mantener fresca dos recámaras las 24 horas del día.",Render:[{id:"atteJ1ynI726mlbRe",url:"https://dl.airtable.com/.attachments/bbd140b9a4f21505cde4cf39ffd5babb/836372ee/33_AZOTEA8PANELES.png",filename:"33_AZOTEA 8 PANELES.png",size:15978885,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/1c4370d6bd078ffcdd8226cd7952dae1/176a2622",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/09c3e02f65cc7efc212cd49ee842aa49/09e244ab",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/8c97ff5d083061cff9af5fa4ffd4eb32/ceec0d94",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:41e3,atributo_nombre:"Paneles Solares"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recfcmBVKVhJsQOKZ",fields:{"opción_nombre":"Opción A","descripción":"Separa los espacios dentro de tu baño instalando cancelería de cristal templado con herrajes metálicos. Mejora la seguridad en el espacio y reduce accidentes con un cancel de 2.20 metros de altura que además resiste los cambios extremos en la temperatura. ",Render:[{id:"attaH5I9CwvgZGyrl",url:"https://dl.airtable.com/.attachments/346bc4d0142c8375a6c074e4e7eb0d78/4fd3d0e0/15_BAOPPALCANCEL2_20M_.png",filename:"15_BAÑO PPAL CANCEL 2_20 M_.png",size:15410662,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/2e0aab17b00d660e90c82b435cd25cf1/87b29d97",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/f04ffa47e3ae4d7760a7fd52852fd308/431c5df9",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/aba66bf104eb1bc09442efa80f971e67/c54f20b3",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:6e4,atributo_nombre:"Cancelería"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"rech0A1frvsxa1uVq",fields:{"opción_nombre":"Opción B","descripción":"Separa los espacios dentro de tu baño instalando cancelería de cristal templado con herrajes metálicos. Mejora la seguridad en el espacio y reduce accidentes con un cancel de 3.00 metros de altura que además resiste los cambios extremos en la temperatura. ",Render:[{id:"att7XxqfWshypGBHQ",url:"https://dl.airtable.com/.attachments/0398e9462f5771123734ba645d09735f/9f985410/16_BAOPPACANCEL2_95.png",filename:"16_BAÑO PPAÑ CANCEL 2_95.png",size:15237810,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/c3079efe9e51cbb52e61c87ed0b38c12/f9ef03a0",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/20e5aefa0347b6bce2bbb6f01ab9386a/92def9ca",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/ca8df2fb82cd7b60c10fd5e470e22b18/e75954ed",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:8e4,atributo_nombre:"Cancelería"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"rechXK6bgTf8gmhp8",fields:{"opción_nombre":"Opción A + Extra","descripción":"Descubre al parrillero experto que tienes dentro con un asador Napoleón y organiza las mejores reuniones. Haz de esas carnes asadas del fin de semana momentos inolvidables con tus familiares y amigos.",Render:[{id:"attrif5lYgZwC9L4B",url:"https://dl.airtable.com/.attachments/4048dd81d2871678b38f22fdd2f6d726/f04a8767/27_AREADEASADORBLANCOCONASADOR.png",filename:"27_AREA DE ASADOR BLANCO CON ASADOR.png",size:15826562,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/ac127b556915217ed49918ddbef435b6/255f31b5",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/06fc802945a093b1152400e1c2c1bf93/8ddd58fb",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/98ba672822678c74b553c86c8754a5a7/27a367e8",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:13e4,atributo_nombre:"Asadores"},createdTime:"2020-09-30T15:54:17.000Z"},{id:"reckgGgX2eXKTpZ7U",fields:{"opción_nombre":"Básico","descripción":"Aprovecha el amplio espacio libre en la tercera planta de tu casa para adecuarlo a tus necesidades. ",Render:[{id:"attgSlpeXkVnrPb7R",url:"https://dl.airtable.com/.attachments/c78fb70c3f0824773deca3355d3b3037/f74e2f2e/GRE-TERCERNIVEL_basetrans.jpg",filename:"GRE-TERCER NIVEL_base trans.jpg",size:4106400,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/72fee0bb4876b02ddb36720b1115d904/2968e48d",width:45,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/8af6604cb36d129346f0bb8acaef6626/cbcae5dd",width:640,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/813f19f06a640b927e5af38f013d3f4e/d7f4f574",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Flex Room"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recnNQbfZgLdww9SC",fields:{"opción_nombre":"Opción A","descripción":"Organiza las mejores reuniones y haz de esas carnes asadas del fin de semana momentos inolvidables con tus familiares y amigos. ¡Descubre al parrillero experto que tienes dentro!",Render:[{id:"atthDJVZTKHsat8K5",url:"https://dl.airtable.com/.attachments/b44f4035842ace9cb913419d5df5aa88/f679dd19/28_AREADEASADORBLANCOSINASADOR.png",filename:"28_AREA DE ASADOR BLANCO SIN ASADOR.png",size:15813363,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/d4d1304b2d7bae576007152af1298c44/ae16c6f4",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/fc2edf0851d97283ce25d1373bd2edff/e3da48cc",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/47a0038e75ff36c22f5969a8da344b14/57051404",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:8e4,atributo_nombre:"Asadores"},createdTime:"2020-09-30T15:54:17.000Z"},{id:"recrYWKs1CDmpq4is",fields:{"opción_nombre":"Opción A","descripción":"La cocina es un lugar muy importante en tu casa, hazlo más cálido y funcional. Intégrala a tu casa y expresa el amor a tus seres queridos en tus platillos con deliciosas creaciones culinarias.",Render:[{id:"attQgENZOqLHAGtxT",url:"https://dl.airtable.com/.attachments/34caff85647065f1bbcfe22df4df93ee/37276c3a/GREENLANESINEQUIPOSSINFIJOS.jpg",filename:"GREENLANE SIN EQUIPOS SIN FIJOS.jpg",size:5496873,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/f0c7caa9d42abf19eae73cd5fad5b88f/eda4cf81",width:54,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/73940750cdbd4fc43e06aca1ff387318/e2ab046c",width:768,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/ff5c312eef27fa10d92835bb58e166e3/d908d5de",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:425e3,atributo_nombre:"Cocinas"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recrzEV6kgJpohclv",fields:{"opción_nombre":"Básico","descripción":"Mantén un amplio espacio libre en terraza para adecuarlo a tus necesidades. ",Render:[{id:"attHbAGUHREYcsbat",url:"https://dl.airtable.com/.attachments/874c52bfe5ddd936aed92e2152cc79fd/43733348/26_AREADEASADORESPACIOLIBRE.png",filename:"26_AREA DE ASADOR ESPACIO LIBRE.png",size:15395249,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/9e5bbfc6db8c08c669dd9cb2e560eb02/5a5d0569",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/3ec7333dac2e94ccf5155e92269c7f78/7c9e3e8c",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/7927a50028626231d2167535ba13171c/fd1cce38",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Asadores"},createdTime:"2020-09-30T15:54:17.000Z"},{id:"recvZNqSoG4Dj9Plm",fields:{"opción_nombre":"Básico","descripción":"Mantén libres las paredes de tu patio, deja volar tu imaginación y decóralas como siempre imaginaste. Disfruta un espacio más para reunirte con tus seres queridos.",Render:[{id:"attt4E0Ijnd72InL3",url:"https://dl.airtable.com/.attachments/e4e72e1f4716ff59beacd56a96fe7691/8e9c0e69/29_PATIOSINMUROVERDE.png",filename:"29_PATIO SIN MURO VERDE.png",size:22938334,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/21f1ab57959e013f5a555c755ffec76b/62b0e681",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/3b6d11f103f2d2598b2f2785b1da8733/3a7782e7",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/2074a7ab2889723483ef6eefe77cd487/ee609e7b",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:0,atributo_nombre:"Muro Verde"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recwMcNUxbGTCdZ9O",fields:{"opción_nombre":"Opción C","descripción":"Haz de tu nueva casa un hogar sustentable y ahorra en tu recibo de luz instalando paneles solares. El solo instalar 10 paneles solares, aproximadamente te permite mantener fresca tres recámaras las 24 horas del día.",Render:[{id:"att7aUOygSogmT2A2",url:"https://dl.airtable.com/.attachments/2752e55038dba2f951016c39fc41ca3b/1f0d4160/34_AZOTEA10PANELES.png",filename:"34_AZOTEA 10 PANELES.png",size:16445104,type:"image/png",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/5ac4d9dbfa237fd0d4dbe89256eba85d/5855c845",width:56,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/e11ee3af254abdfa05ff930872f9e03e/426d6029",width:794,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/a846a70e0ab161e8dc46614699ff05dd/07c1c486",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:6e4,atributo_nombre:"Paneles Solares"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"recwRymWVy2AIVlv5",fields:{"opción_nombre":"Opción A","descripción":"¿Necesitas otra recámara, un gimnasio o bien una oficina, en el tercer nivel de tu casa? En Península Park Living lo puedes tener. Acondiciona tu espacio para que lo aproveches a tu manera.",Render:[{id:"attleiEsgloHOvmhI",url:"https://dl.airtable.com/.attachments/23f5a25c8a3f57ffea166364f9f615e5/a9c671a9/GRE-TERCERNIVEL_baseFLEXtrans.jpg",filename:"GRE-TERCER NIVEL_base FLEX trans.jpg",size:4105829,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/029fc5226e5c784b21eeec12ca614491/efdc2660",width:45,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/d294ae93867ae676020a105d2fbd1a8f/db420437",width:640,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/f43e44b7457ecdc3fa26f3dc47c2b4f6/f47d0dc8",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:35e3,atributo_nombre:"Flex Room"},createdTime:"2020-09-30T16:18:45.000Z"},{id:"reczLe4Q2klq9kc5W",fields:{"opción_nombre":"Opción A","descripción":"Transforma tu hogar en un espacio inteligente. Equípalo con elementos de tecnología para aumentar la seguridad de tu vivienda y para controlar tus diferentes dispositivos electrónicos.",Render:[{id:"attNkdBJxQddpfztv",url:"https://dl.airtable.com/.attachments/88b2519c0a1de6f499541a4e1a44cb02/b5484285/GREEPAQA.jpg",filename:"GREE PAQ A.jpg",size:435947,type:"image/jpeg",thumbnails:{small:{url:"https://dl.airtable.com/.attachmentThumbnails/4cd6e1cee0a548cd4b0a59b206f817d0/30551ea6",width:58,height:36},large:{url:"https://dl.airtable.com/.attachmentThumbnails/9af265c514f2f4fb9c3bd963a3261281/3ef272c8",width:827,height:512},full:{url:"https://dl.airtable.com/.attachmentThumbnails/1dbfdf3bc41f815f698c7a20dc6d1842/d2fae3e9",width:3e3,height:3e3}}}],detalleDePrecio:"¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",precio:25e3,atributo_nombre:"Domótica"},createdTime:"2020-09-30T16:18:45.000Z"}],K=[{id:"recj0jJ6DFRi3mmtx",fields:{Nombre:"Greenlane",Fraccionamiento:["recunm26MjQp3daSq"],"Atributos en Viviendas":"Portones en Greenlane, Cocinas en Greenlane, Equipamiento de Cocinas en Greenlane, Muebles de Cocina en Greenlane, Despensa en Greenlane, Tonalidades de Cocina en Greenlane, Piso en Greenlane, Flex Room en Greenlane, Barandales en Greenlane, Asadores en Greenlane, Cancelería en Greenlane, Clósets en Greenlane, Domótica en Greenlane, Paneles Solares en Greenlane, Muro Verde en Greenlane","Opciones de Atributos en Viviendas":["recrzEV6kgJpohclv","recnNQbfZgLdww9SC","rechXK6bgTf8gmhp8","recXrKeQ39QTIL2sG","recQpdkX7SnTQrQWC","rec96MUTG1JQ2qwC8","recfcmBVKVhJsQOKZ","rech0A1frvsxa1uVq","recVWsERfw49CkFlp","recNCpKJxNxJBgoPy","recQtgk8pQTcFEfe5","rec0WG26BqJMhyDZu","recrYWKs1CDmpq4is","recZeKER0w1GQ5WLo","recGGflV5I3rCxqrf","rec85GQVDovPXdrgb","rec2ogQicdcDdofK7","reczLe4Q2klq9kc5W","recKs0T8A9tffhFSR","rec5NZFeWXxkoNFfi","recP4ep8oFVZnVZ6Y","recNyXiZ5XS9wdYkJ","recGtM08bT1k95A8S","reckgGgX2eXKTpZ7U","recwRymWVy2AIVlv5","rec3XTdCpHmE4mbNk","recUZYYQH85e3OsVY","recvZNqSoG4Dj9Plm","recdB7pLEC2Uh1TpO","recIGiwHZfqLsm3nM","recPt6cInNE8haIbo","receUFRxTCZSqav5r","recwMcNUxbGTCdZ9O","recbVvlPeOSQEe577","recW4CSec0elskXRn","recCuJ9xom75psGSY","recOuIEIkD7wJyM6G","recdSEQaV8QrRHuPE","rec6Ubsef3hF6Xmen","recKf115tTXz19wJK","rec9RJpH8hsUvUJOF","recN5oEXgpe6POkG3","recBcf7zBVagUYLcR","recHcPkUGmGmzuVQ1","rec38nRWZ6nrH0io1"],idWebflow:"5f9c50cd2341d08171d1781b","ID Salesforce":"176","Opciones de Atributos en Viviendas copy":["recjMo7p4my8BKmk1","recf0AnyJmAWJZjR8","rec9auiu0Z4RtProE","recPEuq9NfFCVecrc","recICXwgRYcC3U0V8","rec1jw6cq7yzfTGBE","rec7p6Neu16sFjYJv","rec9dkdybBhgnuEUW","recN9cQaZCTSPNPkV","recFP9W2hTmsOJyO4","recIG0wr9WIVS7pdB","recS9qeplwyvu1NY0","recjbGWLLIs5CTehY","recRruQaKCQp3y6KU","recyTZxePOSaP0AqL","rec0iq2enukyaGBfH","recUB02BWj1mqRpJD","recrYYg9Mqa9mNm4s","recCFK5rkfiYsKPRn","recX0JRxG3m3BgPeO","recHhYBr8LKIAo95u","recFLHuiP3HSJG8jf","recyGwcrVZQ3myK7o","recctqsgMkMt6S96q","reco4iyfFERjVovuB","recVaDpV9NbnhPlMQ","recMcIa9reUXghCUu","recncxCb8MTmwCZkS","rec5ORB4oIRDuu3ok","recAT2I0JlfuFPdmi","recHGQo17TtRuDSaU","rec67p3QDIOBDDF4X","recoZWZdhhvCPG98k","rec38fx8YUHzRHf6D","recOhm4xW634FN7QT","recuHtlQ8sWOCVQRu","recGHsQ14JWfW1W5c","rec55o2tFeFa4aEOa","recY7VExZ96ojqwdT","recCsLdodZMieCGIg","rec14tB0SnhDInTNb","recFi8Qg0v3P2huFz","rectpZjSl1ZZ7rVbn","reczpzwdqsv5MX5Px","recVl73fJccaUtsnx"],"ID Salesforce 2":"176","Opciones de Atributos en Viviendas 2 copy":["recItxbcTWBrPbZnH","recEHJrlyWDfXqWUO","recyRDmhPz7aHg4rk","recelDuWCPIV9FPuS","rec7j6A3GyfVhlDYO","recq0FaZfHBStkjEk","recw6fR1jB9LTKBMb","recyUthl0bkzBVhXC","reccQlUXOcWb3esnB","rec4wi0P6tpL2abRK","rec7n9AeYwLe6y2gh","rechQzica6BOIsq1G","recISP0yAivoQkRkE","recg8DUXzcTIhZJNA","recXA8B1EoVt3rdtr","recpZz61c4nRo7ein","recji96oLT4FEi2Mj","recQF7kWB0dsAeZ78","rec1mT9e9PlhGbsU3","recmHSVkvDpmPHshu","rec6Y7FeXlN1OPM8a","rec4sQy5EDKbX7LmV","recXnFgeKzTmAZna4","recBazw3BUPMkjM96","recNLrC2ueUC9P8xh","reckRMtIYneGvgYPw","recbTReWgOXguIfXa","recMTGGYXmWFK3Cny","recuv0FRdiUWIVGr0","recZAbMNyViNTgQpY","rec6nZsOWtwaI4vdA","recvOy7DsiRUR4i7D","recNG5306RyV37Mb0","recsPoBVNuKS58S9j","recdYv8kLG6nTeKTz","recToCpDX2Z7QmtUa","rec5oBUOTjZyasz8S","recuMx6guOItiBhRQ","recnO4IkOJ9HxR9gz","rec19Uhb2zPBs3jLW","recqLCFNHXkWWOwQR","rec4ZhU3P568gI7If","recS68nFaB2ilSye3","recY6IA0f2yo0oISd","reck2g72yMft8U5qd"],"Proyecto-Modelo":"Península-Greenlane"},createdTime:"2020-09-29T20:39:03.000Z"},{id:"recyqNCh3Wb7EzrvO",fields:{Nombre:"Inland",Fraccionamiento:["recunm26MjQp3daSq"],"Atributos en Viviendas":"pe","Opciones de Atributos en Viviendas":["rec7fJPGqHOrsaJvx","recW2fbab7utfklAX","recNheqFQfYgbjvRx","recmgbbFKgCubfls8","recfUJqRoNJh3uh94","recuRKXBlOhmp5owI","recULnle4IcsKqIa7","recC82VSjkClAI5Jq","recRQlpSwYNumlXf0","reckLXXmwH7CkrwGM","recEQ2GZKRwcfByqQ","recrUrixiJ9nVZ6DF","recksBcqWn2eiPzci","recTW55rc4EX6zEYe","rec2mLCI17KZvI9Yb","recX5OrNYbmQxbHsj","recVEG180Mccv67nZ","recIn77MaijeHzREb","recm1fLSeLKnVHi6H","recRGmQKcO9oxDPUt","recQBwGLcrazoyQA9","rec2IjktPZG3e7wDi","recZv8PhJ1iiswq6k","recBTUQ00wcMhJwq4","recal9jpaphmyt3KE","recuIcW8FNkTl9USf","recgWSG9VtNqGTfl0","recpp092eMPvCMWzz","recZAep30iAt3XrxK","rec7mwuOZYBLibuko","recLXJ44XhRPiJwgu","recH0jIFXPTXmE8OW","recX03yDSf1Zjet7P","receNersKBF0ArK2d","rec0LUMCt9hdtbpU1","recu4hM0bTQsdImic","recZQbACIK3jAHRAz","recV7t8Q8EZJ4NCRU","recmJm1E4oTGaSVug","rec7Fi5yEJgOm9n2o","recjmOOvN4fpzTNEe","recGyyEhMsbmAJCWQ","recnni5sisXKU3cpV","recf6TyHNsc4OAfl7","recJGEvUzHi1Hne3j"],idWebflow:"5f9c50d30e2086f9854b4053","ID Salesforce":"177","Opciones de Atributos en Viviendas copy":["recZst1ZaNDaFDTu3","recOfZntVdjcsNvzt","recFuYCYAlNZoMFQ3","recetVnYumrdoIvrE","rec77tCa8Ty0gXr8A","recm4u9U5U65Cyyve","recMY7xxOO1bXTS9D","reculM7b3qr4NbfIW","recJ35Bbg4CdzO7ew","reccYH9FgNWlxUGFi","recw3MSiuXlVs4Ipm","recj7buQ2PY68sgCb","reccFloJGtRXviJbO","recL9PhKWatGj2OXK","recUzvO1LdzIIbjXH","recPiyD6IhbzKERrP","recNRqdrKS1VIzhmv","recAARj5Uo8XU21DH","receeZXbYRz68as5d","recJT623WUY7K6ZTZ","recIOgS4WxZiB10zF","recUV3wMz5vMrAGCO","recRIS1At771FZA5Q","rect6E2jKC1vucGpA","rec2yTvIUv65LWdJa","recmVW8rpT9CyC4RL","rec89CSsFzC9Tmpkw","rechCKllYSEePf6y5","recRNYBmKopcgqBwg","recZzgG7J4quvEEjU","recDatgnHnGyvcGf0","reczd3UYHVIGz7iNs","recPdNKWClQIwHD6l","rec60YDLuHuJNUU1J","recSYEYVdf6WGEzTx","recmh1YjVZFbqbwhI","recR3VMVsQS2Na1z5","recNkdk9SKOshgMQq","receW6dXOuIpnl5tM","recZS2hRoP5xzCx1U","recbzy0Oxa48MmXDK","recyLiQAwy05NcMVm","recfA2hL2yMt7wmor","rec7jDK0xy1N13pkD","recBToHdjN7KUQo2P"],"ID Salesforce 2":"177","Opciones de Atributos en Viviendas 2 copy":["reco9C5MZnGtT4wxJ","recdW8rgKNmvGe8C9","rec4b7GLpVQiCdiTJ","recDa4rLjWuwC98uk","recwOCGXXtBjuo4bg","recLLDdHUu9oQZbyU","recbFgBkDo4ubkvcj","recT2VbYS0un1CSLC","rec8KeFY5EFwNfKhc","recBFQds5nZELljIY","recVKVW5jxoeGvls2","recIOkyDRp1pmTTFR","recBmuswv3UgJJmeu","recaQYlxLKwZxtr0q","recjgESOANC1WCW0n","receZHHTxReSY5uuv","reccyzhezs4eW0Upb","recZh0nSJYbg8tEGn","recDV81YNrCpmB58T","rec8Af6QLu1qYxCWF","rec7vpWRL72BPsDCl","recjCcAzoFy5F1jFu","recgp15niHakTqd8w","recSNN66zc4OIDjsg","recrf2zvJ59oZnQMQ","recLC5ceetcVM3HUr","recxQLWfu9Fs7N2nc","recGjTp8NsHx3GJBL","recgu7F9zYsvuRezW","recogpKUyEtNJ5hmA","rec2RCkawXJRJDjiG","recYUcYLwvLZNyVQ8","receUWOJrVT1K8g91","recvH7Hyjhx21lx4p","rechFN2I2P9fU5cWd","recLYa26KzIuEC9ko","recgK4QIhqVl1BECL","recc1moWHkRLvHpT6","recDDfhKD4LIBMIws","recozblEdp8QN3a4A","recAgH4BmK7r0NAGq","recXsrUnl83o1DpY2","recEhblyR8PMlXZr7","recw0MONm846fu2nj","rec0AxL08na38h15v"],"Proyecto-Modelo":"Península-Inland"},createdTime:"2020-09-30T16:18:45.000Z"}],W=[{id:"recunm26MjQp3daSq",fields:{Nombre:"Península",Viviendas:["recj0jJ6DFRi3mmtx","recyqNCh3Wb7EzrvO"],"ID Salesforce":"53"},createdTime:"2020-09-29T20:39:18.000Z"}],X=[{id:"recw6bvdSzBo77wgK",fields:{Nombre:"Asadores"},createdTime:"2020-09-01T18:40:59.000Z"},{id:"recNdT3JemQx9earo",fields:{Nombre:"Barandales","Categoría":["Entertrainment"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"recbJcaO7iX2n5KpW",fields:{Nombre:"Cancelería","Categoría":["Entertrainment"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"recJmaYx4KfUuOWb6",fields:{Nombre:"Clósets","Categoría":["Outdoors"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"recpFsGpNYF87pO4Q",fields:{Nombre:"Cocinas","Categoría":["Security"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"recQ5IyAPoK2GsZ02",fields:{Nombre:"Despensa","Categoría":["Entertrainment"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"rec0OEoRleuH8Ig9c",fields:{Nombre:"Domótica","Categoría":["Outdoors"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"recxhy4xe0k6jRK6s",fields:{Nombre:"Equipamiento de Cocinas","Categoría":["Security"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"rectdzpunp5v4m0Mt",fields:{Nombre:"Flex Room","Categoría":["Outdoors"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"recV8GhwQt8myEWSb",fields:{Nombre:"Muebles de Cocina","Categoría":["Entertrainment"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"rectYa095cYxcHIjQ",fields:{Nombre:"Muro Verde","Categoría":["Outdoors"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"recXPEDSNJsLJZbhn",fields:{Nombre:"Paneles Solares","Categoría":["Outdoors"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"recEMuAuU19hVExGr",fields:{Nombre:"Piso","Categoría":["Outdoors","Security"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"rec5Q5GN0NmjqIcMX",fields:{Nombre:"Portones","Categoría":["Security"]},createdTime:"2020-09-01T18:40:59.000Z"},{id:"recJvGc1BKlvCnrSc",fields:{Nombre:"Tonalidades de Cocina","Categoría":["Entertrainment"]},createdTime:"2020-09-01T18:40:59.000Z"}],Y=[];function ee(t,a=e){let i;const r=[];function c(e){if(n(t,e)&&(t=e,i)){const e=!Y.length;for(let e=0;e<r.length;e+=1){const a=r[e];a[1](),Y.push(a,t)}if(e){for(let e=0;e<Y.length;e+=2)Y[e][0](Y[e+1]);Y.length=0}}}return{set:c,update:function(e){c(e(t))},subscribe:function(n,s=e){const l=[n,s];return r.push(l),1===r.length&&(i=a(c)||e),n(t),()=>{const e=r.indexOf(l);-1!==e&&r.splice(e,1),0===r.length&&(i(),i=null)}}}}var te=function(e,t){return function(){for(var a=new Array(arguments.length),i=0;i<a.length;i++)a[i]=arguments[i];return e.apply(t,a)}},ae=Object.prototype.toString;function ie(e){return"[object Array]"===ae.call(e)}function re(e){return void 0===e}function ne(e){return null!==e&&"object"==typeof e}function ce(e){if("[object Object]"!==ae.call(e))return!1;var t=Object.getPrototypeOf(e);return null===t||t===Object.prototype}function se(e){return"[object Function]"===ae.call(e)}function le(e,t){if(null!=e)if("object"!=typeof e&&(e=[e]),ie(e))for(var a=0,i=e.length;a<i;a++)t.call(null,e[a],a,e);else for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.call(null,e[r],r,e)}var de={isArray:ie,isArrayBuffer:function(e){return"[object ArrayBuffer]"===ae.call(e)},isBuffer:function(e){return null!==e&&!re(e)&&null!==e.constructor&&!re(e.constructor)&&"function"==typeof e.constructor.isBuffer&&e.constructor.isBuffer(e)},isFormData:function(e){return"undefined"!=typeof FormData&&e instanceof FormData},isArrayBufferView:function(e){return"undefined"!=typeof ArrayBuffer&&ArrayBuffer.isView?ArrayBuffer.isView(e):e&&e.buffer&&e.buffer instanceof ArrayBuffer},isString:function(e){return"string"==typeof e},isNumber:function(e){return"number"==typeof e},isObject:ne,isPlainObject:ce,isUndefined:re,isDate:function(e){return"[object Date]"===ae.call(e)},isFile:function(e){return"[object File]"===ae.call(e)},isBlob:function(e){return"[object Blob]"===ae.call(e)},isFunction:se,isStream:function(e){return ne(e)&&se(e.pipe)},isURLSearchParams:function(e){return"undefined"!=typeof URLSearchParams&&e instanceof URLSearchParams},isStandardBrowserEnv:function(){return("undefined"==typeof navigator||"ReactNative"!==navigator.product&&"NativeScript"!==navigator.product&&"NS"!==navigator.product)&&("undefined"!=typeof window&&"undefined"!=typeof document)},forEach:le,merge:function e(){var t={};function a(a,i){ce(t[i])&&ce(a)?t[i]=e(t[i],a):ce(a)?t[i]=e({},a):ie(a)?t[i]=a.slice():t[i]=a}for(var i=0,r=arguments.length;i<r;i++)le(arguments[i],a);return t},extend:function(e,t,a){return le(t,(function(t,i){e[i]=a&&"function"==typeof t?te(t,a):t})),e},trim:function(e){return e.replace(/^\s*/,"").replace(/\s*$/,"")},stripBOM:function(e){return 65279===e.charCodeAt(0)&&(e=e.slice(1)),e}};function oe(e){return encodeURIComponent(e).replace(/%3A/gi,":").replace(/%24/g,"$").replace(/%2C/gi,",").replace(/%20/g,"+").replace(/%5B/gi,"[").replace(/%5D/gi,"]")}var ue=function(e,t,a){if(!t)return e;var i;if(a)i=a(t);else if(de.isURLSearchParams(t))i=t.toString();else{var r=[];de.forEach(t,(function(e,t){null!=e&&(de.isArray(e)?t+="[]":e=[e],de.forEach(e,(function(e){de.isDate(e)?e=e.toISOString():de.isObject(e)&&(e=JSON.stringify(e)),r.push(oe(t)+"="+oe(e))})))})),i=r.join("&")}if(i){var n=e.indexOf("#");-1!==n&&(e=e.slice(0,n)),e+=(-1===e.indexOf("?")?"?":"&")+i}return e};function me(){this.handlers=[]}me.prototype.use=function(e,t){return this.handlers.push({fulfilled:e,rejected:t}),this.handlers.length-1},me.prototype.eject=function(e){this.handlers[e]&&(this.handlers[e]=null)},me.prototype.forEach=function(e){de.forEach(this.handlers,(function(t){null!==t&&e(t)}))};var fe=me,he=function(e,t,a){return de.forEach(a,(function(a){e=a(e,t)})),e},pe=function(e){return!(!e||!e.__CANCEL__)},be=function(e,t){de.forEach(e,(function(a,i){i!==t&&i.toUpperCase()===t.toUpperCase()&&(e[t]=a,delete e[i])}))},ge=function(e,t,a,i,r){return function(e,t,a,i,r){return e.config=t,a&&(e.code=a),e.request=i,e.response=r,e.isAxiosError=!0,e.toJSON=function(){return{message:this.message,name:this.name,description:this.description,number:this.number,fileName:this.fileName,lineNumber:this.lineNumber,columnNumber:this.columnNumber,stack:this.stack,config:this.config,code:this.code}},e}(new Error(e),t,a,i,r)},Te=de.isStandardBrowserEnv()?{write:function(e,t,a,i,r,n){var c=[];c.push(e+"="+encodeURIComponent(t)),de.isNumber(a)&&c.push("expires="+new Date(a).toGMTString()),de.isString(i)&&c.push("path="+i),de.isString(r)&&c.push("domain="+r),!0===n&&c.push("secure"),document.cookie=c.join("; ")},read:function(e){var t=document.cookie.match(new RegExp("(^|;\\s*)("+e+")=([^;]*)"));return t?decodeURIComponent(t[3]):null},remove:function(e){this.write(e,"",Date.now()-864e5)}}:{write:function(){},read:function(){return null},remove:function(){}},ye=["age","authorization","content-length","content-type","etag","expires","from","host","if-modified-since","if-unmodified-since","last-modified","location","max-forwards","proxy-authorization","referer","retry-after","user-agent"],Ae=de.isStandardBrowserEnv()?function(){var e,t=/(msie|trident)/i.test(navigator.userAgent),a=document.createElement("a");function i(e){var i=e;return t&&(a.setAttribute("href",i),i=a.href),a.setAttribute("href",i),{href:a.href,protocol:a.protocol?a.protocol.replace(/:$/,""):"",host:a.host,search:a.search?a.search.replace(/^\?/,""):"",hash:a.hash?a.hash.replace(/^#/,""):"",hostname:a.hostname,port:a.port,pathname:"/"===a.pathname.charAt(0)?a.pathname:"/"+a.pathname}}return e=i(window.location.href),function(t){var a=de.isString(t)?i(t):t;return a.protocol===e.protocol&&a.host===e.host}}():function(){return!0},ve=function(e){return new Promise((function(t,a){var i=e.data,r=e.headers;de.isFormData(i)&&delete r["Content-Type"];var n=new XMLHttpRequest;if(e.auth){var c=e.auth.username||"",s=e.auth.password?unescape(encodeURIComponent(e.auth.password)):"";r.Authorization="Basic "+btoa(c+":"+s)}var l,d,o=(l=e.baseURL,d=e.url,l&&!/^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(d)?function(e,t){return t?e.replace(/\/+$/,"")+"/"+t.replace(/^\/+/,""):e}(l,d):d);if(n.open(e.method.toUpperCase(),ue(o,e.params,e.paramsSerializer),!0),n.timeout=e.timeout,n.onreadystatechange=function(){if(n&&4===n.readyState&&(0!==n.status||n.responseURL&&0===n.responseURL.indexOf("file:"))){var i,r,c,s,l,d="getAllResponseHeaders"in n?(i=n.getAllResponseHeaders(),l={},i?(de.forEach(i.split("\n"),(function(e){if(s=e.indexOf(":"),r=de.trim(e.substr(0,s)).toLowerCase(),c=de.trim(e.substr(s+1)),r){if(l[r]&&ye.indexOf(r)>=0)return;l[r]="set-cookie"===r?(l[r]?l[r]:[]).concat([c]):l[r]?l[r]+", "+c:c}})),l):l):null,o={data:e.responseType&&"text"!==e.responseType?n.response:n.responseText,status:n.status,statusText:n.statusText,headers:d,config:e,request:n};!function(e,t,a){var i=a.config.validateStatus;a.status&&i&&!i(a.status)?t(ge("Request failed with status code "+a.status,a.config,null,a.request,a)):e(a)}(t,a,o),n=null}},n.onabort=function(){n&&(a(ge("Request aborted",e,"ECONNABORTED",n)),n=null)},n.onerror=function(){a(ge("Network Error",e,null,n)),n=null},n.ontimeout=function(){var t="timeout of "+e.timeout+"ms exceeded";e.timeoutErrorMessage&&(t=e.timeoutErrorMessage),a(ge(t,e,"ECONNABORTED",n)),n=null},de.isStandardBrowserEnv()){var u=(e.withCredentials||Ae(o))&&e.xsrfCookieName?Te.read(e.xsrfCookieName):void 0;u&&(r[e.xsrfHeaderName]=u)}if("setRequestHeader"in n&&de.forEach(r,(function(e,t){void 0===i&&"content-type"===t.toLowerCase()?delete r[t]:n.setRequestHeader(t,e)})),de.isUndefined(e.withCredentials)||(n.withCredentials=!!e.withCredentials),e.responseType)try{n.responseType=e.responseType}catch(t){if("json"!==e.responseType)throw t}"function"==typeof e.onDownloadProgress&&n.addEventListener("progress",e.onDownloadProgress),"function"==typeof e.onUploadProgress&&n.upload&&n.upload.addEventListener("progress",e.onUploadProgress),e.cancelToken&&e.cancelToken.promise.then((function(e){n&&(n.abort(),a(e),n=null)})),i||(i=null),n.send(i)}))},Ee={"Content-Type":"application/x-www-form-urlencoded"};function Re(e,t){!de.isUndefined(e)&&de.isUndefined(e["Content-Type"])&&(e["Content-Type"]=t)}var we,Ce={adapter:(("undefined"!=typeof XMLHttpRequest||"undefined"!=typeof process&&"[object process]"===Object.prototype.toString.call(process))&&(we=ve),we),transformRequest:[function(e,t){return be(t,"Accept"),be(t,"Content-Type"),de.isFormData(e)||de.isArrayBuffer(e)||de.isBuffer(e)||de.isStream(e)||de.isFile(e)||de.isBlob(e)?e:de.isArrayBufferView(e)?e.buffer:de.isURLSearchParams(e)?(Re(t,"application/x-www-form-urlencoded;charset=utf-8"),e.toString()):de.isObject(e)?(Re(t,"application/json;charset=utf-8"),JSON.stringify(e)):e}],transformResponse:[function(e){if("string"==typeof e)try{e=JSON.parse(e)}catch(e){}return e}],timeout:0,xsrfCookieName:"XSRF-TOKEN",xsrfHeaderName:"X-XSRF-TOKEN",maxContentLength:-1,maxBodyLength:-1,validateStatus:function(e){return e>=200&&e<300}};Ce.headers={common:{Accept:"application/json, text/plain, */*"}},de.forEach(["delete","get","head"],(function(e){Ce.headers[e]={}})),de.forEach(["post","put","patch"],(function(e){Ce.headers[e]=de.merge(Ee)}));var Ne=Ce;function Oe(e){e.cancelToken&&e.cancelToken.throwIfRequested()}var Se=function(e){return Oe(e),e.headers=e.headers||{},e.data=he(e.data,e.headers,e.transformRequest),e.headers=de.merge(e.headers.common||{},e.headers[e.method]||{},e.headers),de.forEach(["delete","get","head","post","put","patch","common"],(function(t){delete e.headers[t]})),(e.adapter||Ne.adapter)(e).then((function(t){return Oe(e),t.data=he(t.data,t.headers,e.transformResponse),t}),(function(t){return pe(t)||(Oe(e),t&&t.response&&(t.response.data=he(t.response.data,t.response.headers,e.transformResponse))),Promise.reject(t)}))},Pe=function(e,t){t=t||{};var a={},i=["url","method","data"],r=["headers","auth","proxy","params"],n=["baseURL","transformRequest","transformResponse","paramsSerializer","timeout","timeoutMessage","withCredentials","adapter","responseType","xsrfCookieName","xsrfHeaderName","onUploadProgress","onDownloadProgress","decompress","maxContentLength","maxBodyLength","maxRedirects","transport","httpAgent","httpsAgent","cancelToken","socketPath","responseEncoding"],c=["validateStatus"];function s(e,t){return de.isPlainObject(e)&&de.isPlainObject(t)?de.merge(e,t):de.isPlainObject(t)?de.merge({},t):de.isArray(t)?t.slice():t}function l(i){de.isUndefined(t[i])?de.isUndefined(e[i])||(a[i]=s(void 0,e[i])):a[i]=s(e[i],t[i])}de.forEach(i,(function(e){de.isUndefined(t[e])||(a[e]=s(void 0,t[e]))})),de.forEach(r,l),de.forEach(n,(function(i){de.isUndefined(t[i])?de.isUndefined(e[i])||(a[i]=s(void 0,e[i])):a[i]=s(void 0,t[i])})),de.forEach(c,(function(i){i in t?a[i]=s(e[i],t[i]):i in e&&(a[i]=s(void 0,e[i]))}));var d=i.concat(r).concat(n).concat(c),o=Object.keys(e).concat(Object.keys(t)).filter((function(e){return-1===d.indexOf(e)}));return de.forEach(o,l),a};function ze(e){this.defaults=e,this.interceptors={request:new fe,response:new fe}}ze.prototype.request=function(e){"string"==typeof e?(e=arguments[1]||{}).url=arguments[0]:e=e||{},(e=Pe(this.defaults,e)).method?e.method=e.method.toLowerCase():this.defaults.method?e.method=this.defaults.method.toLowerCase():e.method="get";var t=[Se,void 0],a=Promise.resolve(e);for(this.interceptors.request.forEach((function(e){t.unshift(e.fulfilled,e.rejected)})),this.interceptors.response.forEach((function(e){t.push(e.fulfilled,e.rejected)}));t.length;)a=a.then(t.shift(),t.shift());return a},ze.prototype.getUri=function(e){return e=Pe(this.defaults,e),ue(e.url,e.params,e.paramsSerializer).replace(/^\?/,"")},de.forEach(["delete","get","head","options"],(function(e){ze.prototype[e]=function(t,a){return this.request(Pe(a||{},{method:e,url:t,data:(a||{}).data}))}})),de.forEach(["post","put","patch"],(function(e){ze.prototype[e]=function(t,a,i){return this.request(Pe(i||{},{method:e,url:t,data:a}))}}));var De=ze;function _e(e){this.message=e}_e.prototype.toString=function(){return"Cancel"+(this.message?": "+this.message:"")},_e.prototype.__CANCEL__=!0;var Le=_e;function je(e){if("function"!=typeof e)throw new TypeError("executor must be a function.");var t;this.promise=new Promise((function(e){t=e}));var a=this;e((function(e){a.reason||(a.reason=new Le(e),t(a.reason))}))}je.prototype.throwIfRequested=function(){if(this.reason)throw this.reason},je.source=function(){var e;return{token:new je((function(t){e=t})),cancel:e}};var Ie=je;function Ze(e){var t=new De(e),a=te(De.prototype.request,t);return de.extend(a,De.prototype,t),de.extend(a,t),a}var Be=Ze(Ne);Be.Axios=De,Be.create=function(e){return Ze(Pe(Be.defaults,e))},Be.Cancel=Le,Be.CancelToken=Ie,Be.isCancel=pe,Be.all=function(e){return Promise.all(e)},Be.spread=function(e){return function(t){return e.apply(null,t)}},Be.isAxiosError=function(e){return"object"==typeof e&&!0===e.isAxiosError};var Ge=Be,xe=Be;Ge.default=xe;var $e=Ge;const Ue=ee([]),Me=ee([]),ke=ee([]),qe=ee([]),Ve=ee({}),Qe=ee({proyect:null,modelo:null}),Fe=ee({}),Je=function(t,a,n){const s=!Array.isArray(t),l=s?[t]:t,d=a.length<2;return{subscribe:ee(n,(t=>{let n=!1;const o=[];let u=0,m=e;const f=()=>{if(u)return;m();const i=a(s?o[0]:o,t);d?t(i):m=r(i)?i:e},h=l.map(((e,t)=>c(e,(e=>{o[t]=e,u&=~(1<<t),n&&f()}),(()=>{u|=1<<t}))));return n=!0,f(),function(){i(h),m()}})).subscribe}}(ke,(e=>{let t={};return e.map((e=>{let a=e.fields.atributo_nombre;t[a]?t[e.fields.atributo_nombre].push(e):t[e.fields.atributo_nombre]=[e]})),t})),He=ee({});function Ke(){let e={all:!0};s(qe).forEach((t=>{t.fields.Categoría&&t.fields.Categoría.forEach((t=>{e[t]=!1}))})),He.set(e)}function We(e,t,a){const i=e.slice();return i[3]=t[a],i}function Xe(e){let t,a,i,r,n,c,s,l,d,f=e[3]+"";function A(){return e[2](e[3])}return{c(){t=h("div"),a=h("div"),i=h("div"),r=b(),n=h("div"),c=p(f),s=b(),T(i,"class","switch-thumb"),v(i,"switch-thumb-on",e[0][e[3]]),T(a,"class","switch-bg"),v(a,"switch-bg-on",e[0][e[3]]),T(n,"class","switch-title"),T(t,"class","switch")},m(e,m){u(e,t,m),o(t,a),o(a,i),o(t,r),o(t,n),o(n,c),o(t,s),l||(d=g(t,"click",A),l=!0)},p(t,r){e=t,1&r&&v(i,"switch-thumb-on",e[0][e[3]]),1&r&&v(a,"switch-bg-on",e[0][e[3]]),1&r&&f!==(f=e[3]+"")&&y(c,f)},d(e){e&&m(t),l=!1,d()}}}function Ye(t){let a,i,r,n=Object.keys(t[0]),c=[];for(let e=0;e<n.length;e+=1)c[e]=Xe(We(t,n,e));return{c(){a=h("div"),a.textContent="Categorias",i=b(),r=h("div");for(let e=0;e<c.length;e+=1)c[e].c();T(a,"class","categorias-title"),T(r,"class","categorias")},m(e,t){u(e,a,t),u(e,i,t),u(e,r,t);for(let e=0;e<c.length;e+=1)c[e].m(r,null)},p(e,[t]){if(3&t){let a;for(n=Object.keys(e[0]),a=0;a<n.length;a+=1){const i=We(e,n,a);c[a]?c[a].p(i,t):(c[a]=Xe(i),c[a].c(),c[a].m(r,null))}for(;a<c.length;a+=1)c[a].d(1);c.length=n.length}},i:e,o:e,d(e){e&&m(a),e&&m(i),e&&m(r),f(c,e)}}}function et(e,t,a){let i;function r(e){d(He,i[e]=!i[e],i),"all"!=e&&d(He,i.all=!Object.keys(i).some((e=>"all"!=e&&i[e])),i)}l(e,He,(e=>a(0,i=e)));return[i,r,e=>{r(e)}]}!function(){if("localhost"==window.location.hostname)return Ue.set(W),void(s(Qe).proyect||Qe.update((e=>(e.proyect=W[0],e))));$e.get("https://en57ds8aebutpuq.m.pipedream.net").then((e=>{Ue.set(e.data),s(Qe).proyect||Qe.update((t=>(t.proyect=e.data[0],t)))}))}(),function(){if("localhost"==window.location.hostname)return qe.set(X),void Ke();$e.get("https://enl4yiidhnuij8n.m.pipedream.net").then((e=>{qe.set(e.data),Ke()}))}(),"localhost"!=window.location.hostname?$e.get("https://enw9gnpjz0b6y3s.m.pipedream.net").then((e=>{Me.set(e.data)})):Me.set(K);class tt extends J{constructor(e){super(),F(this,e,et,Ye,n,{})}}function at(t){let a,r,n,c,s,l,d,f,A,E,R,w,C,N,O,S,P,z=t[0].fields.opción_nombre+"",D=t[0].fields.descripción+"",_=t[0].fields.precio+"";return{c(){a=h("div"),r=h("img"),c=b(),s=h("div"),l=p(z),d=b(),f=h("div"),A=p(D),E=b(),R=h("div"),w=p("$"),C=p(_),N=b(),O=h("div"),O.textContent="+",T(r,"class","opcione-img"),r.src!==(n=t[0].fields.Render[0].thumbnails.large.url)&&T(r,"src",n),T(r,"alt",""),T(s,"class","opcione-title"),T(f,"class","opcione-description"),T(R,"class","opcione-price"),T(O,"class","opcione-plus-btn"),T(a,"class","opcione"),v(a,"selected",t[1][t[0].fields.atributo_nombre]==t[0])},m(e,i){u(e,a,i),o(a,r),o(a,c),o(a,s),o(s,l),o(a,d),o(a,f),o(f,A),o(a,E),o(a,R),o(R,w),o(R,C),o(a,N),o(a,O),S||(P=[g(r,"load",t[3]),g(a,"click",t[4])],S=!0)},p(e,[t]){1&t&&r.src!==(n=e[0].fields.Render[0].thumbnails.large.url)&&T(r,"src",n),1&t&&z!==(z=e[0].fields.opción_nombre+"")&&y(l,z),1&t&&D!==(D=e[0].fields.descripción+"")&&y(A,D),1&t&&_!==(_=e[0].fields.precio+"")&&y(C,_),3&t&&v(a,"selected",e[1][e[0].fields.atributo_nombre]==e[0])},i:e,o:e,d(e){e&&m(a),S=!1,i(P)}}}function it(e,t,a){let i;l(e,Fe,(e=>a(1,i=e)));const r=C();let{opcione:n}=t;return e.$$set=e=>{"opcione"in e&&a(0,n=e.opcione)},[n,i,r,()=>{r("img-loaded")},()=>{d(Fe,i[n.fields.atributo_nombre]=n,i)}]}class rt extends J{constructor(e){super(),F(this,e,it,at,n,{opcione:0})}}function nt(e,t,a){const i=e.slice();return i[8]=t[a],i}function ct(e){let t,a;return t=new rt({props:{opcione:e[8]}}),t.$on("img-loaded",e[2]),{c(){q(t.$$.fragment)},m(e,i){V(t,e,i),a=!0},p(e,a){const i={};1&a&&(i.opcione=e[8]),t.$set(i)},i(e){a||(M(t.$$.fragment,e),a=!0)},o(e){k(t.$$.fragment,e),a=!1},d(e){Q(t,e)}}}function st(e){let t,a,i=e[0],r=[];for(let t=0;t<i.length;t+=1)r[t]=ct(nt(e,i,t));const n=e=>k(r[e],1,1,(()=>{r[e]=null}));return{c(){t=h("div");for(let e=0;e<r.length;e+=1)r[e].c();T(t,"class","opciones")},m(i,n){u(i,t,n);for(let e=0;e<r.length;e+=1)r[e].m(t,null);e[5](t),a=!0},p(e,[a]){if(5&a){let c;for(i=e[0],c=0;c<i.length;c+=1){const n=nt(e,i,c);r[c]?(r[c].p(n,a),M(r[c],1)):(r[c]=ct(n),r[c].c(),M(r[c],1),r[c].m(t,null))}for($(),c=i.length;c<r.length;c+=1)n(c);U()}},i(e){if(!a){for(let e=0;e<i.length;e+=1)M(r[e]);a=!0}},o(e){r=r.filter(Boolean);for(let e=0;e<r.length;e+=1)k(r[e]);a=!1},d(a){a&&m(t),f(r,a),e[5](null)}}}function lt(e,t,a){let i,{opciones:r=[]}=t,{isOpen:n=!1}=t,c=0,s=0;async function l(){await(_(),z),a(4,c=i.scrollHeight)}return e.$$set=e=>{"opciones"in e&&a(0,r=e.opciones),"isOpen"in e&&a(3,n=e.isOpen)},e.$$.update=()=>{26&e.$$.dirty&&i&&a(1,i.style.maxHeight=n?c+"px":"0px",i)},[r,i,function(){s++,s>=r.length&&l()},n,c,function(e){O[e?"unshift":"push"]((()=>{i=e,a(1,i),a(3,n),a(4,c)}))}]}class dt extends J{constructor(e){super(),F(this,e,lt,st,n,{opciones:0,isOpen:3})}}function ot(e){let t,a,i,r,n,c,s,l=e[0].fields.Nombre+"";return r=new dt({props:{opciones:e[3][e[0].fields.Nombre],isOpen:e[4]}}),{c(){t=h("div"),a=p(l),i=b(),q(r.$$.fragment),T(t,"class","atributo-title"),v(t,"disabled",e[1])},m(l,d){u(l,t,d),o(t,a),u(l,i,d),V(r,l,d),n=!0,c||(s=g(t,"click",e[7]),c=!0)},p(e,[i]){(!n||1&i)&&l!==(l=e[0].fields.Nombre+"")&&y(a,l),2&i&&v(t,"disabled",e[1]);const c={};9&i&&(c.opciones=e[3][e[0].fields.Nombre]),16&i&&(c.isOpen=e[4]),r.$set(c)},i(e){n||(M(r.$$.fragment,e),n=!0)},o(e){k(r.$$.fragment,e),n=!1},d(e){e&&m(t),e&&m(i),Q(r,e),c=!1,s()}}}function ut(e,t,a){let i,r,n;l(e,Ve,(e=>a(2,i=e))),l(e,Je,(e=>a(3,r=e))),l(e,He,(e=>a(6,n=e)));let c,s,o,{atributo:u}=t;return e.$$set=e=>{"atributo"in e&&a(0,u=e.atributo)},e.$$.update=()=>{9&e.$$.dirty&&a(5,o=!r[u.fields.Nombre]||0==r[u.fields.Nombre].length),99&e.$$.dirty&&(o?a(1,c=!0):n.all?a(1,c=!1):u.fields.Categoría?a(1,c=u.fields.Categoría.some((e=>!n[e]))):a(1,c=!0),c&&d(Ve,i[u.fields.Nombre]=!1,i)),5&e.$$.dirty&&a(4,s=i[u.fields.Nombre])},[u,c,i,r,s,o,n,()=>{c||d(Ve,i[u.fields.Nombre]=!i[u.fields.Nombre],i)}]}class mt extends J{constructor(e){super(),F(this,e,ut,ot,n,{atributo:0})}}function ft(e,t,a){const i=e.slice();return i[1]=t[a],i}function ht(e){let t,a;return t=new mt({props:{atributo:e[1]}}),{c(){q(t.$$.fragment)},m(e,i){V(t,e,i),a=!0},p(e,a){const i={};1&a&&(i.atributo=e[1]),t.$set(i)},i(e){a||(M(t.$$.fragment,e),a=!0)},o(e){k(t.$$.fragment,e),a=!1},d(e){Q(t,e)}}}function pt(e){let t,a,i=e[0],r=[];for(let t=0;t<i.length;t+=1)r[t]=ht(ft(e,i,t));const n=e=>k(r[e],1,1,(()=>{r[e]=null}));return{c(){t=h("div");for(let e=0;e<r.length;e+=1)r[e].c();T(t,"class","opciones-container")},m(e,i){u(e,t,i);for(let e=0;e<r.length;e+=1)r[e].m(t,null);a=!0},p(e,[a]){if(1&a){let c;for(i=e[0],c=0;c<i.length;c+=1){const n=ft(e,i,c);r[c]?(r[c].p(n,a),M(r[c],1)):(r[c]=ht(n),r[c].c(),M(r[c],1),r[c].m(t,null))}for($(),c=i.length;c<r.length;c+=1)n(c);U()}},i(e){if(!a){for(let e=0;e<i.length;e+=1)M(r[e]);a=!0}},o(e){r=r.filter(Boolean);for(let e=0;e<r.length;e+=1)k(r[e]);a=!1},d(e){e&&m(t),f(r,e)}}}function bt(e,t,a){let i;return l(e,qe,(e=>a(0,i=e))),[i]}class gt extends J{constructor(e){super(),F(this,e,bt,pt,n,{})}}function Tt(t){let a,i,r,n,c,s,l,d,f,g,v,E,R=(t[2]?t[2]:"")+"",w=Number.isInteger(t[3])?"$"+t[3]:"";return{c(){a=h("div"),i=h("div"),r=b(),n=h("div"),c=h("div"),s=p(t[1]),l=b(),d=h("div"),f=p(R),g=b(),v=h("div"),E=p(w),T(i,"class","select-img"),A(i,"background",t[0]?"url("+t[0]+")":"grey"),A(i,"background-size","cover"),T(c,"class","select-cat"),T(d,"class","select-title"),T(v,"class","select-price"),T(a,"class","select-item")},m(e,t){u(e,a,t),o(a,i),o(a,r),o(a,n),o(n,c),o(c,s),o(n,l),o(n,d),o(d,f),o(n,g),o(n,v),o(v,E)},p(e,[t]){1&t&&A(i,"background",e[0]?"url("+e[0]+")":"grey"),2&t&&y(s,e[1]),4&t&&R!==(R=(e[2]?e[2]:"")+"")&&y(f,R),8&t&&w!==(w=Number.isInteger(e[3])?"$"+e[3]:"")&&y(E,w)},i:e,o:e,d(e){e&&m(a)}}}function yt(e,t,a){let{imgUrl:i}=t,{cat:r}=t,{title:n}=t,{price:c}=t;return e.$$set=e=>{"imgUrl"in e&&a(0,i=e.imgUrl),"cat"in e&&a(1,r=e.cat),"title"in e&&a(2,n=e.title),"price"in e&&a(3,c=e.price)},e.$$.update=()=>{8&e.$$.dirty&&console.log(""!=c?"$"+c:"")},[i,r,n,c]}class At extends J{constructor(e){super(),F(this,e,yt,Tt,n,{imgUrl:0,cat:1,title:2,price:3})}}function vt(e,t,a){const i=e.slice();return i[8]=t[a],i}function Et(e,t,a){const i=e.slice();return i[11]=t[a],i}function Rt(e){let t,a;return t=new At({props:{imgUrl:"",cat:"Proyect",title:e[1].proyect.fields.Nombre,price:""}}),{c(){q(t.$$.fragment)},m(e,i){V(t,e,i),a=!0},p(e,a){const i={};2&a&&(i.title=e[1].proyect.fields.Nombre),t.$set(i)},i(e){a||(M(t.$$.fragment,e),a=!0)},o(e){k(t.$$.fragment,e),a=!1},d(e){Q(t,e)}}}function wt(e){let t,a;return t=new At({props:{imgUrl:"",cat:"Modelo",title:e[1].modelo.fields.Nombre,price:""}}),{c(){q(t.$$.fragment)},m(e,i){V(t,e,i),a=!0},p(e,a){const i={};2&a&&(i.title=e[1].modelo.fields.Nombre),t.$set(i)},i(e){a||(M(t.$$.fragment,e),a=!0)},o(e){k(t.$$.fragment,e),a=!1},d(e){Q(t,e)}}}function Ct(e){let t,a,i,r,n,c,s,l,d,p,y,A=e[3],v=[];for(let t=0;t<A.length;t+=1)v[t]=Nt(Et(e,A,t));let E=e[4],R=[];for(let t=0;t<E.length;t+=1)R[t]=Ot(vt(e,E,t));return{c(){t=h("div"),a=h("div"),i=h("div"),i.textContent="Select Project",r=b(),n=h("div");for(let e=0;e<v.length;e+=1)v[e].c();c=b(),s=h("div"),s.textContent="Select Model",l=b(),d=h("div");for(let e=0;e<R.length;e+=1)R[e].c();T(i,"class","modal-title"),T(n,"class","select-proyectos"),T(s,"class","modal-title"),T(d,"class","select-modelos"),T(a,"class","select-modal-bg"),T(t,"class","select-modal")},m(m,f){u(m,t,f),o(t,a),o(a,i),o(a,r),o(a,n);for(let e=0;e<v.length;e+=1)v[e].m(n,null);o(a,c),o(a,s),o(a,l),o(a,d);for(let e=0;e<R.length;e+=1)R[e].m(d,null);p||(y=g(t,"click",e[7]),p=!0)},p(e,t){if(10&t){let a;for(A=e[3],a=0;a<A.length;a+=1){const i=Et(e,A,a);v[a]?v[a].p(i,t):(v[a]=Nt(i),v[a].c(),v[a].m(n,null))}for(;a<v.length;a+=1)v[a].d(1);v.length=A.length}if(19&t){let a;for(E=e[4],a=0;a<E.length;a+=1){const i=vt(e,E,a);R[a]?R[a].p(i,t):(R[a]=Ot(i),R[a].c(),R[a].m(d,null))}for(;a<R.length;a+=1)R[a].d(1);R.length=E.length}},d(e){e&&m(t),f(v,e),f(R,e),p=!1,y()}}}function Nt(e){let t,a,i,r,n,c,s,l,d=e[11].fields.Nombre+"",f=e[11].fields.Nombre+"";return{c(){t=h("div"),a=h("div"),i=p(d),r=p(" - Image"),n=b(),c=h("div"),s=p(f),l=b(),T(a,"class","proyect-img"),T(c,"class","proyect-title"),T(t,"class","select-proyect"),v(t,"selected",e[11]==e[1].proyect)},m(e,d){u(e,t,d),o(t,a),o(a,i),o(a,r),o(t,n),o(t,c),o(c,s),o(t,l)},p(e,a){8&a&&d!==(d=e[11].fields.Nombre+"")&&y(i,d),8&a&&f!==(f=e[11].fields.Nombre+"")&&y(s,f),10&a&&v(t,"selected",e[11]==e[1].proyect)},d(e){e&&m(t)}}}function Ot(e){let t,a,i,r,n,c,s,l,d,f,A=e[8].fields.Nombre+"",E=e[8].fields.Nombre+"";function R(){return e[6](e[8])}return{c(){t=h("div"),a=h("div"),i=p(A),r=p(" - Image"),n=b(),c=h("div"),s=p(E),l=b(),T(a,"class","modelo-img"),T(c,"class","modelo-title"),T(t,"class","select-modelo"),v(t,"selected",e[8]==e[1].modelo)},m(e,m){var h;u(e,t,m),o(t,a),o(a,i),o(a,r),o(t,n),o(t,c),o(c,s),o(t,l),d||(f=g(t,"click",(h=R,function(e){return e.stopPropagation(),h.call(this,e)})),d=!0)},p(a,r){e=a,16&r&&A!==(A=e[8].fields.Nombre+"")&&y(i,A),16&r&&E!==(E=e[8].fields.Nombre+"")&&y(s,E),18&r&&v(t,"selected",e[8]==e[1].modelo)},d(e){e&&m(t),d=!1,f()}}}function St(e){let t,a,i,r,n,c,s,l,d,f,y,A=e[1].proyect&&Rt(e),v=e[1].modelo&&wt(e),E=(e[0]||e[2]&&0==e[2].length)&&Ct(e);return{c(){t=h("div"),a=h("div"),a.textContent="Editar",i=b(),r=h("div"),r.textContent="Mi Casa",n=b(),A&&A.c(),c=b(),v&&v.c(),s=b(),E&&E.c(),l=p(""),T(a,"class","editar"),T(r,"class","select-section-title"),T(t,"class","mi-casa")},m(m,h){u(m,t,h),o(t,a),o(t,i),o(t,r),o(t,n),A&&A.m(t,null),o(t,c),v&&v.m(t,null),u(m,s,h),E&&E.m(m,h),u(m,l,h),d=!0,f||(y=g(a,"click",e[5]),f=!0)},p(e,[a]){e[1].proyect?A?(A.p(e,a),2&a&&M(A,1)):(A=Rt(e),A.c(),M(A,1),A.m(t,c)):A&&($(),k(A,1,1,(()=>{A=null})),U()),e[1].modelo?v?(v.p(e,a),2&a&&M(v,1)):(v=wt(e),v.c(),M(v,1),v.m(t,null)):v&&($(),k(v,1,1,(()=>{v=null})),U()),e[0]||e[2]&&0==e[2].length?E?E.p(e,a):(E=Ct(e),E.c(),E.m(l.parentNode,l)):E&&(E.d(1),E=null)},i(e){d||(M(A),M(v),d=!0)},o(e){k(A),k(v),d=!1},d(e){e&&m(t),A&&A.d(),v&&v.d(),e&&m(s),E&&E.d(e),e&&m(l),f=!1,y()}}}function Pt(e,t,a){let i,r,n,c;l(e,Qe,(e=>a(1,i=e))),l(e,ke,(e=>a(2,r=e))),l(e,Ue,(e=>a(3,n=e))),l(e,Me,(e=>a(4,c=e)));let s=!0;return[s,i,r,n,c,()=>{a(0,s=!0)},e=>{var t;d(Qe,i.modelo=e,i),t=e.fields.Nombre,"localhost"!=window.location.hostname?$e.get(`https://enombb1z99rtf6o.m.pipedream.net?vivienda=${t}`).then((e=>{ke.set(e.data)})):ke.set(H),a(0,s=!1)},()=>{a(0,s=!1)}]}class zt extends J{constructor(e){super(),F(this,e,Pt,St,n,{})}}function Dt(e,t,a){const i=e.slice();return i[4]=t[a],i}function _t(e){let t,a;return t=new At({props:{imgUrl:e[0][e[4]].fields.Render[0].thumbnails.small.url,title:e[0][e[4]].fields.opción_nombre,cat:e[0][e[4]].fields.atributo_nombre,price:e[0][e[4]].fields.precio}}),{c(){q(t.$$.fragment)},m(e,i){V(t,e,i),a=!0},p(e,a){const i={};1&a&&(i.imgUrl=e[0][e[4]].fields.Render[0].thumbnails.small.url),1&a&&(i.title=e[0][e[4]].fields.opción_nombre),1&a&&(i.cat=e[0][e[4]].fields.atributo_nombre),1&a&&(i.price=e[0][e[4]].fields.precio),t.$set(i)},i(e){a||(M(t.$$.fragment,e),a=!0)},o(e){k(t.$$.fragment,e),a=!1},d(e){Q(t,e)}}}function Lt(e){let t,a,i,r,n,c,s,l,d,g,A,v,E=Object.keys(e[0]),R=[];for(let t=0;t<E.length;t+=1)R[t]=_t(Dt(e,E,t));const w=e=>k(R[e],1,1,(()=>{R[e]=null}));return{c(){t=h("div"),t.textContent="Mis Atributos",a=b(),i=h("div");for(let e=0;e<R.length;e+=1)R[e].c();r=b(),n=h("div"),c=h("div"),c.textContent="Total",s=b(),l=h("div"),d=p(e[1]),g=b(),A=h("div"),A.textContent="Listo →",T(t,"class","select-section-title"),T(c,"class","cart-total"),T(l,"class","cart-sum-num"),T(A,"class","listo-btn"),T(n,"class","cart-sum")},m(e,m){u(e,t,m),u(e,a,m),u(e,i,m);for(let e=0;e<R.length;e+=1)R[e].m(i,null);u(e,r,m),u(e,n,m),o(n,c),o(n,s),o(n,l),o(l,d),o(n,g),o(n,A),v=!0},p(e,[t]){if(1&t){let a;for(E=Object.keys(e[0]),a=0;a<E.length;a+=1){const r=Dt(e,E,a);R[a]?(R[a].p(r,t),M(R[a],1)):(R[a]=_t(r),R[a].c(),M(R[a],1),R[a].m(i,null))}for($(),a=E.length;a<R.length;a+=1)w(a);U()}(!v||2&t)&&y(d,e[1])},i(e){if(!v){for(let e=0;e<E.length;e+=1)M(R[e]);v=!0}},o(e){R=R.filter(Boolean);for(let e=0;e<R.length;e+=1)k(R[e]);v=!1},d(e){e&&m(t),e&&m(a),e&&m(i),f(R,e),e&&m(r),e&&m(n)}}}function jt(e,t,a){let i,r,n;l(e,Fe,(e=>a(0,n=e)));const c=new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"});return e.$$.update=()=>{1&e.$$.dirty&&console.log(n),1&e.$$.dirty&&a(2,i=Object.keys(n).reduce(((e,t)=>e+n[t].fields.precio),0)),4&e.$$.dirty&&a(1,r=c.format(i))},[n,r,i]}class It extends J{constructor(e){super(),F(this,e,jt,Lt,n,{})}}function Zt(t){let a,i,r,n,c,s,l,d,f,p,g,y;return r=new tt({}),c=new gt({}),f=new zt({}),g=new It({}),{c(){a=h("div"),i=h("div"),q(r.$$.fragment),n=b(),q(c.$$.fragment),s=b(),l=h("div"),d=h("div"),q(f.$$.fragment),p=b(),q(g.$$.fragment),T(i,"class","col-left"),T(d,"class","col-right-sticky svelte-gdr1bt"),T(l,"class","col-right"),T(a,"class","main-app")},m(e,t){u(e,a,t),o(a,i),V(r,i,null),o(i,n),V(c,i,null),o(a,s),o(a,l),o(l,d),V(f,d,null),o(d,p),V(g,d,null),y=!0},p:e,i(e){y||(M(r.$$.fragment,e),M(c.$$.fragment,e),M(f.$$.fragment,e),M(g.$$.fragment,e),y=!0)},o(e){k(r.$$.fragment,e),k(c.$$.fragment,e),k(f.$$.fragment,e),k(g.$$.fragment,e),y=!1},d(e){e&&m(a),Q(r),Q(c),Q(f),Q(g)}}}function Bt(e){var t;return t=()=>{console.log(5)},w().$$.on_mount.push(t),[]}return new class extends J{constructor(e){super(),F(this,e,Bt,Zt,n,{})}}({target:document.getElementById("app-container")})}();
+
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
+var app = (function () {
+    'use strict';
+
+    function noop() { }
+    function add_location(element, file, line, column, char) {
+        element.__svelte_meta = {
+            loc: { file, line, column, char }
+        };
+    }
+    function run(fn) {
+        return fn();
+    }
+    function blank_object() {
+        return Object.create(null);
+    }
+    function run_all(fns) {
+        fns.forEach(run);
+    }
+    function is_function(thing) {
+        return typeof thing === 'function';
+    }
+    function safe_not_equal(a, b) {
+        return a != a ? b == b : a !== b || ((a && typeof a === 'object') || typeof a === 'function');
+    }
+    function is_empty(obj) {
+        return Object.keys(obj).length === 0;
+    }
+    function validate_store(store, name) {
+        if (store != null && typeof store.subscribe !== 'function') {
+            throw new Error(`'${name}' is not a store with a 'subscribe' method`);
+        }
+    }
+    function subscribe(store, ...callbacks) {
+        if (store == null) {
+            return noop;
+        }
+        const unsub = store.subscribe(...callbacks);
+        return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
+    }
+    function get_store_value(store) {
+        let value;
+        subscribe(store, _ => value = _)();
+        return value;
+    }
+    function component_subscribe(component, store, callback) {
+        component.$$.on_destroy.push(subscribe(store, callback));
+    }
+    function set_store_value(store, ret, value = ret) {
+        store.set(value);
+        return ret;
+    }
+
+    function append(target, node) {
+        target.appendChild(node);
+    }
+    function insert(target, node, anchor) {
+        target.insertBefore(node, anchor || null);
+    }
+    function detach(node) {
+        node.parentNode.removeChild(node);
+    }
+    function destroy_each(iterations, detaching) {
+        for (let i = 0; i < iterations.length; i += 1) {
+            if (iterations[i])
+                iterations[i].d(detaching);
+        }
+    }
+    function element(name) {
+        return document.createElement(name);
+    }
+    function text(data) {
+        return document.createTextNode(data);
+    }
+    function space() {
+        return text(' ');
+    }
+    function empty() {
+        return text('');
+    }
+    function listen(node, event, handler, options) {
+        node.addEventListener(event, handler, options);
+        return () => node.removeEventListener(event, handler, options);
+    }
+    function stop_propagation(fn) {
+        return function (event) {
+            event.stopPropagation();
+            // @ts-ignore
+            return fn.call(this, event);
+        };
+    }
+    function attr(node, attribute, value) {
+        if (value == null)
+            node.removeAttribute(attribute);
+        else if (node.getAttribute(attribute) !== value)
+            node.setAttribute(attribute, value);
+    }
+    function children(element) {
+        return Array.from(element.childNodes);
+    }
+    function set_style(node, key, value, important) {
+        node.style.setProperty(key, value, important ? 'important' : '');
+    }
+    function toggle_class(element, name, toggle) {
+        element.classList[toggle ? 'add' : 'remove'](name);
+    }
+    function custom_event(type, detail) {
+        const e = document.createEvent('CustomEvent');
+        e.initCustomEvent(type, false, false, detail);
+        return e;
+    }
+
+    let current_component;
+    function set_current_component(component) {
+        current_component = component;
+    }
+    function get_current_component() {
+        if (!current_component)
+            throw new Error('Function called outside component initialization');
+        return current_component;
+    }
+    function onMount(fn) {
+        get_current_component().$$.on_mount.push(fn);
+    }
+    function createEventDispatcher() {
+        const component = get_current_component();
+        return (type, detail) => {
+            const callbacks = component.$$.callbacks[type];
+            if (callbacks) {
+                // TODO are there situations where events could be dispatched
+                // in a server (non-DOM) environment?
+                const event = custom_event(type, detail);
+                callbacks.slice().forEach(fn => {
+                    fn.call(component, event);
+                });
+            }
+        };
+    }
+
+    const dirty_components = [];
+    const binding_callbacks = [];
+    const render_callbacks = [];
+    const flush_callbacks = [];
+    const resolved_promise = Promise.resolve();
+    let update_scheduled = false;
+    function schedule_update() {
+        if (!update_scheduled) {
+            update_scheduled = true;
+            resolved_promise.then(flush);
+        }
+    }
+    function tick() {
+        schedule_update();
+        return resolved_promise;
+    }
+    function add_render_callback(fn) {
+        render_callbacks.push(fn);
+    }
+    let flushing = false;
+    const seen_callbacks = new Set();
+    function flush() {
+        if (flushing)
+            return;
+        flushing = true;
+        do {
+            // first, call beforeUpdate functions
+            // and update components
+            for (let i = 0; i < dirty_components.length; i += 1) {
+                const component = dirty_components[i];
+                set_current_component(component);
+                update(component.$$);
+            }
+            set_current_component(null);
+            dirty_components.length = 0;
+            while (binding_callbacks.length)
+                binding_callbacks.pop()();
+            // then, once components are updated, call
+            // afterUpdate functions. This may cause
+            // subsequent updates...
+            for (let i = 0; i < render_callbacks.length; i += 1) {
+                const callback = render_callbacks[i];
+                if (!seen_callbacks.has(callback)) {
+                    // ...so guard against infinite loops
+                    seen_callbacks.add(callback);
+                    callback();
+                }
+            }
+            render_callbacks.length = 0;
+        } while (dirty_components.length);
+        while (flush_callbacks.length) {
+            flush_callbacks.pop()();
+        }
+        update_scheduled = false;
+        flushing = false;
+        seen_callbacks.clear();
+    }
+    function update($$) {
+        if ($$.fragment !== null) {
+            $$.update();
+            run_all($$.before_update);
+            const dirty = $$.dirty;
+            $$.dirty = [-1];
+            $$.fragment && $$.fragment.p($$.ctx, dirty);
+            $$.after_update.forEach(add_render_callback);
+        }
+    }
+    const outroing = new Set();
+    let outros;
+    function group_outros() {
+        outros = {
+            r: 0,
+            c: [],
+            p: outros // parent group
+        };
+    }
+    function check_outros() {
+        if (!outros.r) {
+            run_all(outros.c);
+        }
+        outros = outros.p;
+    }
+    function transition_in(block, local) {
+        if (block && block.i) {
+            outroing.delete(block);
+            block.i(local);
+        }
+    }
+    function transition_out(block, local, detach, callback) {
+        if (block && block.o) {
+            if (outroing.has(block))
+                return;
+            outroing.add(block);
+            outros.c.push(() => {
+                outroing.delete(block);
+                if (callback) {
+                    if (detach)
+                        block.d(1);
+                    callback();
+                }
+            });
+            block.o(local);
+        }
+    }
+
+    const globals = (typeof window !== 'undefined'
+        ? window
+        : typeof globalThis !== 'undefined'
+            ? globalThis
+            : global);
+    function create_component(block) {
+        block && block.c();
+    }
+    function mount_component(component, target, anchor) {
+        const { fragment, on_mount, on_destroy, after_update } = component.$$;
+        fragment && fragment.m(target, anchor);
+        // onMount happens before the initial afterUpdate
+        add_render_callback(() => {
+            const new_on_destroy = on_mount.map(run).filter(is_function);
+            if (on_destroy) {
+                on_destroy.push(...new_on_destroy);
+            }
+            else {
+                // Edge case - component was destroyed immediately,
+                // most likely as a result of a binding initialising
+                run_all(new_on_destroy);
+            }
+            component.$$.on_mount = [];
+        });
+        after_update.forEach(add_render_callback);
+    }
+    function destroy_component(component, detaching) {
+        const $$ = component.$$;
+        if ($$.fragment !== null) {
+            run_all($$.on_destroy);
+            $$.fragment && $$.fragment.d(detaching);
+            // TODO null out other refs, including component.$$ (but need to
+            // preserve final state?)
+            $$.on_destroy = $$.fragment = null;
+            $$.ctx = [];
+        }
+    }
+    function make_dirty(component, i) {
+        if (component.$$.dirty[0] === -1) {
+            dirty_components.push(component);
+            schedule_update();
+            component.$$.dirty.fill(0);
+        }
+        component.$$.dirty[(i / 31) | 0] |= (1 << (i % 31));
+    }
+    function init(component, options, instance, create_fragment, not_equal, props, dirty = [-1]) {
+        const parent_component = current_component;
+        set_current_component(component);
+        const $$ = component.$$ = {
+            fragment: null,
+            ctx: null,
+            // state
+            props,
+            update: noop,
+            not_equal,
+            bound: blank_object(),
+            // lifecycle
+            on_mount: [],
+            on_destroy: [],
+            before_update: [],
+            after_update: [],
+            context: new Map(parent_component ? parent_component.$$.context : []),
+            // everything else
+            callbacks: blank_object(),
+            dirty,
+            skip_bound: false
+        };
+        let ready = false;
+        $$.ctx = instance
+            ? instance(component, options.props || {}, (i, ret, ...rest) => {
+                const value = rest.length ? rest[0] : ret;
+                if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
+                    if (!$$.skip_bound && $$.bound[i])
+                        $$.bound[i](value);
+                    if (ready)
+                        make_dirty(component, i);
+                }
+                return ret;
+            })
+            : [];
+        $$.update();
+        ready = true;
+        run_all($$.before_update);
+        // `false` as a special case of no DOM component
+        $$.fragment = create_fragment ? create_fragment($$.ctx) : false;
+        if (options.target) {
+            if (options.hydrate) {
+                const nodes = children(options.target);
+                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+                $$.fragment && $$.fragment.l(nodes);
+                nodes.forEach(detach);
+            }
+            else {
+                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+                $$.fragment && $$.fragment.c();
+            }
+            if (options.intro)
+                transition_in(component.$$.fragment);
+            mount_component(component, options.target, options.anchor);
+            flush();
+        }
+        set_current_component(parent_component);
+    }
+    /**
+     * Base class for Svelte components. Used when dev=false.
+     */
+    class SvelteComponent {
+        $destroy() {
+            destroy_component(this, 1);
+            this.$destroy = noop;
+        }
+        $on(type, callback) {
+            const callbacks = (this.$$.callbacks[type] || (this.$$.callbacks[type] = []));
+            callbacks.push(callback);
+            return () => {
+                const index = callbacks.indexOf(callback);
+                if (index !== -1)
+                    callbacks.splice(index, 1);
+            };
+        }
+        $set($$props) {
+            if (this.$$set && !is_empty($$props)) {
+                this.$$.skip_bound = true;
+                this.$$set($$props);
+                this.$$.skip_bound = false;
+            }
+        }
+    }
+
+    function dispatch_dev(type, detail) {
+        document.dispatchEvent(custom_event(type, Object.assign({ version: '3.32.2' }, detail)));
+    }
+    function append_dev(target, node) {
+        dispatch_dev('SvelteDOMInsert', { target, node });
+        append(target, node);
+    }
+    function insert_dev(target, node, anchor) {
+        dispatch_dev('SvelteDOMInsert', { target, node, anchor });
+        insert(target, node, anchor);
+    }
+    function detach_dev(node) {
+        dispatch_dev('SvelteDOMRemove', { node });
+        detach(node);
+    }
+    function listen_dev(node, event, handler, options, has_prevent_default, has_stop_propagation) {
+        const modifiers = options === true ? ['capture'] : options ? Array.from(Object.keys(options)) : [];
+        if (has_prevent_default)
+            modifiers.push('preventDefault');
+        if (has_stop_propagation)
+            modifiers.push('stopPropagation');
+        dispatch_dev('SvelteDOMAddEventListener', { node, event, handler, modifiers });
+        const dispose = listen(node, event, handler, options);
+        return () => {
+            dispatch_dev('SvelteDOMRemoveEventListener', { node, event, handler, modifiers });
+            dispose();
+        };
+    }
+    function attr_dev(node, attribute, value) {
+        attr(node, attribute, value);
+        if (value == null)
+            dispatch_dev('SvelteDOMRemoveAttribute', { node, attribute });
+        else
+            dispatch_dev('SvelteDOMSetAttribute', { node, attribute, value });
+    }
+    function set_data_dev(text, data) {
+        data = '' + data;
+        if (text.wholeText === data)
+            return;
+        dispatch_dev('SvelteDOMSetData', { node: text, data });
+        text.data = data;
+    }
+    function validate_each_argument(arg) {
+        if (typeof arg !== 'string' && !(arg && typeof arg === 'object' && 'length' in arg)) {
+            let msg = '{#each} only iterates over array-like objects.';
+            if (typeof Symbol === 'function' && arg && Symbol.iterator in arg) {
+                msg += ' You can use a spread to convert this iterable into an array.';
+            }
+            throw new Error(msg);
+        }
+    }
+    function validate_slots(name, slot, keys) {
+        for (const slot_key of Object.keys(slot)) {
+            if (!~keys.indexOf(slot_key)) {
+                console.warn(`<${name}> received an unexpected slot "${slot_key}".`);
+            }
+        }
+    }
+    /**
+     * Base class for Svelte components with some minor dev-enhancements. Used when dev=true.
+     */
+    class SvelteComponentDev extends SvelteComponent {
+        constructor(options) {
+            if (!options || (!options.target && !options.$$inline)) {
+                throw new Error("'target' is a required option");
+            }
+            super();
+        }
+        $destroy() {
+            super.$destroy();
+            this.$destroy = () => {
+                console.warn('Component was already destroyed'); // eslint-disable-line no-console
+            };
+        }
+        $capture_state() { }
+        $inject_state() { }
+    }
+
+    const mock_opciones = [
+      {
+        id: "rec0WG26BqJMhyDZu",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Mantén el espacio libre para hacer la instalación de la cocina de tu preferencia.",
+          Render: [
+            {
+              id: "att8CpVlHSeM28Kgl",
+              url:
+                "https://dl.airtable.com/.attachments/da73fe0cadd5492dffc4977c4ce9630d/c14c7c28/greenlanesolo.bmp",
+              filename: "greenlane solo.bmp",
+              size: 6684438,
+              type: "image/bmp",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f80f02fd15ff2c1a5009e4caae6a3a6a/5fb54a9a.png",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/fe0bead3b67616defaf2f847f26d44af/f63342ce.png",
+                  width: 769,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ac1785092776b59ef7eacd5f88e9337c/32e403d3.png",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Cocinas",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "rec2ogQicdcDdofK7",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Transforma tu hogar en un espacio inteligente. Equípalo con elementos básicos de tecnología para aumentar la seguridad de tu vivienda y para controlar tus diferentes dispositivos electrónicos.",
+          Render: [
+            {
+              id: "attwdZvP0ZFNTjRZd",
+              url:
+                "https://dl.airtable.com/.attachments/e4ad57b80bf4669235a0cad52ee923e4/968ea934/GREEPAQBASE.jpg",
+              filename: "GREE PAQ BASE.jpg",
+              size: 421273,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/cdb323d5ebd9032b613948c3deca8327/7125b3b8",
+                  width: 58,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/d129ecf1fe6ee17f154bcfbd4f66dec6/23d641bb",
+                  width: 827,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/342f256702b02961fae374a59cdc235a/1154be9e",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Domótica",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "rec38nRWZ6nrH0io1",
+        fields: {
+          opción_nombre: "Opción B + Extra",
+          descripción:
+            "Descubre al parrillero experto que tienes dentro con un asador Napoleón y organiza las mejores reuniones. Haz de esas carnes asadas del fin de semana momentos inolvidables con tus familiares y amigos.",
+          Render: [
+            {
+              id: "attrif5lYgZwC9L4B",
+              url:
+                "https://dl.airtable.com/.attachments/4048dd81d2871678b38f22fdd2f6d726/f04a8767/27_AREADEASADORBLANCOCONASADOR.png",
+              filename: "27_AREA DE ASADOR BLANCO CON ASADOR.png",
+              size: 15826562,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ac127b556915217ed49918ddbef435b6/255f31b5",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/06fc802945a093b1152400e1c2c1bf93/8ddd58fb",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/98ba672822678c74b553c86c8754a5a7/27a367e8",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 130000,
+          atributo_nombre: "Asadores",
+        },
+        createdTime: "2020-11-04T20:18:29.000Z",
+      },
+      {
+        id: "rec3XTdCpHmE4mbNk",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Mantén el espacio de tu alacena libre para instalar los muebles de tu preferencia.\n",
+          Render: [
+            {
+              id: "att8CpVlHSeM28Kgl",
+              url:
+                "https://dl.airtable.com/.attachments/da73fe0cadd5492dffc4977c4ce9630d/c14c7c28/greenlanesolo.bmp",
+              filename: "greenlane solo.bmp",
+              size: 6684438,
+              type: "image/bmp",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f80f02fd15ff2c1a5009e4caae6a3a6a/5fb54a9a.png",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/fe0bead3b67616defaf2f847f26d44af/f63342ce.png",
+                  width: 769,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ac1785092776b59ef7eacd5f88e9337c/32e403d3.png",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Muebles de Cocina",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "rec5NZFeWXxkoNFfi",
+        fields: {
+          opción_nombre: "Opción C",
+          descripción:
+            "Transforma tu hogar en un espacio inteligente. Equípalo con los elementos de tecnología más avanzados para aumentar la seguridad de tu vivienda y para controlar tus diferentes dispositivos electrónicos.",
+          Render: [
+            {
+              id: "attY2aqEl1533NmwO",
+              url:
+                "https://dl.airtable.com/.attachments/b9b6a29961830ae4901a89143f5f9f58/1efc0de7/GREEPAQC.jpg",
+              filename: "GREE PAQ C.jpg",
+              size: 437075,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/bcb5736dac343079b0cc62a19237943f/a76e30dd",
+                  width: 58,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/0d3930e472827d3887a9eb22736dbfe9/4b805f23",
+                  width: 827,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/bad637ec54aef7282c3414b9f5e8cdfe/9bfd5d9b",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 60000,
+          atributo_nombre: "Domótica",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "rec6Ubsef3hF6Xmen",
+        fields: {
+          opción_nombre: "Opción B",
+          descripción:
+            "Integra un portón automático con diseño lineal contemporáneo y vistas en madera al acceso principal de tu hogar brindando mayor protección.",
+          Render: [
+            {
+              id: "atthaF0jNiJ1qEu4H",
+              url:
+                "https://dl.airtable.com/.attachments/7e45f92e8d259541e0014777ce4598fe/4809ef64/07_INLANDPORTONCERCACASA011.png",
+              filename: "07_INLAND PORTON CERCA CASA 01 (1).png",
+              size: 18130424,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ee99e13172c17de9ab84cac353fac78d/4c5c1c65",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/37cb00c85d8743396be93114dcf7aa5b/2a098fee",
+                  width: 795,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/700d2e6c07c89cf743db65d0d4653270/0643aa4f",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 65000,
+          atributo_nombre: "Portones",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "rec85GQVDovPXdrgb",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Mantén todo organizado y a la mano al preparar tus mejores platillos y atender a tus visitas. Lógralo agregando divisores y estantes a tu despensa.",
+          Render: [
+            {
+              id: "att1Dz3GzR8IzaCP5",
+              url:
+                "https://dl.airtable.com/.attachments/8ead6304a0d5f5886f4d4b2a350421d2/971eaee0/GREENLANEDESPENSA.jpg",
+              filename: "GREENLANE DESPENSA.jpg",
+              size: 4924547,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/0298c688fc7c1bf9391cf73539b8f10a/e9dca8d9",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/7c2a8b779913193dcd005430c62b3276/b61a284a",
+                  width: 768,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/43b6467e36881a50a817f34a26f80efd/9417464c",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 65000,
+          atributo_nombre: "Despensa",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "rec96MUTG1JQ2qwC8",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Mantén tu espacio libre y listo para la instalación de tu cancelería. \n",
+          Render: [
+            {
+              id: "attDzJujkDVJceXWJ",
+              url:
+                "https://dl.airtable.com/.attachments/4f387a7f0cd767ba51226275459f5aea/2b530dc0/2020-07-10_14h44_11.png",
+              filename: "2020-07-10_14h44_11.png",
+              size: 2310121,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/1b7ee48b70af9dcb6020ef41c71125a0/4e1fb8c8",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/eb95262ae73be0714dfea90bda27bd08/ad3157f5",
+                  width: 796,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/fa93eb35804e459e180a3a47f8f6afc4/1a73f577",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Cancelería",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "rec9RJpH8hsUvUJOF",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Reviste con tonalidades claras y dale un estilo único a tu cocina con un ambiente más cálido para ti y tus invitados.",
+          Render: [
+            {
+              id: "attmk50dTHjGzFP2d",
+              url:
+                "https://dl.airtable.com/.attachments/546b6f53f69b5503f433cdddc8d938c0/b9477aa2/GREENLANEMONARCABASALTOSINFIJOS.jpg",
+              filename: "GREENLANE MONARCA BASALTO SIN FIJOS.jpg",
+              size: 4315384,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/cb58bd84af9ca4dfc21b1f95f1e29335/3250e6c7",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/15299a8f421c8819468a7fd365070273/4ec73d58",
+                  width: 768,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/41290e919c601a4d74c0a39b96b3311f/15de2801",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Tonalidades de Cocina",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recBcf7zBVagUYLcR",
+        fields: {
+          opción_nombre: "Opción C",
+          descripción:
+            "Reviste con las tonalidades medias y dale un estilo único a tu cocina con un ambiente más cálido para ti y tus invitados.",
+          Render: [
+            {
+              id: "att9aMAw1xsgVpwvX",
+              url:
+                "https://dl.airtable.com/.attachments/df040d41f166ea2a8dde8578b3859ea4/f3e0f0d7/GREENLANEBAGNOLACASHMIRESINFIJOS.jpg",
+              filename: "GREENLANE BAGNOLA CASHMIRE SIN FIJOS.jpg",
+              size: 4624802,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/90b8dbbf54371efdb3b279a86cd8e0d8/c344ada0",
+                  width: 58,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/78877e73a4814b6f7a7250ab05eedffc/bf9c0d65",
+                  width: 824,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f04d506cd6aaf3e61997d77dc9c7d820/ef9d7686",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Tonalidades de Cocina",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recCuJ9xom75psGSY",
+        fields: {
+          opción_nombre: "Opción B",
+          descripción:
+            "Lleva un estilo único a cada nivel de tu hogar  integrando duela en tono greige como parte de los acabados de tus pisos.",
+          Render: [
+            {
+              id: "attTq6Y8fXuBGvfNM",
+              url:
+                "https://dl.airtable.com/.attachments/d3eec337d392e5b57976feca69cf2f77/fa88202f/Group44.jpg",
+              filename: "Group 44.jpg",
+              size: 2231495,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/723d3f460e2c6fe6b7b630291c35a1e6/118897c6",
+                  width: 67,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/d61f3bb9e36131cdb49731d1d77ab818/c22f9b8a",
+                  width: 946,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/fbb00d27c05e713c5929caedb7eb274c/59940561",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 32000,
+          atributo_nombre: "Piso",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recGGflV5I3rCxqrf",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Mantén tu espacio de despensa libre y listo para modularlo a tu preferencia.",
+          Render: [
+            {
+              id: "att8CpVlHSeM28Kgl",
+              url:
+                "https://dl.airtable.com/.attachments/da73fe0cadd5492dffc4977c4ce9630d/c14c7c28/greenlanesolo.bmp",
+              filename: "greenlane solo.bmp",
+              size: 6684438,
+              type: "image/bmp",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f80f02fd15ff2c1a5009e4caae6a3a6a/5fb54a9a.png",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/fe0bead3b67616defaf2f847f26d44af/f63342ce.png",
+                  width: 769,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ac1785092776b59ef7eacd5f88e9337c/32e403d3.png",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Despensa",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recGtM08bT1k95A8S",
+        fields: {
+          opción_nombre: "Opción B",
+          descripción:
+            "¡La mejor forma de enriquecer tu cocina! Si lo que buscas es potenciar tu espacio, compleméntalo con un refrigerador y una elegante campana  de diseñador.\n",
+          Render: [
+            {
+              id: "attBwRMegJyXc0djD",
+              url:
+                "https://dl.airtable.com/.attachments/8e8d2c32d3d66a6718454e4949c97991/0d46dfbd/greenlaneequipos.bmp",
+              filename: "greenlane equipos.bmp",
+              size: 3275574,
+              type: "image/bmp",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/d8564b43e1065f393c6a6e27b42b57c1/173d3ea3.png",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f69256ec661d2caa3bfb6fa66441580a/c67bb9c3.png",
+                  width: 768,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/42c5c4843c89da623694021b6486c3e2/99ca836b.png",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 70000,
+          atributo_nombre: "Equipamiento de Cocinas",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recHcPkUGmGmzuVQ1",
+        fields: {
+          opción_nombre: "Opción B",
+          descripción:
+            "Organiza las mejores reuniones y haz de esas carnes asadas del fin de semana momentos inolvidables con tus familiares y amigos. ¡Descubre al parrillero experto que tienes dentro!",
+          Render: [
+            {
+              id: "atthDJVZTKHsat8K5",
+              url:
+                "https://dl.airtable.com/.attachments/b44f4035842ace9cb913419d5df5aa88/f679dd19/28_AREADEASADORBLANCOSINASADOR.png",
+              filename: "28_AREA DE ASADOR BLANCO SIN ASADOR.png",
+              size: 15813363,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/d4d1304b2d7bae576007152af1298c44/ae16c6f4",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/fc2edf0851d97283ce25d1373bd2edff/e3da48cc",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/47a0038e75ff36c22f5969a8da344b14/57051404",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 92000,
+          atributo_nombre: "Asadores",
+        },
+        createdTime: "2020-11-04T20:15:02.000Z",
+      },
+      {
+        id: "recIGiwHZfqLsm3nM",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Haz de tu nueva casa un hogar sustentable y ahorra en tu recibo de luz instalando paneles solares. El solo instalar 4 paneles solares, aproximadamente te permite mantener fresca una recpamara las 24 horas del día.",
+          Render: [
+            {
+              id: "attAcPsMYzUzL3d5A",
+              url:
+                "https://dl.airtable.com/.attachments/cc5a59174e70f2618cdf7140d8625668/195cb051/31_AZOTEA4PANELES.png",
+              filename: "31_AZOTEA 4 PANELES.png",
+              size: 15617947,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/20a5ae10538b021a0f78cb451ba63ce8/a130dda1",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/924ba327adf3c68c515cd9f366a536b9/e7a9b161",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/5d03ae27826ef5ba396577074929dcf8/f3d4f2ce",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Paneles Solares",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recKf115tTXz19wJK",
+        fields: {
+          opción_nombre: "Opción C",
+          descripción:
+            "Integra un portón automático con diseño cuadricular al acceso principal de tu hogar brindando mayor protección.\n",
+          Render: [
+            {
+              id: "attuN6Ej2NeS6PM1L",
+              url:
+                "https://dl.airtable.com/.attachments/b4640b02d59270d21b95b698976a0e5d/79833c2e/08_INLANDPORTONCERCACASA021.png",
+              filename: "08_INLAND PORTON CERCA CASA 02 (1).png",
+              size: 16284033,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/4dddcf0f8ab700c36484787a12e58c6d/19e304ab",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/2d569b9fe527014147e6a32e87a38fee/f26d5d3e",
+                  width: 795,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/7edca58cd8aa648d2866ea9990949e5c/ad22e58c",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 65000,
+          atributo_nombre: "Portones",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recKs0T8A9tffhFSR",
+        fields: {
+          opción_nombre: "Opción B",
+          descripción:
+            "Transforma tu hogar en un espacio inteligente. Equípalo con elementos de tecnología avanzados para aumentar la seguridad de tu vivienda y para controlar tus diferentes dispositivos electrónicos.",
+          Render: [
+            {
+              id: "attL8JEa3ut7SOUFj",
+              url:
+                "https://dl.airtable.com/.attachments/cb3c4611d41c2dfa2144bced8b0aaf22/68fbbdcb/GREEPAQB.jpg",
+              filename: "GREE PAQ B.jpg",
+              size: 434740,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/9610d0a95e730746d7ee2d3b19f7dd2b/e1f7fbea",
+                  width: 58,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/6a5854cac1cac15a217b9e94a7760bb1/5e966976",
+                  width: 827,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/dffc0b1ffe94464b5d6d779f590f8a5e/f534fa8e",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 45000,
+          atributo_nombre: "Domótica",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recN5oEXgpe6POkG3",
+        fields: {
+          opción_nombre: "Opción B",
+          descripción:
+            "Reviste con tonalidades oscuras y dale un estilo único a tu cocina con un ambiente más cálido para ti y tus invitados.",
+          Render: [
+            {
+              id: "attJTA8CeWoiRcB9W",
+              url:
+                "https://dl.airtable.com/.attachments/483ed1317181f083f0e1e99c91fa68f6/7f859cc3/GREENLANEMARALUNGAANTRACITASINFIJOS.jpg",
+              filename: "GREENLANE MARALUNGA ANTRACITA SIN FIJOS.jpg",
+              size: 4222801,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/a620de3821afb205aa4c0a02a2ab58ef/ffe3bc5d",
+                  width: 58,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/06a045a29d6797dfe07d6163c2bd7479/d7c6ea55",
+                  width: 824,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/89ce5583a9f488d1927ca593167f65cb/55d4ec16",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Tonalidades de Cocina",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recNCpKJxNxJBgoPy",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Incluye un clóset y vestidor color nogal con un diseño elegante y funcional para poner en orden tu habitación organizando tus prendas, zapatos y artículos de higiene personal.",
+          Render: [
+            {
+              id: "attCLQ7qGD5vqt4w7",
+              url:
+                "https://dl.airtable.com/.attachments/c91aad2192feb1c8515ffbc04cadc9e0/7cb7281d/19_CLOSETSECRECSECNOGAL.png",
+              filename: "19_CLOSET SEC REC SEC NOGAL.png",
+              size: 13326231,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ab457e941861e0faa0dc7f73fbc6ec72/d15c4872",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/fd6d17b27950326acec064f3d596d5d3/bb7a8252",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/d5b8ad4bf1b3601d6aff5c1720ebac02/cdeb9a47",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 185000,
+          atributo_nombre: "Clósets",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recNyXiZ5XS9wdYkJ",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Si lo que buscas es potenciar tu cocina, compleméntala con un refrigerador y una elegante campana.\n",
+          Render: [
+            {
+              id: "attOGVG1IAWqdEqnp",
+              url:
+                "https://dl.airtable.com/.attachments/6f43e79ad6dadd88b779c1a7a280ba56/57a6c701/greenlaneequipos.bmp",
+              filename: "greenlane equipos.bmp",
+              size: 3275574,
+              type: "image/bmp",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/c49bc6c1e9173715ace43206e78ee526/0a7fb188.png",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/326daab562925299a6c5d0261aa9bd08/5baf221c.png",
+                  width: 768,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/c957d5877831bafae57295131fd61d8b/38e8827f.png",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 50000,
+          atributo_nombre: "Equipamiento de Cocinas",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recOuIEIkD7wJyM6G",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Mantén tu fachada limpia y el acceso principal sin restricción para tus vehículos. \n",
+          Render: [
+            {
+              id: "attcETXKS542ReyfP",
+              url:
+                "https://dl.airtable.com/.attachments/3265fda32e5405a49c86d45089fc5687/b9b5b42a/35_INLANDFACHADASINPORTON.png",
+              filename: "35_INLAND FACHADA SIN PORTON.png",
+              size: 17255386,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/8c3344f5460b5b151674c5f6ecbdf5fd/0b959b3a",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/31777bca86e73d362724228e745bd740/ebf7cfc0",
+                  width: 795,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/62fdc3510cf07e53d29f44a95ad636ef/af5b13b6",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Portones",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recP4ep8oFVZnVZ6Y",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Mantén los espacios en tu cocina libres para instalar el refrigerador y campana de tu preferencia.",
+          Render: [
+            {
+              id: "att8CpVlHSeM28Kgl",
+              url:
+                "https://dl.airtable.com/.attachments/da73fe0cadd5492dffc4977c4ce9630d/c14c7c28/greenlanesolo.bmp",
+              filename: "greenlane solo.bmp",
+              size: 6684438,
+              type: "image/bmp",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f80f02fd15ff2c1a5009e4caae6a3a6a/5fb54a9a.png",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/fe0bead3b67616defaf2f847f26d44af/f63342ce.png",
+                  width: 769,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ac1785092776b59ef7eacd5f88e9337c/32e403d3.png",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Equipamiento de Cocinas",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recPt6cInNE8haIbo",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Haz de tu nueva casa un hogar sustentable y ahorra en tu recibo de luz instalando paneles solares. El solo instalar 6 paneles solares, aproximadamente te permite mantener fresca una recámara las 24 horas del día.",
+          Render: [
+            {
+              id: "atteUVUzfQnrhejGz",
+              url:
+                "https://dl.airtable.com/.attachments/35a137ffbc1dd9ac9dc2f87d71842480/74a7ceba/32_AZOTEA6PANELES.png",
+              filename: "32_AZOTEA 6 PANELES.png",
+              size: 15881750,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/b0d0dc2ee5ea0f671af464b07c006db9/93f0d854",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/44a68c0a686c285ed8d91d51f7feb536/796cd3c5",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/5bc08e13e208d3e616280ef03777ec3d/7e56ad9a",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 20000,
+          atributo_nombre: "Paneles Solares",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recQpdkX7SnTQrQWC",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Complementa tu escalera con un increíble barandal de cristal para darle un toque elegante a tu espacio y la seguridad que necesitas.",
+          Render: [
+            {
+              id: "att0gYnDlb4OYe1AW",
+              url:
+                "https://dl.airtable.com/.attachments/301ba860c5145b468561388052624fe9/c1f42f2d/11_ESCALERASBARANDALDECRISTAL.png",
+              filename: "11_ESCALERAS BARANDAL DE CRISTAL.png",
+              size: 17727974,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ce1e232c08d22450585c6d67608e72f1/7ca54d0e",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/407247670b124f97203da2cee750c077/2734b7cc",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/3fdb2d2cebdd9bbb2b4014bc3216bc24/ba123504",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 60000,
+          atributo_nombre: "Barandales",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recQtgk8pQTcFEfe5",
+        fields: {
+          opción_nombre: "Opción B",
+          descripción:
+            "Incluye un clóset y vestidor color monarca con un diseño elegante y funcional para poner en orden tu habitación organizando tus prendas, zapatos y artículos de higiene personal.",
+          Render: [
+            {
+              id: "attRRtfH1a555Hxk3",
+              url:
+                "https://dl.airtable.com/.attachments/0666270de7593096422943b94530bfaf/c6479279/18_CLOSETRECSEC.png",
+              filename: "18_CLOSET REC SEC.png",
+              size: 13794994,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/2b82cadff30e5fc712cdb1621df84f90/21528a58",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/60c6cf669740aa1703a2ca47140e0abf/4317c325",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/a4341b53844a9c31dd1b2da1f9d88f55/09ad0c11",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 185000,
+          atributo_nombre: "Clósets",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recUZYYQH85e3OsVY",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "¡Haz que el diseño de tu cocina no tenga comparación! Lógralo agregando unos muebles fijos decorativos a tu alacena.",
+          Render: [
+            {
+              id: "attu16zSl5HJu17eI",
+              url:
+                "https://dl.airtable.com/.attachments/656849d821560c32ddb36249e1cd642b/be60c002/GREENLANEMONARCABASALTOCONFIJOS.jpg",
+              filename: "GREENLANE MONARCA BASALTO CON FIJOS.jpg",
+              size: 4377828,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f4507d721708f4bb7e1c99646e35c97b/def37721",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/e5213ed6f7287f237470e99f907622f5/fe0de6c8",
+                  width: 768,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/2802ff0cd8408dfd98667339cf27162c/845aebf6",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 40000,
+          atributo_nombre: "Muebles de Cocina",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recVWsERfw49CkFlp",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Mantén el espacio libre para instalar un clóset a la medida y aprovechar tu espacio personal. ",
+          Render: [
+            {
+              id: "att9ftGPl3PS5fAJl",
+              url:
+                "https://dl.airtable.com/.attachments/a55ac548bb37c47443021e156be63d21/623ec4e4/20_CLOSETRECSECSINMUEBLE_RGB.png",
+              filename: "20_CLOSET REC SEC SIN MUEBLE_RGB.png",
+              size: 12359500,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/8b624c8c96ebba2444431369032c0c99/41bb51c7",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/0d5057f7690b87f0d08167bad8d0ac53/cecf4928",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/62333ceb4c15d668fb1fc7cec8997b5e/7e50fd4d",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Clósets",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recW4CSec0elskXRn",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Lleva un estilo único a cada nivel de tu hogar  integrando duela en tono natural como parte de los acabados de tus pisos.",
+          Render: [
+            {
+              id: "attTKxUR0TPTTV6VW",
+              url:
+                "https://dl.airtable.com/.attachments/3c6f0621510e1740d18137cae5eaa68b/8b67074c/Group43.jpg",
+              filename: "Group 43.jpg",
+              size: 2338381,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/dd96480542c57e25ca200a504b453643/ad92fb44",
+                  width: 67,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/3a278fb02c7cce862abcdc866db4d6be/397c0e4d",
+                  width: 946,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/aeda9465f44ffc4eac009b1602d78664/8101e0ae",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 32000,
+          atributo_nombre: "Piso",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recXrKeQ39QTIL2sG",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Complementa tu escalera con un barandal de herrería para darle un toque elegante a tu espacio y la seguridad que necesitas.",
+          Render: [
+            {
+              id: "attvIB3uUpey1TSnm",
+              url:
+                "https://dl.airtable.com/.attachments/280ae1fc4c6e45638fc86a845f4a56da/ec5f2fce/10_ESCALERASBARANDALMETALICO.png",
+              filename: "10_ESCALERAS BARANDAL METALICO.png",
+              size: 15720925,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/a8202308f0671c37f51c678302c32044/47b554a6",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/e07e822209907913c11f4fcf70db6089/571e26e4",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/6ffae98ea23e11135f7b05cff98b0f69/316aa174",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Barandales",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recZeKER0w1GQ5WLo",
+        fields: {
+          opción_nombre: "Opción B",
+          descripción:
+            "La cocina es un lugar muy importante en tu casa, hazlo más cálido y funcional. Intégrala a tu casa con la propuesta más equipada y expresa el amor a tus seres queridos en tus platillos con deliciosas creaciones culinarias.",
+          Render: [
+            {
+              id: "attnZGNIfQY5aML7t",
+              url:
+                "https://dl.airtable.com/.attachments/55da8258b94bc6250632c826bc8a0c75/b50f6dc1/2020-07-07_16h00_50.png",
+              filename: "2020-07-07_16h00_50.png",
+              size: 2068142,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/3ae98522f5c936231a1656c13f9f311a/8f52a26f",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/a8557a3b616076a64d0b2fb2c9315db0/40a71313",
+                  width: 770,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f599da9dc356e705c4ab593317119058/e0a27ec3",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 465000,
+          atributo_nombre: "Cocinas",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recbVvlPeOSQEe577",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Dale un estilo único a tu hogar con diferentes acabados en pisos.",
+          Render: [
+            {
+              id: "attQF4iVRo0p0ElGc",
+              url:
+                "https://dl.airtable.com/.attachments/125f82797241874e1c95b338844f6b73/8839f26c/Group422.jpg",
+              filename: "Group 42 (2).jpg",
+              size: 2314678,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/db30ca250b5a359ef1aa8ea5f2d26445/d7ee51d3",
+                  width: 66,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/9e77f09d2f46788716da15d1027e9dc7/f56335c3",
+                  width: 945,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/d68749ddf6a920e013700d6017c82a7f/6f8ab294",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Piso",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recdB7pLEC2Uh1TpO",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Extiende la naturaleza a tu patio sin necesidad de regarlo día con día. Decóralo con la instalación de un muro verde artificial y obtén un espacio agradable para reunirte con tus seres queridos.",
+          Render: [
+            {
+              id: "att6pGUMWwRohQUSq",
+              url:
+                "https://dl.airtable.com/.attachments/f0058ffcd97ff3e0797e14660ae6467b/a1a5a318/30_PATIOCONMUROVERDE.png",
+              filename: "30_PATIO CON MURO VERDE.png",
+              size: 26015188,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/a6ae035e4957e5b06fbc4f5f8f479931/66065a41",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/80146ade999b67060f24c5120c69e766/d226e378",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/9ef8c44ba6e8b704efd9032a3764548f/67c8e39b",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 72000,
+          atributo_nombre: "Muro Verde",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recdSEQaV8QrRHuPE",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Integra un portón automático con diseño lineal contemporáneo al acceso principal de tu hogar brindando mayor protección.",
+          Render: [
+            {
+              id: "att3QqU7uMvP1JYWk",
+              url:
+                "https://dl.airtable.com/.attachments/e24dfff0e4570ba5c718616e6112fdc4/3bfaecc7/09_INLANDCOCHERACERCACASA03.png",
+              filename: "09_INLAND COCHERA CERCA CASA 03.png",
+              size: 11971479,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/d21acaca67def097a16a8f20d2227cda/ab7f4523",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/78084a7cc2ce387fcebd38a1420aaac7/c2af870a",
+                  width: 795,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/a4e9783a2c3eb6a9593f5cb000a44838/9894136f",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 65000,
+          atributo_nombre: "Portones",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "receUFRxTCZSqav5r",
+        fields: {
+          opción_nombre: "Opción B",
+          descripción:
+            "Haz de tu nueva casa un hogar sustentable y ahorra en tu recibo de luz instalando paneles solares. El solo instalar 8 paneles solares, aproximadamente te permite mantener fresca dos recámaras las 24 horas del día.",
+          Render: [
+            {
+              id: "atteJ1ynI726mlbRe",
+              url:
+                "https://dl.airtable.com/.attachments/bbd140b9a4f21505cde4cf39ffd5babb/836372ee/33_AZOTEA8PANELES.png",
+              filename: "33_AZOTEA 8 PANELES.png",
+              size: 15978885,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/1c4370d6bd078ffcdd8226cd7952dae1/176a2622",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/09c3e02f65cc7efc212cd49ee842aa49/09e244ab",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/8c97ff5d083061cff9af5fa4ffd4eb32/ceec0d94",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 41000,
+          atributo_nombre: "Paneles Solares",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recfcmBVKVhJsQOKZ",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Separa los espacios dentro de tu baño instalando cancelería de cristal templado con herrajes metálicos. Mejora la seguridad en el espacio y reduce accidentes con un cancel de 2.20 metros de altura que además resiste los cambios extremos en la temperatura. ",
+          Render: [
+            {
+              id: "attaH5I9CwvgZGyrl",
+              url:
+                "https://dl.airtable.com/.attachments/346bc4d0142c8375a6c074e4e7eb0d78/4fd3d0e0/15_BAOPPALCANCEL2_20M_.png",
+              filename: "15_BAÑO PPAL CANCEL 2_20 M_.png",
+              size: 15410662,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/2e0aab17b00d660e90c82b435cd25cf1/87b29d97",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f04ffa47e3ae4d7760a7fd52852fd308/431c5df9",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/aba66bf104eb1bc09442efa80f971e67/c54f20b3",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 60000,
+          atributo_nombre: "Cancelería",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "rech0A1frvsxa1uVq",
+        fields: {
+          opción_nombre: "Opción B",
+          descripción:
+            "Separa los espacios dentro de tu baño instalando cancelería de cristal templado con herrajes metálicos. Mejora la seguridad en el espacio y reduce accidentes con un cancel de 3.00 metros de altura que además resiste los cambios extremos en la temperatura. ",
+          Render: [
+            {
+              id: "att7XxqfWshypGBHQ",
+              url:
+                "https://dl.airtable.com/.attachments/0398e9462f5771123734ba645d09735f/9f985410/16_BAOPPACANCEL2_95.png",
+              filename: "16_BAÑO PPAÑ CANCEL 2_95.png",
+              size: 15237810,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/c3079efe9e51cbb52e61c87ed0b38c12/f9ef03a0",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/20e5aefa0347b6bce2bbb6f01ab9386a/92def9ca",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ca8df2fb82cd7b60c10fd5e470e22b18/e75954ed",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 80000,
+          atributo_nombre: "Cancelería",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "rechXK6bgTf8gmhp8",
+        fields: {
+          opción_nombre: "Opción A + Extra",
+          descripción:
+            "Descubre al parrillero experto que tienes dentro con un asador Napoleón y organiza las mejores reuniones. Haz de esas carnes asadas del fin de semana momentos inolvidables con tus familiares y amigos.",
+          Render: [
+            {
+              id: "attrif5lYgZwC9L4B",
+              url:
+                "https://dl.airtable.com/.attachments/4048dd81d2871678b38f22fdd2f6d726/f04a8767/27_AREADEASADORBLANCOCONASADOR.png",
+              filename: "27_AREA DE ASADOR BLANCO CON ASADOR.png",
+              size: 15826562,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ac127b556915217ed49918ddbef435b6/255f31b5",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/06fc802945a093b1152400e1c2c1bf93/8ddd58fb",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/98ba672822678c74b553c86c8754a5a7/27a367e8",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 130000,
+          atributo_nombre: "Asadores",
+        },
+        createdTime: "2020-09-30T15:54:17.000Z",
+      },
+      {
+        id: "reckgGgX2eXKTpZ7U",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Aprovecha el amplio espacio libre en la tercera planta de tu casa para adecuarlo a tus necesidades. ",
+          Render: [
+            {
+              id: "attgSlpeXkVnrPb7R",
+              url:
+                "https://dl.airtable.com/.attachments/c78fb70c3f0824773deca3355d3b3037/f74e2f2e/GRE-TERCERNIVEL_basetrans.jpg",
+              filename: "GRE-TERCER NIVEL_base trans.jpg",
+              size: 4106400,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/72fee0bb4876b02ddb36720b1115d904/2968e48d",
+                  width: 45,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/8af6604cb36d129346f0bb8acaef6626/cbcae5dd",
+                  width: 640,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/813f19f06a640b927e5af38f013d3f4e/d7f4f574",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Flex Room",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recnNQbfZgLdww9SC",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Organiza las mejores reuniones y haz de esas carnes asadas del fin de semana momentos inolvidables con tus familiares y amigos. ¡Descubre al parrillero experto que tienes dentro!",
+          Render: [
+            {
+              id: "atthDJVZTKHsat8K5",
+              url:
+                "https://dl.airtable.com/.attachments/b44f4035842ace9cb913419d5df5aa88/f679dd19/28_AREADEASADORBLANCOSINASADOR.png",
+              filename: "28_AREA DE ASADOR BLANCO SIN ASADOR.png",
+              size: 15813363,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/d4d1304b2d7bae576007152af1298c44/ae16c6f4",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/fc2edf0851d97283ce25d1373bd2edff/e3da48cc",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/47a0038e75ff36c22f5969a8da344b14/57051404",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 80000,
+          atributo_nombre: "Asadores",
+        },
+        createdTime: "2020-09-30T15:54:17.000Z",
+      },
+      {
+        id: "recrYWKs1CDmpq4is",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "La cocina es un lugar muy importante en tu casa, hazlo más cálido y funcional. Intégrala a tu casa y expresa el amor a tus seres queridos en tus platillos con deliciosas creaciones culinarias.",
+          Render: [
+            {
+              id: "attQgENZOqLHAGtxT",
+              url:
+                "https://dl.airtable.com/.attachments/34caff85647065f1bbcfe22df4df93ee/37276c3a/GREENLANESINEQUIPOSSINFIJOS.jpg",
+              filename: "GREENLANE SIN EQUIPOS SIN FIJOS.jpg",
+              size: 5496873,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f0c7caa9d42abf19eae73cd5fad5b88f/eda4cf81",
+                  width: 54,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/73940750cdbd4fc43e06aca1ff387318/e2ab046c",
+                  width: 768,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/ff5c312eef27fa10d92835bb58e166e3/d908d5de",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 425000,
+          atributo_nombre: "Cocinas",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recrzEV6kgJpohclv",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Mantén un amplio espacio libre en terraza para adecuarlo a tus necesidades. ",
+          Render: [
+            {
+              id: "attHbAGUHREYcsbat",
+              url:
+                "https://dl.airtable.com/.attachments/874c52bfe5ddd936aed92e2152cc79fd/43733348/26_AREADEASADORESPACIOLIBRE.png",
+              filename: "26_AREA DE ASADOR ESPACIO LIBRE.png",
+              size: 15395249,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/9e5bbfc6db8c08c669dd9cb2e560eb02/5a5d0569",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/3ec7333dac2e94ccf5155e92269c7f78/7c9e3e8c",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/7927a50028626231d2167535ba13171c/fd1cce38",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Asadores",
+        },
+        createdTime: "2020-09-30T15:54:17.000Z",
+      },
+      {
+        id: "recvZNqSoG4Dj9Plm",
+        fields: {
+          opción_nombre: "Básico",
+          descripción:
+            "Mantén libres las paredes de tu patio, deja volar tu imaginación y decóralas como siempre imaginaste. Disfruta un espacio más para reunirte con tus seres queridos.",
+          Render: [
+            {
+              id: "attt4E0Ijnd72InL3",
+              url:
+                "https://dl.airtable.com/.attachments/e4e72e1f4716ff59beacd56a96fe7691/8e9c0e69/29_PATIOSINMUROVERDE.png",
+              filename: "29_PATIO SIN MURO VERDE.png",
+              size: 22938334,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/21f1ab57959e013f5a555c755ffec76b/62b0e681",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/3b6d11f103f2d2598b2f2785b1da8733/3a7782e7",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/2074a7ab2889723483ef6eefe77cd487/ee609e7b",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 0,
+          atributo_nombre: "Muro Verde",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recwMcNUxbGTCdZ9O",
+        fields: {
+          opción_nombre: "Opción C",
+          descripción:
+            "Haz de tu nueva casa un hogar sustentable y ahorra en tu recibo de luz instalando paneles solares. El solo instalar 10 paneles solares, aproximadamente te permite mantener fresca tres recámaras las 24 horas del día.",
+          Render: [
+            {
+              id: "att7aUOygSogmT2A2",
+              url:
+                "https://dl.airtable.com/.attachments/2752e55038dba2f951016c39fc41ca3b/1f0d4160/34_AZOTEA10PANELES.png",
+              filename: "34_AZOTEA 10 PANELES.png",
+              size: 16445104,
+              type: "image/png",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/5ac4d9dbfa237fd0d4dbe89256eba85d/5855c845",
+                  width: 56,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/e11ee3af254abdfa05ff930872f9e03e/426d6029",
+                  width: 794,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/a846a70e0ab161e8dc46614699ff05dd/07c1c486",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 60000,
+          atributo_nombre: "Paneles Solares",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "recwRymWVy2AIVlv5",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "¿Necesitas otra recámara, un gimnasio o bien una oficina, en el tercer nivel de tu casa? En Península Park Living lo puedes tener. Acondiciona tu espacio para que lo aproveches a tu manera.",
+          Render: [
+            {
+              id: "attleiEsgloHOvmhI",
+              url:
+                "https://dl.airtable.com/.attachments/23f5a25c8a3f57ffea166364f9f615e5/a9c671a9/GRE-TERCERNIVEL_baseFLEXtrans.jpg",
+              filename: "GRE-TERCER NIVEL_base FLEX trans.jpg",
+              size: 4105829,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/029fc5226e5c784b21eeec12ca614491/efdc2660",
+                  width: 45,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/d294ae93867ae676020a105d2fbd1a8f/db420437",
+                  width: 640,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/f43e44b7457ecdc3fa26f3dc47c2b4f6/f47d0dc8",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 35000,
+          atributo_nombre: "Flex Room",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+      {
+        id: "reczLe4Q2klq9kc5W",
+        fields: {
+          opción_nombre: "Opción A",
+          descripción:
+            "Transforma tu hogar en un espacio inteligente. Equípalo con elementos de tecnología para aumentar la seguridad de tu vivienda y para controlar tus diferentes dispositivos electrónicos.",
+          Render: [
+            {
+              id: "attNkdBJxQddpfztv",
+              url:
+                "https://dl.airtable.com/.attachments/88b2519c0a1de6f499541a4e1a44cb02/b5484285/GREEPAQA.jpg",
+              filename: "GREE PAQ A.jpg",
+              size: 435947,
+              type: "image/jpeg",
+              thumbnails: {
+                small: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/4cd6e1cee0a548cd4b0a59b206f817d0/30551ea6",
+                  width: 58,
+                  height: 36,
+                },
+                large: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/9af265c514f2f4fb9c3bd963a3261281/3ef272c8",
+                  width: 827,
+                  height: 512,
+                },
+                full: {
+                  url:
+                    "https://dl.airtable.com/.attachmentThumbnails/1dbfdf3bc41f815f698c7a20dc6d1842/d2fae3e9",
+                  width: 3000,
+                  height: 3000,
+                },
+              },
+            },
+          ],
+          detalleDePrecio:
+            "¡Recibe y disfruta de tu vivienda personalizada 8 semanas después de tu escrituración!",
+          precio: 25000,
+          atributo_nombre: "Domótica",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+    ];
+
+    const mock_modelos = [
+      {
+        id: "recj0jJ6DFRi3mmtx",
+        fields: {
+          Nombre: "Greenlane",
+          Fraccionamiento: ["recunm26MjQp3daSq"],
+          "Atributos en Viviendas":
+            "Portones en Greenlane, Cocinas en Greenlane, Equipamiento de Cocinas en Greenlane, Muebles de Cocina en Greenlane, Despensa en Greenlane, Tonalidades de Cocina en Greenlane, Piso en Greenlane, Flex Room en Greenlane, Barandales en Greenlane, Asadores en Greenlane, Cancelería en Greenlane, Clósets en Greenlane, Domótica en Greenlane, Paneles Solares en Greenlane, Muro Verde en Greenlane",
+          "Opciones de Atributos en Viviendas": [
+            "recrzEV6kgJpohclv",
+            "recnNQbfZgLdww9SC",
+            "rechXK6bgTf8gmhp8",
+            "recXrKeQ39QTIL2sG",
+            "recQpdkX7SnTQrQWC",
+            "rec96MUTG1JQ2qwC8",
+            "recfcmBVKVhJsQOKZ",
+            "rech0A1frvsxa1uVq",
+            "recVWsERfw49CkFlp",
+            "recNCpKJxNxJBgoPy",
+            "recQtgk8pQTcFEfe5",
+            "rec0WG26BqJMhyDZu",
+            "recrYWKs1CDmpq4is",
+            "recZeKER0w1GQ5WLo",
+            "recGGflV5I3rCxqrf",
+            "rec85GQVDovPXdrgb",
+            "rec2ogQicdcDdofK7",
+            "reczLe4Q2klq9kc5W",
+            "recKs0T8A9tffhFSR",
+            "rec5NZFeWXxkoNFfi",
+            "recP4ep8oFVZnVZ6Y",
+            "recNyXiZ5XS9wdYkJ",
+            "recGtM08bT1k95A8S",
+            "reckgGgX2eXKTpZ7U",
+            "recwRymWVy2AIVlv5",
+            "rec3XTdCpHmE4mbNk",
+            "recUZYYQH85e3OsVY",
+            "recvZNqSoG4Dj9Plm",
+            "recdB7pLEC2Uh1TpO",
+            "recIGiwHZfqLsm3nM",
+            "recPt6cInNE8haIbo",
+            "receUFRxTCZSqav5r",
+            "recwMcNUxbGTCdZ9O",
+            "recbVvlPeOSQEe577",
+            "recW4CSec0elskXRn",
+            "recCuJ9xom75psGSY",
+            "recOuIEIkD7wJyM6G",
+            "recdSEQaV8QrRHuPE",
+            "rec6Ubsef3hF6Xmen",
+            "recKf115tTXz19wJK",
+            "rec9RJpH8hsUvUJOF",
+            "recN5oEXgpe6POkG3",
+            "recBcf7zBVagUYLcR",
+            "recHcPkUGmGmzuVQ1",
+            "rec38nRWZ6nrH0io1",
+          ],
+          idWebflow: "5f9c50cd2341d08171d1781b",
+          "ID Salesforce": "176",
+          "Opciones de Atributos en Viviendas copy": [
+            "recjMo7p4my8BKmk1",
+            "recf0AnyJmAWJZjR8",
+            "rec9auiu0Z4RtProE",
+            "recPEuq9NfFCVecrc",
+            "recICXwgRYcC3U0V8",
+            "rec1jw6cq7yzfTGBE",
+            "rec7p6Neu16sFjYJv",
+            "rec9dkdybBhgnuEUW",
+            "recN9cQaZCTSPNPkV",
+            "recFP9W2hTmsOJyO4",
+            "recIG0wr9WIVS7pdB",
+            "recS9qeplwyvu1NY0",
+            "recjbGWLLIs5CTehY",
+            "recRruQaKCQp3y6KU",
+            "recyTZxePOSaP0AqL",
+            "rec0iq2enukyaGBfH",
+            "recUB02BWj1mqRpJD",
+            "recrYYg9Mqa9mNm4s",
+            "recCFK5rkfiYsKPRn",
+            "recX0JRxG3m3BgPeO",
+            "recHhYBr8LKIAo95u",
+            "recFLHuiP3HSJG8jf",
+            "recyGwcrVZQ3myK7o",
+            "recctqsgMkMt6S96q",
+            "reco4iyfFERjVovuB",
+            "recVaDpV9NbnhPlMQ",
+            "recMcIa9reUXghCUu",
+            "recncxCb8MTmwCZkS",
+            "rec5ORB4oIRDuu3ok",
+            "recAT2I0JlfuFPdmi",
+            "recHGQo17TtRuDSaU",
+            "rec67p3QDIOBDDF4X",
+            "recoZWZdhhvCPG98k",
+            "rec38fx8YUHzRHf6D",
+            "recOhm4xW634FN7QT",
+            "recuHtlQ8sWOCVQRu",
+            "recGHsQ14JWfW1W5c",
+            "rec55o2tFeFa4aEOa",
+            "recY7VExZ96ojqwdT",
+            "recCsLdodZMieCGIg",
+            "rec14tB0SnhDInTNb",
+            "recFi8Qg0v3P2huFz",
+            "rectpZjSl1ZZ7rVbn",
+            "reczpzwdqsv5MX5Px",
+            "recVl73fJccaUtsnx",
+          ],
+          "ID Salesforce 2": "176",
+          "Opciones de Atributos en Viviendas 2 copy": [
+            "recItxbcTWBrPbZnH",
+            "recEHJrlyWDfXqWUO",
+            "recyRDmhPz7aHg4rk",
+            "recelDuWCPIV9FPuS",
+            "rec7j6A3GyfVhlDYO",
+            "recq0FaZfHBStkjEk",
+            "recw6fR1jB9LTKBMb",
+            "recyUthl0bkzBVhXC",
+            "reccQlUXOcWb3esnB",
+            "rec4wi0P6tpL2abRK",
+            "rec7n9AeYwLe6y2gh",
+            "rechQzica6BOIsq1G",
+            "recISP0yAivoQkRkE",
+            "recg8DUXzcTIhZJNA",
+            "recXA8B1EoVt3rdtr",
+            "recpZz61c4nRo7ein",
+            "recji96oLT4FEi2Mj",
+            "recQF7kWB0dsAeZ78",
+            "rec1mT9e9PlhGbsU3",
+            "recmHSVkvDpmPHshu",
+            "rec6Y7FeXlN1OPM8a",
+            "rec4sQy5EDKbX7LmV",
+            "recXnFgeKzTmAZna4",
+            "recBazw3BUPMkjM96",
+            "recNLrC2ueUC9P8xh",
+            "reckRMtIYneGvgYPw",
+            "recbTReWgOXguIfXa",
+            "recMTGGYXmWFK3Cny",
+            "recuv0FRdiUWIVGr0",
+            "recZAbMNyViNTgQpY",
+            "rec6nZsOWtwaI4vdA",
+            "recvOy7DsiRUR4i7D",
+            "recNG5306RyV37Mb0",
+            "recsPoBVNuKS58S9j",
+            "recdYv8kLG6nTeKTz",
+            "recToCpDX2Z7QmtUa",
+            "rec5oBUOTjZyasz8S",
+            "recuMx6guOItiBhRQ",
+            "recnO4IkOJ9HxR9gz",
+            "rec19Uhb2zPBs3jLW",
+            "recqLCFNHXkWWOwQR",
+            "rec4ZhU3P568gI7If",
+            "recS68nFaB2ilSye3",
+            "recY6IA0f2yo0oISd",
+            "reck2g72yMft8U5qd",
+          ],
+          "Proyecto-Modelo": "Península-Greenlane",
+        },
+        createdTime: "2020-09-29T20:39:03.000Z",
+      },
+      {
+        id: "recyqNCh3Wb7EzrvO",
+        fields: {
+          Nombre: "Inland",
+          Fraccionamiento: ["recunm26MjQp3daSq"],
+          "Atributos en Viviendas": "pe",
+          "Opciones de Atributos en Viviendas": [
+            "rec7fJPGqHOrsaJvx",
+            "recW2fbab7utfklAX",
+            "recNheqFQfYgbjvRx",
+            "recmgbbFKgCubfls8",
+            "recfUJqRoNJh3uh94",
+            "recuRKXBlOhmp5owI",
+            "recULnle4IcsKqIa7",
+            "recC82VSjkClAI5Jq",
+            "recRQlpSwYNumlXf0",
+            "reckLXXmwH7CkrwGM",
+            "recEQ2GZKRwcfByqQ",
+            "recrUrixiJ9nVZ6DF",
+            "recksBcqWn2eiPzci",
+            "recTW55rc4EX6zEYe",
+            "rec2mLCI17KZvI9Yb",
+            "recX5OrNYbmQxbHsj",
+            "recVEG180Mccv67nZ",
+            "recIn77MaijeHzREb",
+            "recm1fLSeLKnVHi6H",
+            "recRGmQKcO9oxDPUt",
+            "recQBwGLcrazoyQA9",
+            "rec2IjktPZG3e7wDi",
+            "recZv8PhJ1iiswq6k",
+            "recBTUQ00wcMhJwq4",
+            "recal9jpaphmyt3KE",
+            "recuIcW8FNkTl9USf",
+            "recgWSG9VtNqGTfl0",
+            "recpp092eMPvCMWzz",
+            "recZAep30iAt3XrxK",
+            "rec7mwuOZYBLibuko",
+            "recLXJ44XhRPiJwgu",
+            "recH0jIFXPTXmE8OW",
+            "recX03yDSf1Zjet7P",
+            "receNersKBF0ArK2d",
+            "rec0LUMCt9hdtbpU1",
+            "recu4hM0bTQsdImic",
+            "recZQbACIK3jAHRAz",
+            "recV7t8Q8EZJ4NCRU",
+            "recmJm1E4oTGaSVug",
+            "rec7Fi5yEJgOm9n2o",
+            "recjmOOvN4fpzTNEe",
+            "recGyyEhMsbmAJCWQ",
+            "recnni5sisXKU3cpV",
+            "recf6TyHNsc4OAfl7",
+            "recJGEvUzHi1Hne3j",
+          ],
+          idWebflow: "5f9c50d30e2086f9854b4053",
+          "ID Salesforce": "177",
+          "Opciones de Atributos en Viviendas copy": [
+            "recZst1ZaNDaFDTu3",
+            "recOfZntVdjcsNvzt",
+            "recFuYCYAlNZoMFQ3",
+            "recetVnYumrdoIvrE",
+            "rec77tCa8Ty0gXr8A",
+            "recm4u9U5U65Cyyve",
+            "recMY7xxOO1bXTS9D",
+            "reculM7b3qr4NbfIW",
+            "recJ35Bbg4CdzO7ew",
+            "reccYH9FgNWlxUGFi",
+            "recw3MSiuXlVs4Ipm",
+            "recj7buQ2PY68sgCb",
+            "reccFloJGtRXviJbO",
+            "recL9PhKWatGj2OXK",
+            "recUzvO1LdzIIbjXH",
+            "recPiyD6IhbzKERrP",
+            "recNRqdrKS1VIzhmv",
+            "recAARj5Uo8XU21DH",
+            "receeZXbYRz68as5d",
+            "recJT623WUY7K6ZTZ",
+            "recIOgS4WxZiB10zF",
+            "recUV3wMz5vMrAGCO",
+            "recRIS1At771FZA5Q",
+            "rect6E2jKC1vucGpA",
+            "rec2yTvIUv65LWdJa",
+            "recmVW8rpT9CyC4RL",
+            "rec89CSsFzC9Tmpkw",
+            "rechCKllYSEePf6y5",
+            "recRNYBmKopcgqBwg",
+            "recZzgG7J4quvEEjU",
+            "recDatgnHnGyvcGf0",
+            "reczd3UYHVIGz7iNs",
+            "recPdNKWClQIwHD6l",
+            "rec60YDLuHuJNUU1J",
+            "recSYEYVdf6WGEzTx",
+            "recmh1YjVZFbqbwhI",
+            "recR3VMVsQS2Na1z5",
+            "recNkdk9SKOshgMQq",
+            "receW6dXOuIpnl5tM",
+            "recZS2hRoP5xzCx1U",
+            "recbzy0Oxa48MmXDK",
+            "recyLiQAwy05NcMVm",
+            "recfA2hL2yMt7wmor",
+            "rec7jDK0xy1N13pkD",
+            "recBToHdjN7KUQo2P",
+          ],
+          "ID Salesforce 2": "177",
+          "Opciones de Atributos en Viviendas 2 copy": [
+            "reco9C5MZnGtT4wxJ",
+            "recdW8rgKNmvGe8C9",
+            "rec4b7GLpVQiCdiTJ",
+            "recDa4rLjWuwC98uk",
+            "recwOCGXXtBjuo4bg",
+            "recLLDdHUu9oQZbyU",
+            "recbFgBkDo4ubkvcj",
+            "recT2VbYS0un1CSLC",
+            "rec8KeFY5EFwNfKhc",
+            "recBFQds5nZELljIY",
+            "recVKVW5jxoeGvls2",
+            "recIOkyDRp1pmTTFR",
+            "recBmuswv3UgJJmeu",
+            "recaQYlxLKwZxtr0q",
+            "recjgESOANC1WCW0n",
+            "receZHHTxReSY5uuv",
+            "reccyzhezs4eW0Upb",
+            "recZh0nSJYbg8tEGn",
+            "recDV81YNrCpmB58T",
+            "rec8Af6QLu1qYxCWF",
+            "rec7vpWRL72BPsDCl",
+            "recjCcAzoFy5F1jFu",
+            "recgp15niHakTqd8w",
+            "recSNN66zc4OIDjsg",
+            "recrf2zvJ59oZnQMQ",
+            "recLC5ceetcVM3HUr",
+            "recxQLWfu9Fs7N2nc",
+            "recGjTp8NsHx3GJBL",
+            "recgu7F9zYsvuRezW",
+            "recogpKUyEtNJ5hmA",
+            "rec2RCkawXJRJDjiG",
+            "recYUcYLwvLZNyVQ8",
+            "receUWOJrVT1K8g91",
+            "recvH7Hyjhx21lx4p",
+            "rechFN2I2P9fU5cWd",
+            "recLYa26KzIuEC9ko",
+            "recgK4QIhqVl1BECL",
+            "recc1moWHkRLvHpT6",
+            "recDDfhKD4LIBMIws",
+            "recozblEdp8QN3a4A",
+            "recAgH4BmK7r0NAGq",
+            "recXsrUnl83o1DpY2",
+            "recEhblyR8PMlXZr7",
+            "recw0MONm846fu2nj",
+            "rec0AxL08na38h15v",
+          ],
+          "Proyecto-Modelo": "Península-Inland",
+        },
+        createdTime: "2020-09-30T16:18:45.000Z",
+      },
+    ];
+
+    const mock_proyectos = [
+      {
+        id: "recunm26MjQp3daSq",
+        fields: {
+          Nombre: "Península",
+          Viviendas: ["recj0jJ6DFRi3mmtx", "recyqNCh3Wb7EzrvO"],
+          "ID Salesforce": "53",
+        },
+        createdTime: "2020-09-29T20:39:18.000Z",
+      },
+    ];
+
+    const mock_atributos = [
+      {
+        id: "recw6bvdSzBo77wgK",
+        fields: { Nombre: "Asadores" },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "recNdT3JemQx9earo",
+        fields: { Nombre: "Barandales", Categoría: ["Entertrainment"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "recbJcaO7iX2n5KpW",
+        fields: { Nombre: "Cancelería", Categoría: ["Entertrainment"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "recJmaYx4KfUuOWb6",
+        fields: { Nombre: "Clósets", Categoría: ["Outdoors"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "recpFsGpNYF87pO4Q",
+        fields: { Nombre: "Cocinas", Categoría: ["Security"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "recQ5IyAPoK2GsZ02",
+        fields: { Nombre: "Despensa", Categoría: ["Entertrainment"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "rec0OEoRleuH8Ig9c",
+        fields: { Nombre: "Domótica", Categoría: ["Outdoors"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "recxhy4xe0k6jRK6s",
+        fields: { Nombre: "Equipamiento de Cocinas", Categoría: ["Security"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "rectdzpunp5v4m0Mt",
+        fields: { Nombre: "Flex Room", Categoría: ["Outdoors"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "recV8GhwQt8myEWSb",
+        fields: { Nombre: "Muebles de Cocina", Categoría: ["Entertrainment"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "rectYa095cYxcHIjQ",
+        fields: { Nombre: "Muro Verde", Categoría: ["Outdoors"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "recXPEDSNJsLJZbhn",
+        fields: { Nombre: "Paneles Solares", Categoría: ["Outdoors"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "recEMuAuU19hVExGr",
+        fields: { Nombre: "Piso", Categoría: ["Outdoors", "Security"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "rec5Q5GN0NmjqIcMX",
+        fields: { Nombre: "Portones", Categoría: ["Security"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+      {
+        id: "recJvGc1BKlvCnrSc",
+        fields: { Nombre: "Tonalidades de Cocina", Categoría: ["Entertrainment"] },
+        createdTime: "2020-09-01T18:40:59.000Z",
+      },
+    ];
+
+    const subscriber_queue = [];
+    /**
+     * Creates a `Readable` store that allows reading by subscription.
+     * @param value initial value
+     * @param {StartStopNotifier}start start and stop notifications for subscriptions
+     */
+    function readable(value, start) {
+        return {
+            subscribe: writable(value, start).subscribe
+        };
+    }
+    /**
+     * Create a `Writable` store that allows both updating and reading by subscription.
+     * @param {*=}value initial value
+     * @param {StartStopNotifier=}start start and stop notifications for subscriptions
+     */
+    function writable(value, start = noop) {
+        let stop;
+        const subscribers = [];
+        function set(new_value) {
+            if (safe_not_equal(value, new_value)) {
+                value = new_value;
+                if (stop) { // store is ready
+                    const run_queue = !subscriber_queue.length;
+                    for (let i = 0; i < subscribers.length; i += 1) {
+                        const s = subscribers[i];
+                        s[1]();
+                        subscriber_queue.push(s, value);
+                    }
+                    if (run_queue) {
+                        for (let i = 0; i < subscriber_queue.length; i += 2) {
+                            subscriber_queue[i][0](subscriber_queue[i + 1]);
+                        }
+                        subscriber_queue.length = 0;
+                    }
+                }
+            }
+        }
+        function update(fn) {
+            set(fn(value));
+        }
+        function subscribe(run, invalidate = noop) {
+            const subscriber = [run, invalidate];
+            subscribers.push(subscriber);
+            if (subscribers.length === 1) {
+                stop = start(set) || noop;
+            }
+            run(value);
+            return () => {
+                const index = subscribers.indexOf(subscriber);
+                if (index !== -1) {
+                    subscribers.splice(index, 1);
+                }
+                if (subscribers.length === 0) {
+                    stop();
+                    stop = null;
+                }
+            };
+        }
+        return { set, update, subscribe };
+    }
+    function derived(stores, fn, initial_value) {
+        const single = !Array.isArray(stores);
+        const stores_array = single
+            ? [stores]
+            : stores;
+        const auto = fn.length < 2;
+        return readable(initial_value, (set) => {
+            let inited = false;
+            const values = [];
+            let pending = 0;
+            let cleanup = noop;
+            const sync = () => {
+                if (pending) {
+                    return;
+                }
+                cleanup();
+                const result = fn(single ? values[0] : values, set);
+                if (auto) {
+                    set(result);
+                }
+                else {
+                    cleanup = is_function(result) ? result : noop;
+                }
+            };
+            const unsubscribers = stores_array.map((store, i) => subscribe(store, (value) => {
+                values[i] = value;
+                pending &= ~(1 << i);
+                if (inited) {
+                    sync();
+                }
+            }, () => {
+                pending |= (1 << i);
+            }));
+            inited = true;
+            sync();
+            return function stop() {
+                run_all(unsubscribers);
+                cleanup();
+            };
+        });
+    }
+
+    var bind = function bind(fn, thisArg) {
+      return function wrap() {
+        var args = new Array(arguments.length);
+        for (var i = 0; i < args.length; i++) {
+          args[i] = arguments[i];
+        }
+        return fn.apply(thisArg, args);
+      };
+    };
+
+    /*global toString:true*/
+
+    // utils is a library of generic helper functions non-specific to axios
+
+    var toString = Object.prototype.toString;
+
+    /**
+     * Determine if a value is an Array
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is an Array, otherwise false
+     */
+    function isArray(val) {
+      return toString.call(val) === '[object Array]';
+    }
+
+    /**
+     * Determine if a value is undefined
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if the value is undefined, otherwise false
+     */
+    function isUndefined(val) {
+      return typeof val === 'undefined';
+    }
+
+    /**
+     * Determine if a value is a Buffer
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is a Buffer, otherwise false
+     */
+    function isBuffer(val) {
+      return val !== null && !isUndefined(val) && val.constructor !== null && !isUndefined(val.constructor)
+        && typeof val.constructor.isBuffer === 'function' && val.constructor.isBuffer(val);
+    }
+
+    /**
+     * Determine if a value is an ArrayBuffer
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is an ArrayBuffer, otherwise false
+     */
+    function isArrayBuffer(val) {
+      return toString.call(val) === '[object ArrayBuffer]';
+    }
+
+    /**
+     * Determine if a value is a FormData
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is an FormData, otherwise false
+     */
+    function isFormData(val) {
+      return (typeof FormData !== 'undefined') && (val instanceof FormData);
+    }
+
+    /**
+     * Determine if a value is a view on an ArrayBuffer
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
+     */
+    function isArrayBufferView(val) {
+      var result;
+      if ((typeof ArrayBuffer !== 'undefined') && (ArrayBuffer.isView)) {
+        result = ArrayBuffer.isView(val);
+      } else {
+        result = (val) && (val.buffer) && (val.buffer instanceof ArrayBuffer);
+      }
+      return result;
+    }
+
+    /**
+     * Determine if a value is a String
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is a String, otherwise false
+     */
+    function isString(val) {
+      return typeof val === 'string';
+    }
+
+    /**
+     * Determine if a value is a Number
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is a Number, otherwise false
+     */
+    function isNumber(val) {
+      return typeof val === 'number';
+    }
+
+    /**
+     * Determine if a value is an Object
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is an Object, otherwise false
+     */
+    function isObject(val) {
+      return val !== null && typeof val === 'object';
+    }
+
+    /**
+     * Determine if a value is a plain Object
+     *
+     * @param {Object} val The value to test
+     * @return {boolean} True if value is a plain Object, otherwise false
+     */
+    function isPlainObject(val) {
+      if (toString.call(val) !== '[object Object]') {
+        return false;
+      }
+
+      var prototype = Object.getPrototypeOf(val);
+      return prototype === null || prototype === Object.prototype;
+    }
+
+    /**
+     * Determine if a value is a Date
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is a Date, otherwise false
+     */
+    function isDate(val) {
+      return toString.call(val) === '[object Date]';
+    }
+
+    /**
+     * Determine if a value is a File
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is a File, otherwise false
+     */
+    function isFile(val) {
+      return toString.call(val) === '[object File]';
+    }
+
+    /**
+     * Determine if a value is a Blob
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is a Blob, otherwise false
+     */
+    function isBlob(val) {
+      return toString.call(val) === '[object Blob]';
+    }
+
+    /**
+     * Determine if a value is a Function
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is a Function, otherwise false
+     */
+    function isFunction(val) {
+      return toString.call(val) === '[object Function]';
+    }
+
+    /**
+     * Determine if a value is a Stream
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is a Stream, otherwise false
+     */
+    function isStream(val) {
+      return isObject(val) && isFunction(val.pipe);
+    }
+
+    /**
+     * Determine if a value is a URLSearchParams object
+     *
+     * @param {Object} val The value to test
+     * @returns {boolean} True if value is a URLSearchParams object, otherwise false
+     */
+    function isURLSearchParams(val) {
+      return typeof URLSearchParams !== 'undefined' && val instanceof URLSearchParams;
+    }
+
+    /**
+     * Trim excess whitespace off the beginning and end of a string
+     *
+     * @param {String} str The String to trim
+     * @returns {String} The String freed of excess whitespace
+     */
+    function trim(str) {
+      return str.replace(/^\s*/, '').replace(/\s*$/, '');
+    }
+
+    /**
+     * Determine if we're running in a standard browser environment
+     *
+     * This allows axios to run in a web worker, and react-native.
+     * Both environments support XMLHttpRequest, but not fully standard globals.
+     *
+     * web workers:
+     *  typeof window -> undefined
+     *  typeof document -> undefined
+     *
+     * react-native:
+     *  navigator.product -> 'ReactNative'
+     * nativescript
+     *  navigator.product -> 'NativeScript' or 'NS'
+     */
+    function isStandardBrowserEnv() {
+      if (typeof navigator !== 'undefined' && (navigator.product === 'ReactNative' ||
+                                               navigator.product === 'NativeScript' ||
+                                               navigator.product === 'NS')) {
+        return false;
+      }
+      return (
+        typeof window !== 'undefined' &&
+        typeof document !== 'undefined'
+      );
+    }
+
+    /**
+     * Iterate over an Array or an Object invoking a function for each item.
+     *
+     * If `obj` is an Array callback will be called passing
+     * the value, index, and complete array for each item.
+     *
+     * If 'obj' is an Object callback will be called passing
+     * the value, key, and complete object for each property.
+     *
+     * @param {Object|Array} obj The object to iterate
+     * @param {Function} fn The callback to invoke for each item
+     */
+    function forEach(obj, fn) {
+      // Don't bother if no value provided
+      if (obj === null || typeof obj === 'undefined') {
+        return;
+      }
+
+      // Force an array if not already something iterable
+      if (typeof obj !== 'object') {
+        /*eslint no-param-reassign:0*/
+        obj = [obj];
+      }
+
+      if (isArray(obj)) {
+        // Iterate over array values
+        for (var i = 0, l = obj.length; i < l; i++) {
+          fn.call(null, obj[i], i, obj);
+        }
+      } else {
+        // Iterate over object keys
+        for (var key in obj) {
+          if (Object.prototype.hasOwnProperty.call(obj, key)) {
+            fn.call(null, obj[key], key, obj);
+          }
+        }
+      }
+    }
+
+    /**
+     * Accepts varargs expecting each argument to be an object, then
+     * immutably merges the properties of each object and returns result.
+     *
+     * When multiple objects contain the same key the later object in
+     * the arguments list will take precedence.
+     *
+     * Example:
+     *
+     * ```js
+     * var result = merge({foo: 123}, {foo: 456});
+     * console.log(result.foo); // outputs 456
+     * ```
+     *
+     * @param {Object} obj1 Object to merge
+     * @returns {Object} Result of all merge properties
+     */
+    function merge(/* obj1, obj2, obj3, ... */) {
+      var result = {};
+      function assignValue(val, key) {
+        if (isPlainObject(result[key]) && isPlainObject(val)) {
+          result[key] = merge(result[key], val);
+        } else if (isPlainObject(val)) {
+          result[key] = merge({}, val);
+        } else if (isArray(val)) {
+          result[key] = val.slice();
+        } else {
+          result[key] = val;
+        }
+      }
+
+      for (var i = 0, l = arguments.length; i < l; i++) {
+        forEach(arguments[i], assignValue);
+      }
+      return result;
+    }
+
+    /**
+     * Extends object a by mutably adding to it the properties of object b.
+     *
+     * @param {Object} a The object to be extended
+     * @param {Object} b The object to copy properties from
+     * @param {Object} thisArg The object to bind function to
+     * @return {Object} The resulting value of object a
+     */
+    function extend(a, b, thisArg) {
+      forEach(b, function assignValue(val, key) {
+        if (thisArg && typeof val === 'function') {
+          a[key] = bind(val, thisArg);
+        } else {
+          a[key] = val;
+        }
+      });
+      return a;
+    }
+
+    /**
+     * Remove byte order marker. This catches EF BB BF (the UTF-8 BOM)
+     *
+     * @param {string} content with BOM
+     * @return {string} content value without BOM
+     */
+    function stripBOM(content) {
+      if (content.charCodeAt(0) === 0xFEFF) {
+        content = content.slice(1);
+      }
+      return content;
+    }
+
+    var utils = {
+      isArray: isArray,
+      isArrayBuffer: isArrayBuffer,
+      isBuffer: isBuffer,
+      isFormData: isFormData,
+      isArrayBufferView: isArrayBufferView,
+      isString: isString,
+      isNumber: isNumber,
+      isObject: isObject,
+      isPlainObject: isPlainObject,
+      isUndefined: isUndefined,
+      isDate: isDate,
+      isFile: isFile,
+      isBlob: isBlob,
+      isFunction: isFunction,
+      isStream: isStream,
+      isURLSearchParams: isURLSearchParams,
+      isStandardBrowserEnv: isStandardBrowserEnv,
+      forEach: forEach,
+      merge: merge,
+      extend: extend,
+      trim: trim,
+      stripBOM: stripBOM
+    };
+
+    function encode(val) {
+      return encodeURIComponent(val).
+        replace(/%3A/gi, ':').
+        replace(/%24/g, '$').
+        replace(/%2C/gi, ',').
+        replace(/%20/g, '+').
+        replace(/%5B/gi, '[').
+        replace(/%5D/gi, ']');
+    }
+
+    /**
+     * Build a URL by appending params to the end
+     *
+     * @param {string} url The base of the url (e.g., http://www.google.com)
+     * @param {object} [params] The params to be appended
+     * @returns {string} The formatted url
+     */
+    var buildURL = function buildURL(url, params, paramsSerializer) {
+      /*eslint no-param-reassign:0*/
+      if (!params) {
+        return url;
+      }
+
+      var serializedParams;
+      if (paramsSerializer) {
+        serializedParams = paramsSerializer(params);
+      } else if (utils.isURLSearchParams(params)) {
+        serializedParams = params.toString();
+      } else {
+        var parts = [];
+
+        utils.forEach(params, function serialize(val, key) {
+          if (val === null || typeof val === 'undefined') {
+            return;
+          }
+
+          if (utils.isArray(val)) {
+            key = key + '[]';
+          } else {
+            val = [val];
+          }
+
+          utils.forEach(val, function parseValue(v) {
+            if (utils.isDate(v)) {
+              v = v.toISOString();
+            } else if (utils.isObject(v)) {
+              v = JSON.stringify(v);
+            }
+            parts.push(encode(key) + '=' + encode(v));
+          });
+        });
+
+        serializedParams = parts.join('&');
+      }
+
+      if (serializedParams) {
+        var hashmarkIndex = url.indexOf('#');
+        if (hashmarkIndex !== -1) {
+          url = url.slice(0, hashmarkIndex);
+        }
+
+        url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
+      }
+
+      return url;
+    };
+
+    function InterceptorManager() {
+      this.handlers = [];
+    }
+
+    /**
+     * Add a new interceptor to the stack
+     *
+     * @param {Function} fulfilled The function to handle `then` for a `Promise`
+     * @param {Function} rejected The function to handle `reject` for a `Promise`
+     *
+     * @return {Number} An ID used to remove interceptor later
+     */
+    InterceptorManager.prototype.use = function use(fulfilled, rejected) {
+      this.handlers.push({
+        fulfilled: fulfilled,
+        rejected: rejected
+      });
+      return this.handlers.length - 1;
+    };
+
+    /**
+     * Remove an interceptor from the stack
+     *
+     * @param {Number} id The ID that was returned by `use`
+     */
+    InterceptorManager.prototype.eject = function eject(id) {
+      if (this.handlers[id]) {
+        this.handlers[id] = null;
+      }
+    };
+
+    /**
+     * Iterate over all the registered interceptors
+     *
+     * This method is particularly useful for skipping over any
+     * interceptors that may have become `null` calling `eject`.
+     *
+     * @param {Function} fn The function to call for each interceptor
+     */
+    InterceptorManager.prototype.forEach = function forEach(fn) {
+      utils.forEach(this.handlers, function forEachHandler(h) {
+        if (h !== null) {
+          fn(h);
+        }
+      });
+    };
+
+    var InterceptorManager_1 = InterceptorManager;
+
+    /**
+     * Transform the data for a request or a response
+     *
+     * @param {Object|String} data The data to be transformed
+     * @param {Array} headers The headers for the request or response
+     * @param {Array|Function} fns A single function or Array of functions
+     * @returns {*} The resulting transformed data
+     */
+    var transformData = function transformData(data, headers, fns) {
+      /*eslint no-param-reassign:0*/
+      utils.forEach(fns, function transform(fn) {
+        data = fn(data, headers);
+      });
+
+      return data;
+    };
+
+    var isCancel = function isCancel(value) {
+      return !!(value && value.__CANCEL__);
+    };
+
+    var normalizeHeaderName = function normalizeHeaderName(headers, normalizedName) {
+      utils.forEach(headers, function processHeader(value, name) {
+        if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
+          headers[normalizedName] = value;
+          delete headers[name];
+        }
+      });
+    };
+
+    /**
+     * Update an Error with the specified config, error code, and response.
+     *
+     * @param {Error} error The error to update.
+     * @param {Object} config The config.
+     * @param {string} [code] The error code (for example, 'ECONNABORTED').
+     * @param {Object} [request] The request.
+     * @param {Object} [response] The response.
+     * @returns {Error} The error.
+     */
+    var enhanceError = function enhanceError(error, config, code, request, response) {
+      error.config = config;
+      if (code) {
+        error.code = code;
+      }
+
+      error.request = request;
+      error.response = response;
+      error.isAxiosError = true;
+
+      error.toJSON = function toJSON() {
+        return {
+          // Standard
+          message: this.message,
+          name: this.name,
+          // Microsoft
+          description: this.description,
+          number: this.number,
+          // Mozilla
+          fileName: this.fileName,
+          lineNumber: this.lineNumber,
+          columnNumber: this.columnNumber,
+          stack: this.stack,
+          // Axios
+          config: this.config,
+          code: this.code
+        };
+      };
+      return error;
+    };
+
+    /**
+     * Create an Error with the specified message, config, error code, request and response.
+     *
+     * @param {string} message The error message.
+     * @param {Object} config The config.
+     * @param {string} [code] The error code (for example, 'ECONNABORTED').
+     * @param {Object} [request] The request.
+     * @param {Object} [response] The response.
+     * @returns {Error} The created error.
+     */
+    var createError = function createError(message, config, code, request, response) {
+      var error = new Error(message);
+      return enhanceError(error, config, code, request, response);
+    };
+
+    /**
+     * Resolve or reject a Promise based on response status.
+     *
+     * @param {Function} resolve A function that resolves the promise.
+     * @param {Function} reject A function that rejects the promise.
+     * @param {object} response The response.
+     */
+    var settle = function settle(resolve, reject, response) {
+      var validateStatus = response.config.validateStatus;
+      if (!response.status || !validateStatus || validateStatus(response.status)) {
+        resolve(response);
+      } else {
+        reject(createError(
+          'Request failed with status code ' + response.status,
+          response.config,
+          null,
+          response.request,
+          response
+        ));
+      }
+    };
+
+    var cookies = (
+      utils.isStandardBrowserEnv() ?
+
+      // Standard browser envs support document.cookie
+        (function standardBrowserEnv() {
+          return {
+            write: function write(name, value, expires, path, domain, secure) {
+              var cookie = [];
+              cookie.push(name + '=' + encodeURIComponent(value));
+
+              if (utils.isNumber(expires)) {
+                cookie.push('expires=' + new Date(expires).toGMTString());
+              }
+
+              if (utils.isString(path)) {
+                cookie.push('path=' + path);
+              }
+
+              if (utils.isString(domain)) {
+                cookie.push('domain=' + domain);
+              }
+
+              if (secure === true) {
+                cookie.push('secure');
+              }
+
+              document.cookie = cookie.join('; ');
+            },
+
+            read: function read(name) {
+              var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
+              return (match ? decodeURIComponent(match[3]) : null);
+            },
+
+            remove: function remove(name) {
+              this.write(name, '', Date.now() - 86400000);
+            }
+          };
+        })() :
+
+      // Non standard browser env (web workers, react-native) lack needed support.
+        (function nonStandardBrowserEnv() {
+          return {
+            write: function write() {},
+            read: function read() { return null; },
+            remove: function remove() {}
+          };
+        })()
+    );
+
+    /**
+     * Determines whether the specified URL is absolute
+     *
+     * @param {string} url The URL to test
+     * @returns {boolean} True if the specified URL is absolute, otherwise false
+     */
+    var isAbsoluteURL = function isAbsoluteURL(url) {
+      // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
+      // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
+      // by any combination of letters, digits, plus, period, or hyphen.
+      return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
+    };
+
+    /**
+     * Creates a new URL by combining the specified URLs
+     *
+     * @param {string} baseURL The base URL
+     * @param {string} relativeURL The relative URL
+     * @returns {string} The combined URL
+     */
+    var combineURLs = function combineURLs(baseURL, relativeURL) {
+      return relativeURL
+        ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '')
+        : baseURL;
+    };
+
+    /**
+     * Creates a new URL by combining the baseURL with the requestedURL,
+     * only when the requestedURL is not already an absolute URL.
+     * If the requestURL is absolute, this function returns the requestedURL untouched.
+     *
+     * @param {string} baseURL The base URL
+     * @param {string} requestedURL Absolute or relative URL to combine
+     * @returns {string} The combined full path
+     */
+    var buildFullPath = function buildFullPath(baseURL, requestedURL) {
+      if (baseURL && !isAbsoluteURL(requestedURL)) {
+        return combineURLs(baseURL, requestedURL);
+      }
+      return requestedURL;
+    };
+
+    // Headers whose duplicates are ignored by node
+    // c.f. https://nodejs.org/api/http.html#http_message_headers
+    var ignoreDuplicateOf = [
+      'age', 'authorization', 'content-length', 'content-type', 'etag',
+      'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since',
+      'last-modified', 'location', 'max-forwards', 'proxy-authorization',
+      'referer', 'retry-after', 'user-agent'
+    ];
+
+    /**
+     * Parse headers into an object
+     *
+     * ```
+     * Date: Wed, 27 Aug 2014 08:58:49 GMT
+     * Content-Type: application/json
+     * Connection: keep-alive
+     * Transfer-Encoding: chunked
+     * ```
+     *
+     * @param {String} headers Headers needing to be parsed
+     * @returns {Object} Headers parsed into an object
+     */
+    var parseHeaders = function parseHeaders(headers) {
+      var parsed = {};
+      var key;
+      var val;
+      var i;
+
+      if (!headers) { return parsed; }
+
+      utils.forEach(headers.split('\n'), function parser(line) {
+        i = line.indexOf(':');
+        key = utils.trim(line.substr(0, i)).toLowerCase();
+        val = utils.trim(line.substr(i + 1));
+
+        if (key) {
+          if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) {
+            return;
+          }
+          if (key === 'set-cookie') {
+            parsed[key] = (parsed[key] ? parsed[key] : []).concat([val]);
+          } else {
+            parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
+          }
+        }
+      });
+
+      return parsed;
+    };
+
+    var isURLSameOrigin = (
+      utils.isStandardBrowserEnv() ?
+
+      // Standard browser envs have full support of the APIs needed to test
+      // whether the request URL is of the same origin as current location.
+        (function standardBrowserEnv() {
+          var msie = /(msie|trident)/i.test(navigator.userAgent);
+          var urlParsingNode = document.createElement('a');
+          var originURL;
+
+          /**
+        * Parse a URL to discover it's components
+        *
+        * @param {String} url The URL to be parsed
+        * @returns {Object}
+        */
+          function resolveURL(url) {
+            var href = url;
+
+            if (msie) {
+            // IE needs attribute set twice to normalize properties
+              urlParsingNode.setAttribute('href', href);
+              href = urlParsingNode.href;
+            }
+
+            urlParsingNode.setAttribute('href', href);
+
+            // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
+            return {
+              href: urlParsingNode.href,
+              protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
+              host: urlParsingNode.host,
+              search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
+              hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
+              hostname: urlParsingNode.hostname,
+              port: urlParsingNode.port,
+              pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
+                urlParsingNode.pathname :
+                '/' + urlParsingNode.pathname
+            };
+          }
+
+          originURL = resolveURL(window.location.href);
+
+          /**
+        * Determine if a URL shares the same origin as the current location
+        *
+        * @param {String} requestURL The URL to test
+        * @returns {boolean} True if URL shares the same origin, otherwise false
+        */
+          return function isURLSameOrigin(requestURL) {
+            var parsed = (utils.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
+            return (parsed.protocol === originURL.protocol &&
+                parsed.host === originURL.host);
+          };
+        })() :
+
+      // Non standard browser envs (web workers, react-native) lack needed support.
+        (function nonStandardBrowserEnv() {
+          return function isURLSameOrigin() {
+            return true;
+          };
+        })()
+    );
+
+    var xhr = function xhrAdapter(config) {
+      return new Promise(function dispatchXhrRequest(resolve, reject) {
+        var requestData = config.data;
+        var requestHeaders = config.headers;
+
+        if (utils.isFormData(requestData)) {
+          delete requestHeaders['Content-Type']; // Let the browser set it
+        }
+
+        var request = new XMLHttpRequest();
+
+        // HTTP basic authentication
+        if (config.auth) {
+          var username = config.auth.username || '';
+          var password = config.auth.password ? unescape(encodeURIComponent(config.auth.password)) : '';
+          requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);
+        }
+
+        var fullPath = buildFullPath(config.baseURL, config.url);
+        request.open(config.method.toUpperCase(), buildURL(fullPath, config.params, config.paramsSerializer), true);
+
+        // Set the request timeout in MS
+        request.timeout = config.timeout;
+
+        // Listen for ready state
+        request.onreadystatechange = function handleLoad() {
+          if (!request || request.readyState !== 4) {
+            return;
+          }
+
+          // The request errored out and we didn't get a response, this will be
+          // handled by onerror instead
+          // With one exception: request that using file: protocol, most browsers
+          // will return status as 0 even though it's a successful request
+          if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf('file:') === 0)) {
+            return;
+          }
+
+          // Prepare the response
+          var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
+          var responseData = !config.responseType || config.responseType === 'text' ? request.responseText : request.response;
+          var response = {
+            data: responseData,
+            status: request.status,
+            statusText: request.statusText,
+            headers: responseHeaders,
+            config: config,
+            request: request
+          };
+
+          settle(resolve, reject, response);
+
+          // Clean up request
+          request = null;
+        };
+
+        // Handle browser request cancellation (as opposed to a manual cancellation)
+        request.onabort = function handleAbort() {
+          if (!request) {
+            return;
+          }
+
+          reject(createError('Request aborted', config, 'ECONNABORTED', request));
+
+          // Clean up request
+          request = null;
+        };
+
+        // Handle low level network errors
+        request.onerror = function handleError() {
+          // Real errors are hidden from us by the browser
+          // onerror should only fire if it's a network error
+          reject(createError('Network Error', config, null, request));
+
+          // Clean up request
+          request = null;
+        };
+
+        // Handle timeout
+        request.ontimeout = function handleTimeout() {
+          var timeoutErrorMessage = 'timeout of ' + config.timeout + 'ms exceeded';
+          if (config.timeoutErrorMessage) {
+            timeoutErrorMessage = config.timeoutErrorMessage;
+          }
+          reject(createError(timeoutErrorMessage, config, 'ECONNABORTED',
+            request));
+
+          // Clean up request
+          request = null;
+        };
+
+        // Add xsrf header
+        // This is only done if running in a standard browser environment.
+        // Specifically not if we're in a web worker, or react-native.
+        if (utils.isStandardBrowserEnv()) {
+          // Add xsrf header
+          var xsrfValue = (config.withCredentials || isURLSameOrigin(fullPath)) && config.xsrfCookieName ?
+            cookies.read(config.xsrfCookieName) :
+            undefined;
+
+          if (xsrfValue) {
+            requestHeaders[config.xsrfHeaderName] = xsrfValue;
+          }
+        }
+
+        // Add headers to the request
+        if ('setRequestHeader' in request) {
+          utils.forEach(requestHeaders, function setRequestHeader(val, key) {
+            if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') {
+              // Remove Content-Type if data is undefined
+              delete requestHeaders[key];
+            } else {
+              // Otherwise add header to the request
+              request.setRequestHeader(key, val);
+            }
+          });
+        }
+
+        // Add withCredentials to request if needed
+        if (!utils.isUndefined(config.withCredentials)) {
+          request.withCredentials = !!config.withCredentials;
+        }
+
+        // Add responseType to request if needed
+        if (config.responseType) {
+          try {
+            request.responseType = config.responseType;
+          } catch (e) {
+            // Expected DOMException thrown by browsers not compatible XMLHttpRequest Level 2.
+            // But, this can be suppressed for 'json' type as it can be parsed by default 'transformResponse' function.
+            if (config.responseType !== 'json') {
+              throw e;
+            }
+          }
+        }
+
+        // Handle progress if needed
+        if (typeof config.onDownloadProgress === 'function') {
+          request.addEventListener('progress', config.onDownloadProgress);
+        }
+
+        // Not all browsers support upload events
+        if (typeof config.onUploadProgress === 'function' && request.upload) {
+          request.upload.addEventListener('progress', config.onUploadProgress);
+        }
+
+        if (config.cancelToken) {
+          // Handle cancellation
+          config.cancelToken.promise.then(function onCanceled(cancel) {
+            if (!request) {
+              return;
+            }
+
+            request.abort();
+            reject(cancel);
+            // Clean up request
+            request = null;
+          });
+        }
+
+        if (!requestData) {
+          requestData = null;
+        }
+
+        // Send the request
+        request.send(requestData);
+      });
+    };
+
+    var DEFAULT_CONTENT_TYPE = {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    };
+
+    function setContentTypeIfUnset(headers, value) {
+      if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
+        headers['Content-Type'] = value;
+      }
+    }
+
+    function getDefaultAdapter() {
+      var adapter;
+      if (typeof XMLHttpRequest !== 'undefined') {
+        // For browsers use XHR adapter
+        adapter = xhr;
+      } else if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') {
+        // For node use HTTP adapter
+        adapter = xhr;
+      }
+      return adapter;
+    }
+
+    var defaults = {
+      adapter: getDefaultAdapter(),
+
+      transformRequest: [function transformRequest(data, headers) {
+        normalizeHeaderName(headers, 'Accept');
+        normalizeHeaderName(headers, 'Content-Type');
+        if (utils.isFormData(data) ||
+          utils.isArrayBuffer(data) ||
+          utils.isBuffer(data) ||
+          utils.isStream(data) ||
+          utils.isFile(data) ||
+          utils.isBlob(data)
+        ) {
+          return data;
+        }
+        if (utils.isArrayBufferView(data)) {
+          return data.buffer;
+        }
+        if (utils.isURLSearchParams(data)) {
+          setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+          return data.toString();
+        }
+        if (utils.isObject(data)) {
+          setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
+          return JSON.stringify(data);
+        }
+        return data;
+      }],
+
+      transformResponse: [function transformResponse(data) {
+        /*eslint no-param-reassign:0*/
+        if (typeof data === 'string') {
+          try {
+            data = JSON.parse(data);
+          } catch (e) { /* Ignore */ }
+        }
+        return data;
+      }],
+
+      /**
+       * A timeout in milliseconds to abort a request. If set to 0 (default) a
+       * timeout is not created.
+       */
+      timeout: 0,
+
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+
+      maxContentLength: -1,
+      maxBodyLength: -1,
+
+      validateStatus: function validateStatus(status) {
+        return status >= 200 && status < 300;
+      }
+    };
+
+    defaults.headers = {
+      common: {
+        'Accept': 'application/json, text/plain, */*'
+      }
+    };
+
+    utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
+      defaults.headers[method] = {};
+    });
+
+    utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+      defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
+    });
+
+    var defaults_1 = defaults;
+
+    /**
+     * Throws a `Cancel` if cancellation has been requested.
+     */
+    function throwIfCancellationRequested(config) {
+      if (config.cancelToken) {
+        config.cancelToken.throwIfRequested();
+      }
+    }
+
+    /**
+     * Dispatch a request to the server using the configured adapter.
+     *
+     * @param {object} config The config that is to be used for the request
+     * @returns {Promise} The Promise to be fulfilled
+     */
+    var dispatchRequest = function dispatchRequest(config) {
+      throwIfCancellationRequested(config);
+
+      // Ensure headers exist
+      config.headers = config.headers || {};
+
+      // Transform request data
+      config.data = transformData(
+        config.data,
+        config.headers,
+        config.transformRequest
+      );
+
+      // Flatten headers
+      config.headers = utils.merge(
+        config.headers.common || {},
+        config.headers[config.method] || {},
+        config.headers
+      );
+
+      utils.forEach(
+        ['delete', 'get', 'head', 'post', 'put', 'patch', 'common'],
+        function cleanHeaderConfig(method) {
+          delete config.headers[method];
+        }
+      );
+
+      var adapter = config.adapter || defaults_1.adapter;
+
+      return adapter(config).then(function onAdapterResolution(response) {
+        throwIfCancellationRequested(config);
+
+        // Transform response data
+        response.data = transformData(
+          response.data,
+          response.headers,
+          config.transformResponse
+        );
+
+        return response;
+      }, function onAdapterRejection(reason) {
+        if (!isCancel(reason)) {
+          throwIfCancellationRequested(config);
+
+          // Transform response data
+          if (reason && reason.response) {
+            reason.response.data = transformData(
+              reason.response.data,
+              reason.response.headers,
+              config.transformResponse
+            );
+          }
+        }
+
+        return Promise.reject(reason);
+      });
+    };
+
+    /**
+     * Config-specific merge-function which creates a new config-object
+     * by merging two configuration objects together.
+     *
+     * @param {Object} config1
+     * @param {Object} config2
+     * @returns {Object} New object resulting from merging config2 to config1
+     */
+    var mergeConfig = function mergeConfig(config1, config2) {
+      // eslint-disable-next-line no-param-reassign
+      config2 = config2 || {};
+      var config = {};
+
+      var valueFromConfig2Keys = ['url', 'method', 'data'];
+      var mergeDeepPropertiesKeys = ['headers', 'auth', 'proxy', 'params'];
+      var defaultToConfig2Keys = [
+        'baseURL', 'transformRequest', 'transformResponse', 'paramsSerializer',
+        'timeout', 'timeoutMessage', 'withCredentials', 'adapter', 'responseType', 'xsrfCookieName',
+        'xsrfHeaderName', 'onUploadProgress', 'onDownloadProgress', 'decompress',
+        'maxContentLength', 'maxBodyLength', 'maxRedirects', 'transport', 'httpAgent',
+        'httpsAgent', 'cancelToken', 'socketPath', 'responseEncoding'
+      ];
+      var directMergeKeys = ['validateStatus'];
+
+      function getMergedValue(target, source) {
+        if (utils.isPlainObject(target) && utils.isPlainObject(source)) {
+          return utils.merge(target, source);
+        } else if (utils.isPlainObject(source)) {
+          return utils.merge({}, source);
+        } else if (utils.isArray(source)) {
+          return source.slice();
+        }
+        return source;
+      }
+
+      function mergeDeepProperties(prop) {
+        if (!utils.isUndefined(config2[prop])) {
+          config[prop] = getMergedValue(config1[prop], config2[prop]);
+        } else if (!utils.isUndefined(config1[prop])) {
+          config[prop] = getMergedValue(undefined, config1[prop]);
+        }
+      }
+
+      utils.forEach(valueFromConfig2Keys, function valueFromConfig2(prop) {
+        if (!utils.isUndefined(config2[prop])) {
+          config[prop] = getMergedValue(undefined, config2[prop]);
+        }
+      });
+
+      utils.forEach(mergeDeepPropertiesKeys, mergeDeepProperties);
+
+      utils.forEach(defaultToConfig2Keys, function defaultToConfig2(prop) {
+        if (!utils.isUndefined(config2[prop])) {
+          config[prop] = getMergedValue(undefined, config2[prop]);
+        } else if (!utils.isUndefined(config1[prop])) {
+          config[prop] = getMergedValue(undefined, config1[prop]);
+        }
+      });
+
+      utils.forEach(directMergeKeys, function merge(prop) {
+        if (prop in config2) {
+          config[prop] = getMergedValue(config1[prop], config2[prop]);
+        } else if (prop in config1) {
+          config[prop] = getMergedValue(undefined, config1[prop]);
+        }
+      });
+
+      var axiosKeys = valueFromConfig2Keys
+        .concat(mergeDeepPropertiesKeys)
+        .concat(defaultToConfig2Keys)
+        .concat(directMergeKeys);
+
+      var otherKeys = Object
+        .keys(config1)
+        .concat(Object.keys(config2))
+        .filter(function filterAxiosKeys(key) {
+          return axiosKeys.indexOf(key) === -1;
+        });
+
+      utils.forEach(otherKeys, mergeDeepProperties);
+
+      return config;
+    };
+
+    /**
+     * Create a new instance of Axios
+     *
+     * @param {Object} instanceConfig The default config for the instance
+     */
+    function Axios(instanceConfig) {
+      this.defaults = instanceConfig;
+      this.interceptors = {
+        request: new InterceptorManager_1(),
+        response: new InterceptorManager_1()
+      };
+    }
+
+    /**
+     * Dispatch a request
+     *
+     * @param {Object} config The config specific for this request (merged with this.defaults)
+     */
+    Axios.prototype.request = function request(config) {
+      /*eslint no-param-reassign:0*/
+      // Allow for axios('example/url'[, config]) a la fetch API
+      if (typeof config === 'string') {
+        config = arguments[1] || {};
+        config.url = arguments[0];
+      } else {
+        config = config || {};
+      }
+
+      config = mergeConfig(this.defaults, config);
+
+      // Set config.method
+      if (config.method) {
+        config.method = config.method.toLowerCase();
+      } else if (this.defaults.method) {
+        config.method = this.defaults.method.toLowerCase();
+      } else {
+        config.method = 'get';
+      }
+
+      // Hook up interceptors middleware
+      var chain = [dispatchRequest, undefined];
+      var promise = Promise.resolve(config);
+
+      this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
+        chain.unshift(interceptor.fulfilled, interceptor.rejected);
+      });
+
+      this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
+        chain.push(interceptor.fulfilled, interceptor.rejected);
+      });
+
+      while (chain.length) {
+        promise = promise.then(chain.shift(), chain.shift());
+      }
+
+      return promise;
+    };
+
+    Axios.prototype.getUri = function getUri(config) {
+      config = mergeConfig(this.defaults, config);
+      return buildURL(config.url, config.params, config.paramsSerializer).replace(/^\?/, '');
+    };
+
+    // Provide aliases for supported request methods
+    utils.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
+      /*eslint func-names:0*/
+      Axios.prototype[method] = function(url, config) {
+        return this.request(mergeConfig(config || {}, {
+          method: method,
+          url: url,
+          data: (config || {}).data
+        }));
+      };
+    });
+
+    utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+      /*eslint func-names:0*/
+      Axios.prototype[method] = function(url, data, config) {
+        return this.request(mergeConfig(config || {}, {
+          method: method,
+          url: url,
+          data: data
+        }));
+      };
+    });
+
+    var Axios_1 = Axios;
+
+    /**
+     * A `Cancel` is an object that is thrown when an operation is canceled.
+     *
+     * @class
+     * @param {string=} message The message.
+     */
+    function Cancel(message) {
+      this.message = message;
+    }
+
+    Cancel.prototype.toString = function toString() {
+      return 'Cancel' + (this.message ? ': ' + this.message : '');
+    };
+
+    Cancel.prototype.__CANCEL__ = true;
+
+    var Cancel_1 = Cancel;
+
+    /**
+     * A `CancelToken` is an object that can be used to request cancellation of an operation.
+     *
+     * @class
+     * @param {Function} executor The executor function.
+     */
+    function CancelToken(executor) {
+      if (typeof executor !== 'function') {
+        throw new TypeError('executor must be a function.');
+      }
+
+      var resolvePromise;
+      this.promise = new Promise(function promiseExecutor(resolve) {
+        resolvePromise = resolve;
+      });
+
+      var token = this;
+      executor(function cancel(message) {
+        if (token.reason) {
+          // Cancellation has already been requested
+          return;
+        }
+
+        token.reason = new Cancel_1(message);
+        resolvePromise(token.reason);
+      });
+    }
+
+    /**
+     * Throws a `Cancel` if cancellation has been requested.
+     */
+    CancelToken.prototype.throwIfRequested = function throwIfRequested() {
+      if (this.reason) {
+        throw this.reason;
+      }
+    };
+
+    /**
+     * Returns an object that contains a new `CancelToken` and a function that, when called,
+     * cancels the `CancelToken`.
+     */
+    CancelToken.source = function source() {
+      var cancel;
+      var token = new CancelToken(function executor(c) {
+        cancel = c;
+      });
+      return {
+        token: token,
+        cancel: cancel
+      };
+    };
+
+    var CancelToken_1 = CancelToken;
+
+    /**
+     * Syntactic sugar for invoking a function and expanding an array for arguments.
+     *
+     * Common use case would be to use `Function.prototype.apply`.
+     *
+     *  ```js
+     *  function f(x, y, z) {}
+     *  var args = [1, 2, 3];
+     *  f.apply(null, args);
+     *  ```
+     *
+     * With `spread` this example can be re-written.
+     *
+     *  ```js
+     *  spread(function(x, y, z) {})([1, 2, 3]);
+     *  ```
+     *
+     * @param {Function} callback
+     * @returns {Function}
+     */
+    var spread = function spread(callback) {
+      return function wrap(arr) {
+        return callback.apply(null, arr);
+      };
+    };
+
+    /**
+     * Determines whether the payload is an error thrown by Axios
+     *
+     * @param {*} payload The value to test
+     * @returns {boolean} True if the payload is an error thrown by Axios, otherwise false
+     */
+    var isAxiosError = function isAxiosError(payload) {
+      return (typeof payload === 'object') && (payload.isAxiosError === true);
+    };
+
+    /**
+     * Create an instance of Axios
+     *
+     * @param {Object} defaultConfig The default config for the instance
+     * @return {Axios} A new instance of Axios
+     */
+    function createInstance(defaultConfig) {
+      var context = new Axios_1(defaultConfig);
+      var instance = bind(Axios_1.prototype.request, context);
+
+      // Copy axios.prototype to instance
+      utils.extend(instance, Axios_1.prototype, context);
+
+      // Copy context to instance
+      utils.extend(instance, context);
+
+      return instance;
+    }
+
+    // Create the default instance to be exported
+    var axios = createInstance(defaults_1);
+
+    // Expose Axios class to allow class inheritance
+    axios.Axios = Axios_1;
+
+    // Factory for creating new instances
+    axios.create = function create(instanceConfig) {
+      return createInstance(mergeConfig(axios.defaults, instanceConfig));
+    };
+
+    // Expose Cancel & CancelToken
+    axios.Cancel = Cancel_1;
+    axios.CancelToken = CancelToken_1;
+    axios.isCancel = isCancel;
+
+    // Expose all/spread
+    axios.all = function all(promises) {
+      return Promise.all(promises);
+    };
+    axios.spread = spread;
+
+    // Expose isAxiosError
+    axios.isAxiosError = isAxiosError;
+
+    var axios_1 = axios;
+
+    // Allow use of default import syntax in TypeScript
+    var _default = axios;
+    axios_1.default = _default;
+
+    var axios$1 = axios_1;
+
+    let useLocal = true;
+    // let useLocal = false;
+
+    const proyectos = writable([]);
+
+    const modelos = writable([]);
+
+    const opciones = writable([]);
+
+    const atributos = writable([]);
+
+    const menuState = writable({}); //atrributes open or closed
+
+    //proyect and modelo selection
+    const currentSelection = writable({
+      proyect: null,
+      modelo: null,
+    });
+
+    //user selected attributes
+    const cart = writable({});
+
+    const opcionesByAtributo = derived(opciones, ($opciones) => {
+      let byAtr = {};
+      $opciones.map((o) => {
+        let atr = o.fields.atributo_nombre;
+        if (!byAtr[atr]) {
+          byAtr[o.fields.atributo_nombre] = [o];
+        } else {
+          byAtr[o.fields.atributo_nombre].push(o);
+        }
+      });
+      return byAtr;
+    });
+
+    const categorias = writable({});
+
+    function getCategoriasFromAtributos() {
+      let cat = {
+        all: true,
+      };
+      get_store_value(atributos).forEach((atr) => {
+        if (atr.fields.Categoría) {
+          atr.fields.Categoría.forEach((catName) => {
+            cat[catName] = false;
+          });
+        }
+      });
+      categorias.set(cat);
+    }
+
+    function getAtributos() {
+      //local
+      if (window.location.hostname == "localhost" && useLocal) {
+        atributos.set(mock_atributos);
+        getCategoriasFromAtributos();
+        return;
+      }
+
+      axios$1.get("https://enl4yiidhnuij8n.m.pipedream.net").then((res) => {
+        atributos.set(res.data);
+        getCategoriasFromAtributos();
+      });
+    }
+
+    function getProyectos() {
+      //local
+      if (window.location.hostname == "localhost" && useLocal) {
+        proyectos.set(mock_proyectos);
+
+        if (!get_store_value(currentSelection).proyect) {
+          currentSelection.update((cs) => {
+            cs.proyect = mock_proyectos[0];
+            return cs;
+          });
+        }
+        return;
+      }
+
+      axios$1.get("https://en57ds8aebutpuq.m.pipedream.net").then((res) => {
+        proyectos.set(res.data);
+        if (!get_store_value(currentSelection).proyect) {
+          currentSelection.update((cs) => {
+            cs.proyect = res.data[0];
+            return cs;
+          });
+        }
+      });
+    }
+
+    function getModelos() {
+      //local
+      if (window.location.hostname == "localhost" && useLocal) {
+        modelos.set(mock_modelos);
+        return;
+      }
+
+      axios$1.get("https://enw9gnpjz0b6y3s.m.pipedream.net").then((res) => {
+        modelos.set(res.data);
+      });
+    }
+
+    function getOpciones(vivienda) {
+      //local
+      if (window.location.hostname == "localhost" && useLocal) {
+        opciones.set(mock_opciones);
+        cart.set({});
+        return;
+      }
+
+      axios$1
+        .get(`https://enombb1z99rtf6o.m.pipedream.net?vivienda=${vivienda}`)
+        .then((res) => {
+          opciones.set(res.data);
+          cart.set({});
+        });
+    }
+
+    getProyectos();
+    getAtributos();
+    getModelos();
+
+    /* src\Categorias.svelte generated by Svelte v3.32.2 */
+
+    const { Object: Object_1 } = globals;
+    const file = "src\\Categorias.svelte";
+
+    function get_each_context(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[3] = list[i];
+    	return child_ctx;
+    }
+
+    // (17:2) {#each Object.keys($categorias) as categoria}
+    function create_each_block(ctx) {
+    	let div3;
+    	let div1;
+    	let div0;
+    	let t0;
+    	let div2;
+    	let t1_value = /*categoria*/ ctx[3] + "";
+    	let t1;
+    	let t2;
+    	let mounted;
+    	let dispose;
+
+    	function click_handler() {
+    		return /*click_handler*/ ctx[2](/*categoria*/ ctx[3]);
+    	}
+
+    	const block = {
+    		c: function create() {
+    			div3 = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
+    			t0 = space();
+    			div2 = element("div");
+    			t1 = text(t1_value);
+    			t2 = space();
+    			attr_dev(div0, "class", "switch-thumb");
+    			toggle_class(div0, "switch-thumb-on", /*$categorias*/ ctx[0][/*categoria*/ ctx[3]]);
+    			add_location(div0, file, 24, 8, 749);
+    			attr_dev(div1, "class", "switch-bg");
+    			toggle_class(div1, "switch-bg-on", /*$categorias*/ ctx[0][/*categoria*/ ctx[3]]);
+    			add_location(div1, file, 23, 6, 672);
+    			attr_dev(div2, "class", "switch-title");
+    			add_location(div2, file, 29, 6, 877);
+    			attr_dev(div3, "class", "switch");
+    			add_location(div3, file, 17, 4, 561);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div3, anchor);
+    			append_dev(div3, div1);
+    			append_dev(div1, div0);
+    			append_dev(div3, t0);
+    			append_dev(div3, div2);
+    			append_dev(div2, t1);
+    			append_dev(div3, t2);
+
+    			if (!mounted) {
+    				dispose = listen_dev(div3, "click", click_handler, false, false, false);
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+
+    			if (dirty & /*$categorias, Object*/ 1) {
+    				toggle_class(div0, "switch-thumb-on", /*$categorias*/ ctx[0][/*categoria*/ ctx[3]]);
+    			}
+
+    			if (dirty & /*$categorias, Object*/ 1) {
+    				toggle_class(div1, "switch-bg-on", /*$categorias*/ ctx[0][/*categoria*/ ctx[3]]);
+    			}
+
+    			if (dirty & /*$categorias*/ 1 && t1_value !== (t1_value = /*categoria*/ ctx[3] + "")) set_data_dev(t1, t1_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div3);
+    			mounted = false;
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block.name,
+    		type: "each",
+    		source: "(17:2) {#each Object.keys($categorias) as categoria}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment(ctx) {
+    	let div0;
+    	let t1;
+    	let div1;
+    	let each_value = Object.keys(/*$categorias*/ ctx[0]);
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			div0.textContent = "Categorias";
+    			t1 = space();
+    			div1 = element("div");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			attr_dev(div0, "class", "categorias-title");
+    			add_location(div0, file, 14, 0, 434);
+    			attr_dev(div1, "class", "categorias");
+    			add_location(div1, file, 15, 0, 482);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div1, null);
+    			}
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*switchClicked, Object, $categorias*/ 3) {
+    				each_value = Object.keys(/*$categorias*/ ctx[0]);
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(div1, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value.length;
+    			}
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div1);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance($$self, $$props, $$invalidate) {
+    	let $categorias;
+    	validate_store(categorias, "categorias");
+    	component_subscribe($$self, categorias, $$value => $$invalidate(0, $categorias = $$value));
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("Categorias", slots, []);
+
+    	function switchClicked(categoria) {
+    		set_store_value(categorias, $categorias[categoria] = !$categorias[categoria], $categorias);
+
+    		if (categoria != "all") {
+    			//if user turned all categories (execpt for all) off we switch all on, otherwise switch all off
+    			set_store_value(categorias, $categorias.all = !Object.keys($categorias).some(cat => cat != "all" ? $categorias[cat] : false), $categorias);
+    		}
+    	}
+
+    	const writable_props = [];
+
+    	Object_1.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Categorias> was created with unknown prop '${key}'`);
+    	});
+
+    	const click_handler = categoria => {
+    		switchClicked(categoria);
+    	};
+
+    	$$self.$capture_state = () => ({ categorias, switchClicked, $categorias });
+    	return [$categorias, switchClicked, click_handler];
+    }
+
+    class Categorias extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance, create_fragment, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Categorias",
+    			options,
+    			id: create_fragment.name
+    		});
+    	}
+    }
+
+    /* src\Opcione.svelte generated by Svelte v3.32.2 */
+    const file$1 = "src\\Opcione.svelte";
+
+    function create_fragment$1(ctx) {
+    	let div4;
+    	let img;
+    	let img_src_value;
+    	let t0;
+    	let div0;
+    	let t1_value = /*opcione*/ ctx[0].fields.opción_nombre + "";
+    	let t1;
+    	let t2;
+    	let div1;
+    	let t3_value = /*opcione*/ ctx[0].fields.descripción + "";
+    	let t3;
+    	let t4;
+    	let div2;
+    	let t5;
+    	let t6_value = /*opcione*/ ctx[0].fields.precio + "";
+    	let t6;
+    	let t7;
+    	let div3;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			div4 = element("div");
+    			img = element("img");
+    			t0 = space();
+    			div0 = element("div");
+    			t1 = text(t1_value);
+    			t2 = space();
+    			div1 = element("div");
+    			t3 = text(t3_value);
+    			t4 = space();
+    			div2 = element("div");
+    			t5 = text("$");
+    			t6 = text(t6_value);
+    			t7 = space();
+    			div3 = element("div");
+    			div3.textContent = "+";
+    			attr_dev(img, "class", "opcione-img");
+    			if (img.src !== (img_src_value = /*opcione*/ ctx[0].fields.Render[0].thumbnails.large.url)) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "");
+    			add_location(img, file$1, 15, 2, 363);
+    			attr_dev(div0, "class", "opcione-title");
+    			add_location(div0, file$1, 23, 2, 532);
+    			attr_dev(div1, "class", "opcione-description");
+    			add_location(div1, file$1, 24, 2, 599);
+    			attr_dev(div2, "class", "opcione-price");
+    			add_location(div2, file$1, 25, 2, 670);
+    			attr_dev(div3, "class", "opcione-plus-btn");
+    			add_location(div3, file$1, 26, 2, 731);
+    			attr_dev(div4, "class", "opcione");
+    			toggle_class(div4, "selected", /*$cart*/ ctx[1][/*opcione*/ ctx[0].fields.atributo_nombre] == /*opcione*/ ctx[0]);
+    			add_location(div4, file$1, 8, 0, 183);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, img);
+    			append_dev(div4, t0);
+    			append_dev(div4, div0);
+    			append_dev(div0, t1);
+    			append_dev(div4, t2);
+    			append_dev(div4, div1);
+    			append_dev(div1, t3);
+    			append_dev(div4, t4);
+    			append_dev(div4, div2);
+    			append_dev(div2, t5);
+    			append_dev(div2, t6);
+    			append_dev(div4, t7);
+    			append_dev(div4, div3);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(img, "load", /*load_handler*/ ctx[3], false, false, false),
+    					listen_dev(div4, "click", /*click_handler*/ ctx[4], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*opcione*/ 1 && img.src !== (img_src_value = /*opcione*/ ctx[0].fields.Render[0].thumbnails.large.url)) {
+    				attr_dev(img, "src", img_src_value);
+    			}
+
+    			if (dirty & /*opcione*/ 1 && t1_value !== (t1_value = /*opcione*/ ctx[0].fields.opción_nombre + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*opcione*/ 1 && t3_value !== (t3_value = /*opcione*/ ctx[0].fields.descripción + "")) set_data_dev(t3, t3_value);
+    			if (dirty & /*opcione*/ 1 && t6_value !== (t6_value = /*opcione*/ ctx[0].fields.precio + "")) set_data_dev(t6, t6_value);
+
+    			if (dirty & /*$cart, opcione*/ 3) {
+    				toggle_class(div4, "selected", /*$cart*/ ctx[1][/*opcione*/ ctx[0].fields.atributo_nombre] == /*opcione*/ ctx[0]);
+    			}
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div4);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$1.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$1($$self, $$props, $$invalidate) {
+    	let $cart;
+    	validate_store(cart, "cart");
+    	component_subscribe($$self, cart, $$value => $$invalidate(1, $cart = $$value));
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("Opcione", slots, []);
+    	const dispatch = createEventDispatcher();
+    	let { opcione } = $$props;
+    	const writable_props = ["opcione"];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Opcione> was created with unknown prop '${key}'`);
+    	});
+
+    	const load_handler = () => {
+    		dispatch("img-loaded");
+    	};
+
+    	const click_handler = () => {
+    		set_store_value(cart, $cart[opcione.fields.atributo_nombre] = opcione, $cart);
+    	};
+
+    	$$self.$$set = $$props => {
+    		if ("opcione" in $$props) $$invalidate(0, opcione = $$props.opcione);
+    	};
+
+    	$$self.$capture_state = () => ({
+    		createEventDispatcher,
+    		cart,
+    		dispatch,
+    		opcione,
+    		$cart
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("opcione" in $$props) $$invalidate(0, opcione = $$props.opcione);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [opcione, $cart, dispatch, load_handler, click_handler];
+    }
+
+    class Opcione extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$1, create_fragment$1, safe_not_equal, { opcione: 0 });
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Opcione",
+    			options,
+    			id: create_fragment$1.name
+    		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+
+    		if (/*opcione*/ ctx[0] === undefined && !("opcione" in props)) {
+    			console.warn("<Opcione> was created without expected prop 'opcione'");
+    		}
+    	}
+
+    	get opcione() {
+    		throw new Error("<Opcione>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set opcione(value) {
+    		throw new Error("<Opcione>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+    }
+
+    /* src\Opciones.svelte generated by Svelte v3.32.2 */
+    const file$2 = "src\\Opciones.svelte";
+
+    function get_each_context$1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[8] = list[i];
+    	return child_ctx;
+    }
+
+    // (35:2) {#each opciones as opcione}
+    function create_each_block$1(ctx) {
+    	let opcione;
+    	let current;
+
+    	opcione = new Opcione({
+    			props: { opcione: /*opcione*/ ctx[8] },
+    			$$inline: true
+    		});
+
+    	opcione.$on("img-loaded", /*opcioneLoaded*/ ctx[2]);
+
+    	const block = {
+    		c: function create() {
+    			create_component(opcione.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(opcione, target, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const opcione_changes = {};
+    			if (dirty & /*opciones*/ 1) opcione_changes.opcione = /*opcione*/ ctx[8];
+    			opcione.$set(opcione_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(opcione.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(opcione.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(opcione, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block$1.name,
+    		type: "each",
+    		source: "(35:2) {#each opciones as opcione}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$2(ctx) {
+    	let div;
+    	let current;
+    	let each_value = /*opciones*/ ctx[0];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
+    	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			attr_dev(div, "class", "opciones");
+    			add_location(div, file$2, 33, 0, 632);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div, null);
+    			}
+
+    			/*div_binding*/ ctx[5](div);
+    			current = true;
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*opciones, opcioneLoaded*/ 5) {
+    				each_value = /*opciones*/ ctx[0];
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context$1(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    						transition_in(each_blocks[i], 1);
+    					} else {
+    						each_blocks[i] = create_each_block$1(child_ctx);
+    						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
+    						each_blocks[i].m(div, null);
+    					}
+    				}
+
+    				group_outros();
+
+    				for (i = each_value.length; i < each_blocks.length; i += 1) {
+    					out(i);
+    				}
+
+    				check_outros();
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+
+    			for (let i = 0; i < each_value.length; i += 1) {
+    				transition_in(each_blocks[i]);
+    			}
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			each_blocks = each_blocks.filter(Boolean);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				transition_out(each_blocks[i]);
+    			}
+
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			destroy_each(each_blocks, detaching);
+    			/*div_binding*/ ctx[5](null);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$2.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$2($$self, $$props, $$invalidate) {
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("Opciones", slots, []);
+    	let { opciones = [] } = $$props;
+    	let { isOpen = false } = $$props;
+    	let opcionesDiv;
+    	let maxHeight = 0;
+    	let opcionesLoaded = 0;
+
+    	async function calcHeight() {
+    		await tick();
+    		$$invalidate(4, maxHeight = opcionesDiv.scrollHeight);
+    	}
+
+    	function opcioneLoaded() {
+    		opcionesLoaded++;
+
+    		if (opcionesLoaded >= opciones.length) {
+    			calcHeight();
+    		}
+    	}
+
+    	const writable_props = ["opciones", "isOpen"];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Opciones> was created with unknown prop '${key}'`);
+    	});
+
+    	function div_binding($$value) {
+    		binding_callbacks[$$value ? "unshift" : "push"](() => {
+    			opcionesDiv = $$value;
+    			(($$invalidate(1, opcionesDiv), $$invalidate(3, isOpen)), $$invalidate(4, maxHeight));
+    		});
+    	}
+
+    	$$self.$$set = $$props => {
+    		if ("opciones" in $$props) $$invalidate(0, opciones = $$props.opciones);
+    		if ("isOpen" in $$props) $$invalidate(3, isOpen = $$props.isOpen);
+    	};
+
+    	$$self.$capture_state = () => ({
+    		tick,
+    		Opcione,
+    		modelos,
+    		opciones,
+    		isOpen,
+    		opcionesDiv,
+    		maxHeight,
+    		opcionesLoaded,
+    		calcHeight,
+    		opcioneLoaded
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("opciones" in $$props) $$invalidate(0, opciones = $$props.opciones);
+    		if ("isOpen" in $$props) $$invalidate(3, isOpen = $$props.isOpen);
+    		if ("opcionesDiv" in $$props) $$invalidate(1, opcionesDiv = $$props.opcionesDiv);
+    		if ("maxHeight" in $$props) $$invalidate(4, maxHeight = $$props.maxHeight);
+    		if ("opcionesLoaded" in $$props) opcionesLoaded = $$props.opcionesLoaded;
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*opcionesDiv, isOpen, maxHeight*/ 26) {
+    			{
+    				if (opcionesDiv) {
+    					$$invalidate(1, opcionesDiv.style.maxHeight = isOpen ? maxHeight + "px" : "0px", opcionesDiv);
+    				}
+    			}
+    		}
+    	};
+
+    	return [opciones, opcionesDiv, opcioneLoaded, isOpen, maxHeight, div_binding];
+    }
+
+    class Opciones extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$2, create_fragment$2, safe_not_equal, { opciones: 0, isOpen: 3 });
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Opciones",
+    			options,
+    			id: create_fragment$2.name
+    		});
+    	}
+
+    	get opciones() {
+    		throw new Error("<Opciones>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set opciones(value) {
+    		throw new Error("<Opciones>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get isOpen() {
+    		throw new Error("<Opciones>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set isOpen(value) {
+    		throw new Error("<Opciones>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+    }
+
+    /* src\Atributo.svelte generated by Svelte v3.32.2 */
+    const file$3 = "src\\Atributo.svelte";
+
+    function create_fragment$3(ctx) {
+    	let div;
+    	let t0_value = /*atributo*/ ctx[0].fields.Nombre + "";
+    	let t0;
+    	let t1;
+    	let opciones;
+    	let current;
+    	let mounted;
+    	let dispose;
+
+    	opciones = new Opciones({
+    			props: {
+    				opciones: /*$opcionesByAtributo*/ ctx[3][/*atributo*/ ctx[0].fields.Nombre],
+    				isOpen: /*isOpen*/ ctx[4]
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			create_component(opciones.$$.fragment);
+    			attr_dev(div, "class", "atributo-title");
+    			toggle_class(div, "disabled", /*disabled*/ ctx[1]);
+    			add_location(div, file$3, 38, 0, 887);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t0);
+    			insert_dev(target, t1, anchor);
+    			mount_component(opciones, target, anchor);
+    			current = true;
+
+    			if (!mounted) {
+    				dispose = listen_dev(div, "click", /*click_handler*/ ctx[7], false, false, false);
+    				mounted = true;
+    			}
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if ((!current || dirty & /*atributo*/ 1) && t0_value !== (t0_value = /*atributo*/ ctx[0].fields.Nombre + "")) set_data_dev(t0, t0_value);
+
+    			if (dirty & /*disabled*/ 2) {
+    				toggle_class(div, "disabled", /*disabled*/ ctx[1]);
+    			}
+
+    			const opciones_changes = {};
+    			if (dirty & /*$opcionesByAtributo, atributo*/ 9) opciones_changes.opciones = /*$opcionesByAtributo*/ ctx[3][/*atributo*/ ctx[0].fields.Nombre];
+    			if (dirty & /*isOpen*/ 16) opciones_changes.isOpen = /*isOpen*/ ctx[4];
+    			opciones.$set(opciones_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(opciones.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(opciones.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(t1);
+    			destroy_component(opciones, detaching);
+    			mounted = false;
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$3.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$3($$self, $$props, $$invalidate) {
+    	let $menuState;
+    	let $opcionesByAtributo;
+    	let $categorias;
+    	validate_store(menuState, "menuState");
+    	component_subscribe($$self, menuState, $$value => $$invalidate(2, $menuState = $$value));
+    	validate_store(opcionesByAtributo, "opcionesByAtributo");
+    	component_subscribe($$self, opcionesByAtributo, $$value => $$invalidate(3, $opcionesByAtributo = $$value));
+    	validate_store(categorias, "categorias");
+    	component_subscribe($$self, categorias, $$value => $$invalidate(6, $categorias = $$value));
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("Atributo", slots, []);
+    	let { atributo } = $$props;
+    	let disabled;
+    	let isOpen;
+    	let isEmpty;
+    	const writable_props = ["atributo"];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Atributo> was created with unknown prop '${key}'`);
+    	});
+
+    	const click_handler = () => {
+    		if (disabled) return;
+    		set_store_value(menuState, $menuState[atributo.fields.Nombre] = !$menuState[atributo.fields.Nombre], $menuState);
+    	};
+
+    	$$self.$$set = $$props => {
+    		if ("atributo" in $$props) $$invalidate(0, atributo = $$props.atributo);
+    	};
+
+    	$$self.$capture_state = () => ({
+    		opcionesByAtributo,
+    		menuState,
+    		categorias,
+    		Opciones,
+    		atributo,
+    		disabled,
+    		isOpen,
+    		isEmpty,
+    		$menuState,
+    		$opcionesByAtributo,
+    		$categorias
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("atributo" in $$props) $$invalidate(0, atributo = $$props.atributo);
+    		if ("disabled" in $$props) $$invalidate(1, disabled = $$props.disabled);
+    		if ("isOpen" in $$props) $$invalidate(4, isOpen = $$props.isOpen);
+    		if ("isEmpty" in $$props) $$invalidate(5, isEmpty = $$props.isEmpty);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*$opcionesByAtributo, atributo*/ 9) {
+    			{
+    				$$invalidate(5, isEmpty = !$opcionesByAtributo[atributo.fields.Nombre] || $opcionesByAtributo[atributo.fields.Nombre].length == 0);
+    			}
+    		}
+
+    		if ($$self.$$.dirty & /*isEmpty, $categorias, atributo, disabled*/ 99) {
+    			{
+    				if (isEmpty) {
+    					$$invalidate(1, disabled = true);
+    				} else if ($categorias.all) {
+    					$$invalidate(1, disabled = false);
+    				} else if (atributo.fields.Categoría) {
+    					//check if at least 1 category of the attribute is switched on in $categories
+    					$$invalidate(1, disabled = atributo.fields.Categoría.some(cat => !$categorias[cat]));
+    				} else {
+    					$$invalidate(1, disabled = true);
+    				}
+
+    				if (disabled) {
+    					set_store_value(menuState, $menuState[atributo.fields.Nombre] = false, $menuState);
+    				}
+    			}
+    		}
+
+    		if ($$self.$$.dirty & /*$menuState, atributo*/ 5) {
+    			{
+    				$$invalidate(4, isOpen = $menuState[atributo.fields.Nombre]);
+    			}
+    		}
+    	};
+
+    	return [
+    		atributo,
+    		disabled,
+    		$menuState,
+    		$opcionesByAtributo,
+    		isOpen,
+    		isEmpty,
+    		$categorias,
+    		click_handler
+    	];
+    }
+
+    class Atributo extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$3, create_fragment$3, safe_not_equal, { atributo: 0 });
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Atributo",
+    			options,
+    			id: create_fragment$3.name
+    		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+
+    		if (/*atributo*/ ctx[0] === undefined && !("atributo" in props)) {
+    			console.warn("<Atributo> was created without expected prop 'atributo'");
+    		}
+    	}
+
+    	get atributo() {
+    		throw new Error("<Atributo>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set atributo(value) {
+    		throw new Error("<Atributo>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+    }
+
+    /* src\Atributos.svelte generated by Svelte v3.32.2 */
+    const file$4 = "src\\Atributos.svelte";
+
+    function get_each_context$2(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[1] = list[i];
+    	return child_ctx;
+    }
+
+    // (7:2) {#each $atributos as atributo}
+    function create_each_block$2(ctx) {
+    	let atributo;
+    	let current;
+
+    	atributo = new Atributo({
+    			props: { atributo: /*atributo*/ ctx[1] },
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(atributo.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(atributo, target, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const atributo_changes = {};
+    			if (dirty & /*$atributos*/ 1) atributo_changes.atributo = /*atributo*/ ctx[1];
+    			atributo.$set(atributo_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(atributo.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(atributo.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(atributo, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block$2.name,
+    		type: "each",
+    		source: "(7:2) {#each $atributos as atributo}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$4(ctx) {
+    	let div;
+    	let current;
+    	let each_value = /*$atributos*/ ctx[0];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block$2(get_each_context$2(ctx, each_value, i));
+    	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			attr_dev(div, "class", "opciones-container");
+    			add_location(div, file$4, 5, 0, 112);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div, null);
+    			}
+
+    			current = true;
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*$atributos*/ 1) {
+    				each_value = /*$atributos*/ ctx[0];
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context$2(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    						transition_in(each_blocks[i], 1);
+    					} else {
+    						each_blocks[i] = create_each_block$2(child_ctx);
+    						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
+    						each_blocks[i].m(div, null);
+    					}
+    				}
+
+    				group_outros();
+
+    				for (i = each_value.length; i < each_blocks.length; i += 1) {
+    					out(i);
+    				}
+
+    				check_outros();
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+
+    			for (let i = 0; i < each_value.length; i += 1) {
+    				transition_in(each_blocks[i]);
+    			}
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			each_blocks = each_blocks.filter(Boolean);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				transition_out(each_blocks[i]);
+    			}
+
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    			destroy_each(each_blocks, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$4.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$4($$self, $$props, $$invalidate) {
+    	let $atributos;
+    	validate_store(atributos, "atributos");
+    	component_subscribe($$self, atributos, $$value => $$invalidate(0, $atributos = $$value));
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("Atributos", slots, []);
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Atributos> was created with unknown prop '${key}'`);
+    	});
+
+    	$$self.$capture_state = () => ({ atributos, Atributo, $atributos });
+    	return [$atributos];
+    }
+
+    class Atributos extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$4, create_fragment$4, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Atributos",
+    			options,
+    			id: create_fragment$4.name
+    		});
+    	}
+    }
+
+    /* src\SideItem.svelte generated by Svelte v3.32.2 */
+
+    const { console: console_1 } = globals;
+    const file$5 = "src\\SideItem.svelte";
+
+    function create_fragment$5(ctx) {
+    	let div5;
+    	let div0;
+    	let t0;
+    	let div4;
+    	let div1;
+    	let t1;
+    	let t2;
+    	let div2;
+    	let t3_value = (/*title*/ ctx[2] ? /*title*/ ctx[2] : "") + "";
+    	let t3;
+    	let t4;
+    	let div3;
+
+    	let t5_value = (Number.isInteger(/*price*/ ctx[3])
+    	? "$" + /*price*/ ctx[3]
+    	: "") + "";
+
+    	let t5;
+
+    	const block = {
+    		c: function create() {
+    			div5 = element("div");
+    			div0 = element("div");
+    			t0 = space();
+    			div4 = element("div");
+    			div1 = element("div");
+    			t1 = text(/*cat*/ ctx[1]);
+    			t2 = space();
+    			div2 = element("div");
+    			t3 = text(t3_value);
+    			t4 = space();
+    			div3 = element("div");
+    			t5 = text(t5_value);
+    			attr_dev(div0, "class", "select-img");
+
+    			set_style(div0, "background", /*imgUrl*/ ctx[0]
+    			? "url(" + /*imgUrl*/ ctx[0] + ")"
+    			: "grey");
+
+    			set_style(div0, "background-size", "cover");
+    			add_location(div0, file$5, 10, 2, 188);
+    			attr_dev(div1, "class", "select-cat");
+    			add_location(div1, file$5, 17, 4, 341);
+    			attr_dev(div2, "class", "select-title");
+    			add_location(div2, file$5, 18, 4, 382);
+    			attr_dev(div3, "class", "select-price");
+    			add_location(div3, file$5, 21, 4, 454);
+    			add_location(div4, file$5, 16, 2, 330);
+    			attr_dev(div5, "class", "select-item");
+    			add_location(div5, file$5, 9, 0, 159);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div0);
+    			append_dev(div5, t0);
+    			append_dev(div5, div4);
+    			append_dev(div4, div1);
+    			append_dev(div1, t1);
+    			append_dev(div4, t2);
+    			append_dev(div4, div2);
+    			append_dev(div2, t3);
+    			append_dev(div4, t4);
+    			append_dev(div4, div3);
+    			append_dev(div3, t5);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*imgUrl*/ 1) {
+    				set_style(div0, "background", /*imgUrl*/ ctx[0]
+    				? "url(" + /*imgUrl*/ ctx[0] + ")"
+    				: "grey");
+    			}
+
+    			if (dirty & /*cat*/ 2) set_data_dev(t1, /*cat*/ ctx[1]);
+    			if (dirty & /*title*/ 4 && t3_value !== (t3_value = (/*title*/ ctx[2] ? /*title*/ ctx[2] : "") + "")) set_data_dev(t3, t3_value);
+
+    			if (dirty & /*price*/ 8 && t5_value !== (t5_value = (Number.isInteger(/*price*/ ctx[3])
+    			? "$" + /*price*/ ctx[3]
+    			: "") + "")) set_data_dev(t5, t5_value);
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div5);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$5.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$5($$self, $$props, $$invalidate) {
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("SideItem", slots, []);
+    	let { imgUrl } = $$props;
+    	let { cat } = $$props;
+    	let { title } = $$props;
+    	let { price } = $$props;
+    	const writable_props = ["imgUrl", "cat", "title", "price"];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1.warn(`<SideItem> was created with unknown prop '${key}'`);
+    	});
+
+    	$$self.$$set = $$props => {
+    		if ("imgUrl" in $$props) $$invalidate(0, imgUrl = $$props.imgUrl);
+    		if ("cat" in $$props) $$invalidate(1, cat = $$props.cat);
+    		if ("title" in $$props) $$invalidate(2, title = $$props.title);
+    		if ("price" in $$props) $$invalidate(3, price = $$props.price);
+    	};
+
+    	$$self.$capture_state = () => ({ imgUrl, cat, title, price });
+
+    	$$self.$inject_state = $$props => {
+    		if ("imgUrl" in $$props) $$invalidate(0, imgUrl = $$props.imgUrl);
+    		if ("cat" in $$props) $$invalidate(1, cat = $$props.cat);
+    		if ("title" in $$props) $$invalidate(2, title = $$props.title);
+    		if ("price" in $$props) $$invalidate(3, price = $$props.price);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*price*/ 8) {
+    			console.log(price != "" ? "$" + price : "");
+    		}
+    	};
+
+    	return [imgUrl, cat, title, price];
+    }
+
+    class SideItem extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$5, create_fragment$5, safe_not_equal, { imgUrl: 0, cat: 1, title: 2, price: 3 });
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "SideItem",
+    			options,
+    			id: create_fragment$5.name
+    		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+
+    		if (/*imgUrl*/ ctx[0] === undefined && !("imgUrl" in props)) {
+    			console_1.warn("<SideItem> was created without expected prop 'imgUrl'");
+    		}
+
+    		if (/*cat*/ ctx[1] === undefined && !("cat" in props)) {
+    			console_1.warn("<SideItem> was created without expected prop 'cat'");
+    		}
+
+    		if (/*title*/ ctx[2] === undefined && !("title" in props)) {
+    			console_1.warn("<SideItem> was created without expected prop 'title'");
+    		}
+
+    		if (/*price*/ ctx[3] === undefined && !("price" in props)) {
+    			console_1.warn("<SideItem> was created without expected prop 'price'");
+    		}
+    	}
+
+    	get imgUrl() {
+    		throw new Error("<SideItem>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set imgUrl(value) {
+    		throw new Error("<SideItem>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get cat() {
+    		throw new Error("<SideItem>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set cat(value) {
+    		throw new Error("<SideItem>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get title() {
+    		throw new Error("<SideItem>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set title(value) {
+    		throw new Error("<SideItem>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	get price() {
+    		throw new Error("<SideItem>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set price(value) {
+    		throw new Error("<SideItem>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+    }
+
+    /* src\SelectModelo.svelte generated by Svelte v3.32.2 */
+    const file$6 = "src\\SelectModelo.svelte";
+
+    function get_each_context$3(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[8] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[11] = list[i];
+    	return child_ctx;
+    }
+
+    // (25:2) {#if $currentSelection.proyect}
+    function create_if_block_2(ctx) {
+    	let sideitem;
+    	let current;
+
+    	sideitem = new SideItem({
+    			props: {
+    				imgUrl: "",
+    				cat: "Proyect",
+    				title: /*$currentSelection*/ ctx[1].proyect.fields.Nombre,
+    				price: ""
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(sideitem.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(sideitem, target, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const sideitem_changes = {};
+    			if (dirty & /*$currentSelection*/ 2) sideitem_changes.title = /*$currentSelection*/ ctx[1].proyect.fields.Nombre;
+    			sideitem.$set(sideitem_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(sideitem.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(sideitem.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(sideitem, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_2.name,
+    		type: "if",
+    		source: "(25:2) {#if $currentSelection.proyect}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (34:2) {#if $currentSelection.modelo}
+    function create_if_block_1(ctx) {
+    	let sideitem;
+    	let current;
+
+    	sideitem = new SideItem({
+    			props: {
+    				imgUrl: "",
+    				cat: "Modelo",
+    				title: /*$currentSelection*/ ctx[1].modelo.fields.Nombre,
+    				price: ""
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(sideitem.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(sideitem, target, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const sideitem_changes = {};
+    			if (dirty & /*$currentSelection*/ 2) sideitem_changes.title = /*$currentSelection*/ ctx[1].modelo.fields.Nombre;
+    			sideitem.$set(sideitem_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(sideitem.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(sideitem.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(sideitem, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_1.name,
+    		type: "if",
+    		source: "(34:2) {#if $currentSelection.modelo}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (45:0) {#if showSelect || ($opciones && $opciones.length == 0)}
+    function create_if_block(ctx) {
+    	let div5;
+    	let div4;
+    	let div0;
+    	let t1;
+    	let div1;
+    	let t2;
+    	let div2;
+    	let t4;
+    	let div3;
+    	let mounted;
+    	let dispose;
+    	let each_value_1 = /*$proyectos*/ ctx[3];
+    	validate_each_argument(each_value_1);
+    	let each_blocks_1 = [];
+
+    	for (let i = 0; i < each_value_1.length; i += 1) {
+    		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+    	}
+
+    	let each_value = /*$modelos*/ ctx[4];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block$3(get_each_context$3(ctx, each_value, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			div5 = element("div");
+    			div4 = element("div");
+    			div0 = element("div");
+    			div0.textContent = "Select Project";
+    			t1 = space();
+    			div1 = element("div");
+
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].c();
+    			}
+
+    			t2 = space();
+    			div2 = element("div");
+    			div2.textContent = "Select Model";
+    			t4 = space();
+    			div3 = element("div");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			attr_dev(div0, "class", "modal-title");
+    			add_location(div0, file$6, 52, 6, 999);
+    			attr_dev(div1, "class", "select-proyectos");
+    			add_location(div1, file$6, 53, 6, 1052);
+    			attr_dev(div2, "class", "modal-title");
+    			add_location(div2, file$6, 69, 6, 1518);
+    			attr_dev(div3, "class", "select-modelos");
+    			add_location(div3, file$6, 70, 6, 1569);
+    			attr_dev(div4, "class", "select-modal-bg");
+    			add_location(div4, file$6, 51, 4, 962);
+    			attr_dev(div5, "class", "select-modal");
+    			add_location(div5, file$6, 45, 2, 863);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div4);
+    			append_dev(div4, div0);
+    			append_dev(div4, t1);
+    			append_dev(div4, div1);
+
+    			for (let i = 0; i < each_blocks_1.length; i += 1) {
+    				each_blocks_1[i].m(div1, null);
+    			}
+
+    			append_dev(div4, t2);
+    			append_dev(div4, div2);
+    			append_dev(div4, t4);
+    			append_dev(div4, div3);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div3, null);
+    			}
+
+    			if (!mounted) {
+    				dispose = listen_dev(div5, "click", /*click_handler_2*/ ctx[7], false, false, false);
+    				mounted = true;
+    			}
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$proyectos, $currentSelection*/ 10) {
+    				each_value_1 = /*$proyectos*/ ctx[3];
+    				validate_each_argument(each_value_1);
+    				let i;
+
+    				for (i = 0; i < each_value_1.length; i += 1) {
+    					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+    					if (each_blocks_1[i]) {
+    						each_blocks_1[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks_1[i] = create_each_block_1(child_ctx);
+    						each_blocks_1[i].c();
+    						each_blocks_1[i].m(div1, null);
+    					}
+    				}
+
+    				for (; i < each_blocks_1.length; i += 1) {
+    					each_blocks_1[i].d(1);
+    				}
+
+    				each_blocks_1.length = each_value_1.length;
+    			}
+
+    			if (dirty & /*$modelos, $currentSelection, getOpciones, showSelect*/ 19) {
+    				each_value = /*$modelos*/ ctx[4];
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context$3(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block$3(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(div3, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value.length;
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div5);
+    			destroy_each(each_blocks_1, detaching);
+    			destroy_each(each_blocks, detaching);
+    			mounted = false;
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block.name,
+    		type: "if",
+    		source: "(45:0) {#if showSelect || ($opciones && $opciones.length == 0)}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (55:8) {#each $proyectos as proyect}
+    function create_each_block_1(ctx) {
+    	let div2;
+    	let div0;
+    	let t0_value = /*proyect*/ ctx[11].fields.Nombre + "";
+    	let t0;
+    	let t1;
+    	let t2;
+    	let div1;
+    	let t3_value = /*proyect*/ ctx[11].fields.Nombre + "";
+    	let t3;
+    	let t4;
+
+    	const block = {
+    		c: function create() {
+    			div2 = element("div");
+    			div0 = element("div");
+    			t0 = text(t0_value);
+    			t1 = text(" - Image");
+    			t2 = space();
+    			div1 = element("div");
+    			t3 = text(t3_value);
+    			t4 = space();
+    			attr_dev(div0, "class", "proyect-img");
+    			add_location(div0, file$6, 59, 12, 1267);
+    			attr_dev(div1, "class", "proyect-title");
+    			add_location(div1, file$6, 62, 12, 1373);
+    			attr_dev(div2, "class", "select-proyect");
+    			toggle_class(div2, "selected", /*proyect*/ ctx[11] == /*$currentSelection*/ ctx[1].proyect);
+    			add_location(div2, file$6, 55, 10, 1133);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, div0);
+    			append_dev(div0, t0);
+    			append_dev(div0, t1);
+    			append_dev(div2, t2);
+    			append_dev(div2, div1);
+    			append_dev(div1, t3);
+    			append_dev(div2, t4);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$proyectos*/ 8 && t0_value !== (t0_value = /*proyect*/ ctx[11].fields.Nombre + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*$proyectos*/ 8 && t3_value !== (t3_value = /*proyect*/ ctx[11].fields.Nombre + "")) set_data_dev(t3, t3_value);
+
+    			if (dirty & /*$proyectos, $currentSelection*/ 10) {
+    				toggle_class(div2, "selected", /*proyect*/ ctx[11] == /*$currentSelection*/ ctx[1].proyect);
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div2);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_1.name,
+    		type: "each",
+    		source: "(55:8) {#each $proyectos as proyect}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (72:8) {#each $modelos as modelo}
+    function create_each_block$3(ctx) {
+    	let div2;
+    	let div0;
+    	let t0_value = /*modelo*/ ctx[8].fields.Nombre + "";
+    	let t0;
+    	let t1;
+    	let t2;
+    	let div1;
+    	let t3_value = /*modelo*/ ctx[8].fields.Nombre + "";
+    	let t3;
+    	let t4;
+    	let mounted;
+    	let dispose;
+
+    	function click_handler_1() {
+    		return /*click_handler_1*/ ctx[6](/*modelo*/ ctx[8]);
+    	}
+
+    	const block = {
+    		c: function create() {
+    			div2 = element("div");
+    			div0 = element("div");
+    			t0 = text(t0_value);
+    			t1 = text(" - Image");
+    			t2 = space();
+    			div1 = element("div");
+    			t3 = text(t3_value);
+    			t4 = space();
+    			attr_dev(div0, "class", "modelo-img");
+    			add_location(div0, file$6, 81, 12, 1974);
+    			attr_dev(div1, "class", "modelo-title");
+    			add_location(div1, file$6, 84, 12, 2078);
+    			attr_dev(div2, "class", "select-modelo");
+    			toggle_class(div2, "selected", /*modelo*/ ctx[8] == /*$currentSelection*/ ctx[1].modelo);
+    			add_location(div2, file$6, 72, 10, 1645);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, div0);
+    			append_dev(div0, t0);
+    			append_dev(div0, t1);
+    			append_dev(div2, t2);
+    			append_dev(div2, div1);
+    			append_dev(div1, t3);
+    			append_dev(div2, t4);
+
+    			if (!mounted) {
+    				dispose = listen_dev(div2, "click", stop_propagation(click_handler_1), false, false, true);
+    				mounted = true;
+    			}
+    		},
+    		p: function update(new_ctx, dirty) {
+    			ctx = new_ctx;
+    			if (dirty & /*$modelos*/ 16 && t0_value !== (t0_value = /*modelo*/ ctx[8].fields.Nombre + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*$modelos*/ 16 && t3_value !== (t3_value = /*modelo*/ ctx[8].fields.Nombre + "")) set_data_dev(t3, t3_value);
+
+    			if (dirty & /*$modelos, $currentSelection*/ 18) {
+    				toggle_class(div2, "selected", /*modelo*/ ctx[8] == /*$currentSelection*/ ctx[1].modelo);
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div2);
+    			mounted = false;
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block$3.name,
+    		type: "each",
+    		source: "(72:8) {#each $modelos as modelo}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$6(ctx) {
+    	let div2;
+    	let div0;
+    	let t1;
+    	let div1;
+    	let t3;
+    	let t4;
+    	let t5;
+    	let if_block2_anchor;
+    	let current;
+    	let mounted;
+    	let dispose;
+    	let if_block0 = /*$currentSelection*/ ctx[1].proyect && create_if_block_2(ctx);
+    	let if_block1 = /*$currentSelection*/ ctx[1].modelo && create_if_block_1(ctx);
+    	let if_block2 = (/*showSelect*/ ctx[0] || /*$opciones*/ ctx[2] && /*$opciones*/ ctx[2].length == 0) && create_if_block(ctx);
+
+    	const block = {
+    		c: function create() {
+    			div2 = element("div");
+    			div0 = element("div");
+    			div0.textContent = "Editar";
+    			t1 = space();
+    			div1 = element("div");
+    			div1.textContent = "Mi Casa";
+    			t3 = space();
+    			if (if_block0) if_block0.c();
+    			t4 = space();
+    			if (if_block1) if_block1.c();
+    			t5 = space();
+    			if (if_block2) if_block2.c();
+    			if_block2_anchor = empty();
+    			attr_dev(div0, "class", "editar");
+    			add_location(div0, file$6, 15, 2, 246);
+    			attr_dev(div1, "class", "select-section-title");
+    			add_location(div1, file$6, 23, 2, 358);
+    			attr_dev(div2, "class", "mi-casa");
+    			add_location(div2, file$6, 14, 0, 221);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, div0);
+    			append_dev(div2, t1);
+    			append_dev(div2, div1);
+    			append_dev(div2, t3);
+    			if (if_block0) if_block0.m(div2, null);
+    			append_dev(div2, t4);
+    			if (if_block1) if_block1.m(div2, null);
+    			insert_dev(target, t5, anchor);
+    			if (if_block2) if_block2.m(target, anchor);
+    			insert_dev(target, if_block2_anchor, anchor);
+    			current = true;
+
+    			if (!mounted) {
+    				dispose = listen_dev(div0, "click", /*click_handler*/ ctx[5], false, false, false);
+    				mounted = true;
+    			}
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (/*$currentSelection*/ ctx[1].proyect) {
+    				if (if_block0) {
+    					if_block0.p(ctx, dirty);
+
+    					if (dirty & /*$currentSelection*/ 2) {
+    						transition_in(if_block0, 1);
+    					}
+    				} else {
+    					if_block0 = create_if_block_2(ctx);
+    					if_block0.c();
+    					transition_in(if_block0, 1);
+    					if_block0.m(div2, t4);
+    				}
+    			} else if (if_block0) {
+    				group_outros();
+
+    				transition_out(if_block0, 1, 1, () => {
+    					if_block0 = null;
+    				});
+
+    				check_outros();
+    			}
+
+    			if (/*$currentSelection*/ ctx[1].modelo) {
+    				if (if_block1) {
+    					if_block1.p(ctx, dirty);
+
+    					if (dirty & /*$currentSelection*/ 2) {
+    						transition_in(if_block1, 1);
+    					}
+    				} else {
+    					if_block1 = create_if_block_1(ctx);
+    					if_block1.c();
+    					transition_in(if_block1, 1);
+    					if_block1.m(div2, null);
+    				}
+    			} else if (if_block1) {
+    				group_outros();
+
+    				transition_out(if_block1, 1, 1, () => {
+    					if_block1 = null;
+    				});
+
+    				check_outros();
+    			}
+
+    			if (/*showSelect*/ ctx[0] || /*$opciones*/ ctx[2] && /*$opciones*/ ctx[2].length == 0) {
+    				if (if_block2) {
+    					if_block2.p(ctx, dirty);
+    				} else {
+    					if_block2 = create_if_block(ctx);
+    					if_block2.c();
+    					if_block2.m(if_block2_anchor.parentNode, if_block2_anchor);
+    				}
+    			} else if (if_block2) {
+    				if_block2.d(1);
+    				if_block2 = null;
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(if_block0);
+    			transition_in(if_block1);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(if_block0);
+    			transition_out(if_block1);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div2);
+    			if (if_block0) if_block0.d();
+    			if (if_block1) if_block1.d();
+    			if (detaching) detach_dev(t5);
+    			if (if_block2) if_block2.d(detaching);
+    			if (detaching) detach_dev(if_block2_anchor);
+    			mounted = false;
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$6.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$6($$self, $$props, $$invalidate) {
+    	let $currentSelection;
+    	let $opciones;
+    	let $proyectos;
+    	let $modelos;
+    	validate_store(currentSelection, "currentSelection");
+    	component_subscribe($$self, currentSelection, $$value => $$invalidate(1, $currentSelection = $$value));
+    	validate_store(opciones, "opciones");
+    	component_subscribe($$self, opciones, $$value => $$invalidate(2, $opciones = $$value));
+    	validate_store(proyectos, "proyectos");
+    	component_subscribe($$self, proyectos, $$value => $$invalidate(3, $proyectos = $$value));
+    	validate_store(modelos, "modelos");
+    	component_subscribe($$self, modelos, $$value => $$invalidate(4, $modelos = $$value));
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("SelectModelo", slots, []);
+    	let showSelect = true;
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<SelectModelo> was created with unknown prop '${key}'`);
+    	});
+
+    	const click_handler = () => {
+    		$$invalidate(0, showSelect = true);
+    	};
+
+    	const click_handler_1 = modelo => {
+    		set_store_value(currentSelection, $currentSelection.modelo = modelo, $currentSelection);
+    		getOpciones(modelo.fields.Nombre);
+    		$$invalidate(0, showSelect = false);
+    	};
+
+    	const click_handler_2 = () => {
+    		$$invalidate(0, showSelect = false);
+    	};
+
+    	$$self.$capture_state = () => ({
+    		modelos,
+    		proyectos,
+    		currentSelection,
+    		opciones,
+    		getOpciones,
+    		SideItem,
+    		showSelect,
+    		$currentSelection,
+    		$opciones,
+    		$proyectos,
+    		$modelos
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("showSelect" in $$props) $$invalidate(0, showSelect = $$props.showSelect);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [
+    		showSelect,
+    		$currentSelection,
+    		$opciones,
+    		$proyectos,
+    		$modelos,
+    		click_handler,
+    		click_handler_1,
+    		click_handler_2
+    	];
+    }
+
+    class SelectModelo extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$6, create_fragment$6, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "SelectModelo",
+    			options,
+    			id: create_fragment$6.name
+    		});
+    	}
+    }
+
+    /* src\Listo.svelte generated by Svelte v3.32.2 */
+
+    const { Object: Object_1$1 } = globals;
+    const file$7 = "src\\Listo.svelte";
+
+    function get_each_context$4(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[4] = list[i];
+    	child_ctx[6] = i;
+    	return child_ctx;
+    }
+
+    // (16:4) {#each Object.keys($cart) as item, idx}
+    function create_each_block$4(ctx) {
+    	let div3;
+    	let div0;
+    	let t0_value = `${/*idx*/ ctx[6]}.${/*item*/ ctx[4]}:` + "";
+    	let t0;
+    	let t1;
+    	let div1;
+    	let t2_value = `${/*$cart*/ ctx[0][/*item*/ ctx[4]].fields.opción_nombre}` + "";
+    	let t2;
+    	let t3;
+    	let div2;
+    	let t4;
+    	let t5_value = `${/*$cart*/ ctx[0][/*item*/ ctx[4]].fields.precio}` + "";
+    	let t5;
+    	let t6;
+
+    	const block = {
+    		c: function create() {
+    			div3 = element("div");
+    			div0 = element("div");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			div1 = element("div");
+    			t2 = text(t2_value);
+    			t3 = space();
+    			div2 = element("div");
+    			t4 = text("$");
+    			t5 = text(t5_value);
+    			t6 = space();
+    			attr_dev(div0, "class", "listo-item-atributo");
+    			add_location(div0, file$7, 17, 8, 516);
+    			attr_dev(div1, "class", "listo-item-nombre");
+    			add_location(div1, file$7, 20, 8, 606);
+    			attr_dev(div2, "class", "listo-item-precio");
+    			add_location(div2, file$7, 23, 8, 714);
+    			attr_dev(div3, "class", "listo-item");
+    			add_location(div3, file$7, 16, 6, 482);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div3, anchor);
+    			append_dev(div3, div0);
+    			append_dev(div0, t0);
+    			append_dev(div3, t1);
+    			append_dev(div3, div1);
+    			append_dev(div1, t2);
+    			append_dev(div3, t3);
+    			append_dev(div3, div2);
+    			append_dev(div2, t4);
+    			append_dev(div2, t5);
+    			append_dev(div3, t6);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*$cart*/ 1 && t0_value !== (t0_value = `${/*idx*/ ctx[6]}.${/*item*/ ctx[4]}:` + "")) set_data_dev(t0, t0_value);
+    			if (dirty & /*$cart*/ 1 && t2_value !== (t2_value = `${/*$cart*/ ctx[0][/*item*/ ctx[4]].fields.opción_nombre}` + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*$cart*/ 1 && t5_value !== (t5_value = `${/*$cart*/ ctx[0][/*item*/ ctx[4]].fields.precio}` + "")) set_data_dev(t5, t5_value);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div3);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block$4.name,
+    		type: "each",
+    		source: "(16:4) {#each Object.keys($cart) as item, idx}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$7(ctx) {
+    	let div4;
+    	let div0;
+    	let t1;
+    	let div1;
+    	let t2;
+    	let t3;
+    	let div2;
+    	let t4;
+    	let div3;
+    	let mounted;
+    	let dispose;
+    	let each_value = Object.keys(/*$cart*/ ctx[0]);
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block$4(get_each_context$4(ctx, each_value, i));
+    	}
+
+    	const block = {
+    		c: function create() {
+    			div4 = element("div");
+    			div0 = element("div");
+    			div0.textContent = "COSTO ESTIMADO DE ATRIBUTOS";
+    			t1 = space();
+    			div1 = element("div");
+    			t2 = text(/*total*/ ctx[1]);
+    			t3 = space();
+    			div2 = element("div");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t4 = space();
+    			div3 = element("div");
+    			div3.textContent = "← Back";
+    			attr_dev(div0, "class", "listo-title");
+    			add_location(div0, file$7, 12, 2, 300);
+    			attr_dev(div1, "class", "listo-total");
+    			add_location(div1, file$7, 13, 2, 362);
+    			attr_dev(div2, "class", "listo-items");
+    			add_location(div2, file$7, 14, 2, 404);
+    			attr_dev(div3, "class", "listo-close-btn");
+    			add_location(div3, file$7, 29, 2, 847);
+    			attr_dev(div4, "class", "listo-bg");
+    			add_location(div4, file$7, 11, 0, 274);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div0);
+    			append_dev(div4, t1);
+    			append_dev(div4, div1);
+    			append_dev(div1, t2);
+    			append_dev(div4, t3);
+    			append_dev(div4, div2);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div2, null);
+    			}
+
+    			append_dev(div4, t4);
+    			append_dev(div4, div3);
+
+    			if (!mounted) {
+    				dispose = listen_dev(div3, "click", /*click_handler*/ ctx[3], false, false, false);
+    				mounted = true;
+    			}
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*total*/ 2) set_data_dev(t2, /*total*/ ctx[1]);
+
+    			if (dirty & /*$cart, Object*/ 1) {
+    				each_value = Object.keys(/*$cart*/ ctx[0]);
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context$4(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block$4(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(div2, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value.length;
+    			}
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div4);
+    			destroy_each(each_blocks, detaching);
+    			mounted = false;
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$7.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$7($$self, $$props, $$invalidate) {
+    	let total;
+    	let $cart;
+    	validate_store(cart, "cart");
+    	component_subscribe($$self, cart, $$value => $$invalidate(0, $cart = $$value));
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("Listo", slots, []);
+    	const dispatch = createEventDispatcher();
+    	const writable_props = [];
+
+    	Object_1$1.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Listo> was created with unknown prop '${key}'`);
+    	});
+
+    	const click_handler = () => {
+    		dispatch("closeListo");
+    	};
+
+    	$$self.$capture_state = () => ({
+    		cart,
+    		createEventDispatcher,
+    		dispatch,
+    		total,
+    		$cart
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("total" in $$props) $$invalidate(1, total = $$props.total);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*$cart*/ 1) {
+    			$$invalidate(1, total = Object.keys($cart).reduce(
+    				(acc, item) => {
+    					return acc + $cart[item].fields.precio;
+    				},
+    				0
+    			));
+    		}
+    	};
+
+    	return [$cart, total, dispatch, click_handler];
+    }
+
+    class Listo extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$7, create_fragment$7, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Listo",
+    			options,
+    			id: create_fragment$7.name
+    		});
+    	}
+    }
+
+    /* src\Cart.svelte generated by Svelte v3.32.2 */
+
+    const { Object: Object_1$2, console: console_1$1 } = globals;
+    const file$8 = "src\\Cart.svelte";
+
+    function get_each_context$5(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[6] = list[i];
+    	return child_ctx;
+    }
+
+    // (27:2) {#each Object.keys($cart) as item}
+    function create_each_block$5(ctx) {
+    	let sideitem;
+    	let current;
+
+    	sideitem = new SideItem({
+    			props: {
+    				imgUrl: /*$cart*/ ctx[0][/*item*/ ctx[6]].fields.Render[0].thumbnails.small.url,
+    				title: /*$cart*/ ctx[0][/*item*/ ctx[6]].fields.opción_nombre,
+    				cat: /*$cart*/ ctx[0][/*item*/ ctx[6]].fields.atributo_nombre,
+    				price: /*$cart*/ ctx[0][/*item*/ ctx[6]].fields.precio
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			create_component(sideitem.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(sideitem, target, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const sideitem_changes = {};
+    			if (dirty & /*$cart*/ 1) sideitem_changes.imgUrl = /*$cart*/ ctx[0][/*item*/ ctx[6]].fields.Render[0].thumbnails.small.url;
+    			if (dirty & /*$cart*/ 1) sideitem_changes.title = /*$cart*/ ctx[0][/*item*/ ctx[6]].fields.opción_nombre;
+    			if (dirty & /*$cart*/ 1) sideitem_changes.cat = /*$cart*/ ctx[0][/*item*/ ctx[6]].fields.atributo_nombre;
+    			if (dirty & /*$cart*/ 1) sideitem_changes.price = /*$cart*/ ctx[0][/*item*/ ctx[6]].fields.precio;
+    			sideitem.$set(sideitem_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(sideitem.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(sideitem.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(sideitem, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block$5.name,
+    		type: "each",
+    		source: "(27:2) {#each Object.keys($cart) as item}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$8(ctx) {
+    	let div0;
+    	let t1;
+    	let div1;
+    	let t2;
+    	let div5;
+    	let div2;
+    	let t4;
+    	let div3;
+    	let t5;
+    	let t6;
+    	let div4;
+    	let current;
+    	let mounted;
+    	let dispose;
+    	let each_value = Object.keys(/*$cart*/ ctx[0]);
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block$5(get_each_context$5(ctx, each_value, i));
+    	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			div0.textContent = "Mis Atributos";
+    			t1 = space();
+    			div1 = element("div");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t2 = space();
+    			div5 = element("div");
+    			div2 = element("div");
+    			div2.textContent = "Total";
+    			t4 = space();
+    			div3 = element("div");
+    			t5 = text(/*totalFormatted*/ ctx[1]);
+    			t6 = space();
+    			div4 = element("div");
+    			div4.textContent = "Listo →";
+    			attr_dev(div0, "class", "select-section-title");
+    			add_location(div0, file$8, 23, 0, 771);
+    			add_location(div1, file$8, 25, 0, 828);
+    			attr_dev(div2, "class", "cart-total");
+    			add_location(div2, file$8, 37, 2, 1146);
+    			attr_dev(div3, "class", "cart-sum-num");
+    			add_location(div3, file$8, 38, 2, 1185);
+    			attr_dev(div4, "class", "listo-btn");
+    			add_location(div4, file$8, 39, 2, 1237);
+    			attr_dev(div5, "class", "cart-sum");
+    			add_location(div5, file$8, 36, 0, 1120);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div1, null);
+    			}
+
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div2);
+    			append_dev(div5, t4);
+    			append_dev(div5, div3);
+    			append_dev(div3, t5);
+    			append_dev(div5, t6);
+    			append_dev(div5, div4);
+    			current = true;
+
+    			if (!mounted) {
+    				dispose = listen_dev(div4, "click", /*click_handler*/ ctx[4], false, false, false);
+    				mounted = true;
+    			}
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*$cart, Object*/ 1) {
+    				each_value = Object.keys(/*$cart*/ ctx[0]);
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context$5(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    						transition_in(each_blocks[i], 1);
+    					} else {
+    						each_blocks[i] = create_each_block$5(child_ctx);
+    						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
+    						each_blocks[i].m(div1, null);
+    					}
+    				}
+
+    				group_outros();
+
+    				for (i = each_value.length; i < each_blocks.length; i += 1) {
+    					out(i);
+    				}
+
+    				check_outros();
+    			}
+
+    			if (!current || dirty & /*totalFormatted*/ 2) set_data_dev(t5, /*totalFormatted*/ ctx[1]);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+
+    			for (let i = 0; i < each_value.length; i += 1) {
+    				transition_in(each_blocks[i]);
+    			}
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			each_blocks = each_blocks.filter(Boolean);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				transition_out(each_blocks[i]);
+    			}
+
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div1);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(div5);
+    			mounted = false;
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$8.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$8($$self, $$props, $$invalidate) {
+    	let total;
+    	let totalFormatted;
+    	let $cart;
+    	validate_store(cart, "cart");
+    	component_subscribe($$self, cart, $$value => $$invalidate(0, $cart = $$value));
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("Cart", slots, []);
+    	const dispatch = createEventDispatcher();
+
+    	const formatter = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }); // These options are needed to round to whole numbers if that's what you want.
+    	//minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+    	//maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+
+    	const writable_props = [];
+
+    	Object_1$2.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$1.warn(`<Cart> was created with unknown prop '${key}'`);
+    	});
+
+    	const click_handler = () => {
+    		dispatch("showListo");
+    	};
+
+    	$$self.$capture_state = () => ({
+    		cart,
+    		createEventDispatcher,
+    		SideItem,
+    		dispatch,
+    		formatter,
+    		$cart,
+    		total,
+    		totalFormatted
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("total" in $$props) $$invalidate(3, total = $$props.total);
+    		if ("totalFormatted" in $$props) $$invalidate(1, totalFormatted = $$props.totalFormatted);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*$cart*/ 1) {
+    			console.log($cart);
+    		}
+
+    		if ($$self.$$.dirty & /*$cart*/ 1) {
+    			$$invalidate(3, total = Object.keys($cart).reduce(
+    				(acc, item) => {
+    					return acc + $cart[item].fields.precio;
+    				},
+    				0
+    			));
+    		}
+
+    		if ($$self.$$.dirty & /*total*/ 8) {
+    			$$invalidate(1, totalFormatted = formatter.format(total));
+    		}
+    	};
+
+    	return [$cart, totalFormatted, dispatch, total, click_handler];
+    }
+
+    class Cart extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$8, create_fragment$8, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Cart",
+    			options,
+    			id: create_fragment$8.name
+    		});
+    	}
+    }
+
+    /* src\App.svelte generated by Svelte v3.32.2 */
+    const file$9 = "src\\App.svelte";
+
+    // (29:0) {#if showListo}
+    function create_if_block$1(ctx) {
+    	let listo;
+    	let current;
+    	listo = new Listo({ $$inline: true });
+    	listo.$on("closeListo", /*closeListo_handler*/ ctx[2]);
+
+    	const block = {
+    		c: function create() {
+    			create_component(listo.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(listo, target, anchor);
+    			current = true;
+    		},
+    		p: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(listo.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(listo.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(listo, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block$1.name,
+    		type: "if",
+    		source: "(29:0) {#if showListo}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$9(ctx) {
+    	let div3;
+    	let div0;
+    	let categorias;
+    	let t0;
+    	let atributos;
+    	let t1;
+    	let div2;
+    	let div1;
+    	let selectmodelo;
+    	let t2;
+    	let cart;
+    	let t3;
+    	let if_block_anchor;
+    	let current;
+    	categorias = new Categorias({ $$inline: true });
+    	atributos = new Atributos({ $$inline: true });
+    	selectmodelo = new SelectModelo({ $$inline: true });
+    	cart = new Cart({ $$inline: true });
+    	cart.$on("showListo", /*showListo_handler*/ ctx[1]);
+    	let if_block = /*showListo*/ ctx[0] && create_if_block$1(ctx);
+
+    	const block = {
+    		c: function create() {
+    			div3 = element("div");
+    			div0 = element("div");
+    			create_component(categorias.$$.fragment);
+    			t0 = space();
+    			create_component(atributos.$$.fragment);
+    			t1 = space();
+    			div2 = element("div");
+    			div1 = element("div");
+    			create_component(selectmodelo.$$.fragment);
+    			t2 = space();
+    			create_component(cart.$$.fragment);
+    			t3 = space();
+    			if (if_block) if_block.c();
+    			if_block_anchor = empty();
+    			attr_dev(div0, "class", "col-left");
+    			add_location(div0, file$9, 12, 2, 339);
+    			attr_dev(div1, "class", "col-right-sticky svelte-gdr1bt");
+    			add_location(div1, file$9, 17, 4, 443);
+    			attr_dev(div2, "class", "col-right");
+    			add_location(div2, file$9, 16, 2, 414);
+    			attr_dev(div3, "class", "main-app");
+    			add_location(div3, file$9, 11, 0, 313);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div3, anchor);
+    			append_dev(div3, div0);
+    			mount_component(categorias, div0, null);
+    			append_dev(div0, t0);
+    			mount_component(atributos, div0, null);
+    			append_dev(div3, t1);
+    			append_dev(div3, div2);
+    			append_dev(div2, div1);
+    			mount_component(selectmodelo, div1, null);
+    			append_dev(div1, t2);
+    			mount_component(cart, div1, null);
+    			insert_dev(target, t3, anchor);
+    			if (if_block) if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (/*showListo*/ ctx[0]) {
+    				if (if_block) {
+    					if_block.p(ctx, dirty);
+
+    					if (dirty & /*showListo*/ 1) {
+    						transition_in(if_block, 1);
+    					}
+    				} else {
+    					if_block = create_if_block$1(ctx);
+    					if_block.c();
+    					transition_in(if_block, 1);
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			} else if (if_block) {
+    				group_outros();
+
+    				transition_out(if_block, 1, 1, () => {
+    					if_block = null;
+    				});
+
+    				check_outros();
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(categorias.$$.fragment, local);
+    			transition_in(atributos.$$.fragment, local);
+    			transition_in(selectmodelo.$$.fragment, local);
+    			transition_in(cart.$$.fragment, local);
+    			transition_in(if_block);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(categorias.$$.fragment, local);
+    			transition_out(atributos.$$.fragment, local);
+    			transition_out(selectmodelo.$$.fragment, local);
+    			transition_out(cart.$$.fragment, local);
+    			transition_out(if_block);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div3);
+    			destroy_component(categorias);
+    			destroy_component(atributos);
+    			destroy_component(selectmodelo);
+    			destroy_component(cart);
+    			if (detaching) detach_dev(t3);
+    			if (if_block) if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$9.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$9($$self, $$props, $$invalidate) {
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("App", slots, []);
+    	let showListo = false;
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
+    	});
+
+    	const showListo_handler = () => {
+    		$$invalidate(0, showListo = true);
+    	};
+
+    	const closeListo_handler = () => {
+    		$$invalidate(0, showListo = false);
+    	};
+
+    	$$self.$capture_state = () => ({
+    		Categorias,
+    		Atributos,
+    		SelectModelo,
+    		Listo,
+    		onMount,
+    		Cart,
+    		showListo
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("showListo" in $$props) $$invalidate(0, showListo = $$props.showListo);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [showListo, showListo_handler, closeListo_handler];
+    }
+
+    class App extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$9, create_fragment$9, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "App",
+    			options,
+    			id: create_fragment$9.name
+    		});
+    	}
+    }
+
+    const app = new App({
+      target: document.getElementById("app-container"),
+    });
+
+    return app;
+
+}());
 //# sourceMappingURL=bundle.js.map
