@@ -132,6 +132,7 @@ export function getModelos() {
 export function getOpciones(vivienda) {
   //local
   opciones.set([]);
+  cart.set({});
   if (window.location.hostname == "localhost" && useLocal) {
     setTimeout(() => {
       opciones.set(mock_opciones);
