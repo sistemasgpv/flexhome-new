@@ -3,8 +3,6 @@
   export let cat;
   export let title;
   export let price;
-
-  $: console.log(price != "" ? "$" + price : "");
 </script>
 
 <div class="select-item">

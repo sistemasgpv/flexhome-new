@@ -118,7 +118,9 @@ export function getProyectos() {
 export function getModelos() {
   //local
   if (window.location.hostname == "localhost" && useLocal) {
-    modelos.set(mock_modelos);
+    setTimeout(() => {
+      modelos.set(mock_modelos);
+    }, 500);
     return;
   }
 
@@ -129,8 +131,11 @@ export function getModelos() {
 
 export function getOpciones(vivienda) {
   //local
+  opciones.set([]);
   if (window.location.hostname == "localhost" && useLocal) {
-    opciones.set(mock_opciones);
+    setTimeout(() => {
+      opciones.set(mock_opciones);
+    }, 500);
     return;
   }
 

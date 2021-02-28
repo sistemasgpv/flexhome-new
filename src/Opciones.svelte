@@ -32,9 +32,11 @@
 </script>
 
 <div class="opciones" bind:this={opcionesDiv}>
-  {#each opciones as opcione}
-    <Opcione {opcione} on:img-loaded={opcioneLoaded} />
-  {/each}
+  {#if opciones}
+    {#each opciones as opcione}
+      <Opcione {opcione} on:img-loaded={opcioneLoaded} />
+    {/each}
+  {/if}
 </div>
 
 <style>

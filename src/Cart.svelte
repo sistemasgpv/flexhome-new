@@ -5,8 +5,6 @@
   const dispatch = createEventDispatcher();
   import { formatCurrency } from "./utils.js";
 
-  $: console.log($cart);
-
   $: total = Object.keys($cart).reduce((acc, item) => {
     return acc + $cart[item].fields.precio;
   }, 0);
