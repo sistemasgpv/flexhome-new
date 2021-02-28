@@ -18,6 +18,7 @@
       <SelectModelo />
       <Cart
         on:showListo={() => {
+          debugger;
           showListo = true;
         }}
       />

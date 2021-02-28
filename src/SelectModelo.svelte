@@ -108,7 +108,3 @@
     {/if}
   </div>
 {/if}
-
-<!-- Overlay modal-->
-<style>
-</style>
