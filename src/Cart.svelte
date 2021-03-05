@@ -21,6 +21,13 @@
       title={$cart[item].fields.opción_nombre}
       cat={$cart[item].fields.atributo_nombre}
       price={$cart[item].fields.precio}
+      removable={true}
+      on:remove={() => {
+        cart.update((c) => {
+          delete c[item];
+          return c;
+        });
+      }}
     />
   {/each}
 </div>

@@ -48,6 +48,7 @@
       cat={"Modelo"}
       title={$currentSelection.modelo.fields.Nombre}
       price={""}
+      removable={false}
     />
   {/if}
 </div>
