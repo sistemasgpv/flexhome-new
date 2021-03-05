@@ -1,7 +1,6 @@
 <script>
   import { tick } from "svelte";
   import Opcione from "./Opcione.svelte";
-  import { modelos } from "./stores.js";
 
   export let opciones = [];
   export let isOpen = false;
