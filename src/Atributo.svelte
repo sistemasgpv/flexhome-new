@@ -30,9 +30,10 @@
       disabled = true;
     }
 
-    if (disabled) {
-      $menuState[atributo.fields.Nombre] = false;
-    }
+    // if (disabled) {
+    //   $menuState[atributo.fields.Nombre] = false;
+    // }
+    $menuState[atributo.fields.Nombre] = !disabled;
   }
 </script>
 

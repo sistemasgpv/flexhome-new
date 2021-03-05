@@ -7,9 +7,8 @@ import {
 import { writable, derived } from "svelte/store";
 import axios from "axios";
 import { get } from "svelte/store";
-import { debug } from "svelte/internal";
 
-let useLocal = true;
+let useLocal = false;
 // let useLocal = false;
 
 export const proyectos = writable([]);
@@ -23,6 +22,10 @@ export const opciones = writable([]);
 export const atributos = writable([]);
 
 export const menuState = writable({}); //atrributes open or closed
+
+export const selection = writable({});
+
+export const categorias = writable({});
 
 export function showAttribute(atr) {
   menuState.update((ms) => {
@@ -58,10 +61,6 @@ export const opcionesByAtributo = derived(opciones, ($opciones) => {
   return byAtr;
 });
 
-export const selection = writable({});
-
-export const categorias = writable({});
-
 function getCategoriasFromAtributos() {
   let cat = {
     all: true,
@@ -79,6 +78,7 @@ function getCategoriasFromAtributos() {
 export function getAtributos() {
   //local
   if (window.location.hostname == "localhost" && useLocal) {
+    let sorted = mock_atributos;
     atributos.set(mock_atributos);
     getCategoriasFromAtributos();
     return;
@@ -135,6 +135,9 @@ export function getOpciones(vivienda) {
   cart.set({});
   if (window.location.hostname == "localhost" && useLocal) {
     setTimeout(() => {
+      mock_opciones.sort((a, b) => {
+        return a.fields.orden - b.fields.orden;
+      });
       opciones.set(mock_opciones);
     }, 500);
     return;
@@ -143,6 +146,9 @@ export function getOpciones(vivienda) {
   axios
     .get(`https://enombb1z99rtf6o.m.pipedream.net?vivienda=${vivienda}`)
     .then((res) => {
+      res.data.sort((a, b) => {
+        return a.fields.orden - b.fields.orden;
+      });
       opciones.set(res.data);
     });
 }

@@ -1,9 +1,12 @@
 <script>
   import { createEventDispatcher } from "svelte";
   import { cart } from "./stores.js";
+  import { formatCurrency } from "./utils.js";
 
   const dispatch = createEventDispatcher();
   export let opcione;
+
+  $: formattedPrecio = formatCurrency(opcione.fields.precio);
 </script>
 
 <div
@@ -23,7 +26,7 @@
   />
   <div class="opcione-title">{opcione.fields.opción_nombre}</div>
   <div class="opcione-description">{opcione.fields.descripción}</div>
-  <div class="opcione-price">${opcione.fields.precio}</div>
+  <div class="opcione-price">{formattedPrecio}</div>
   <div class="opcione-plus-btn">+</div>
 </div>
 

@@ -2,6 +2,7 @@
   import { categorias } from "./stores.js";
 
   function switchClicked(categoria) {
+    debugger;
     $categorias[categoria] = !$categorias[categoria];
     if (categoria != "all") {
       //if user turned all categories (execpt for all) off we switch all on, otherwise switch all off
