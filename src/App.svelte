@@ -11,17 +11,20 @@
   //get css link from webflow and append (so we wont have to copy paste every webflow publish)
   //remove before build
   onMount(() => {
-    axios.get("https://flexhome-3be182.webflow.io/").then((res) => {
-      let cssUrl = res.data.match(/https:.*\.css/gm);
+    debugger;
+    if (document.location.hostname == "localhost") {
+      axios.get("https://flexhome-3be182.webflow.io/").then((res) => {
+        let cssUrl = res.data.match(/https:.*\.css/gm);
 
-      var link = document.createElement("link");
-      link.href = cssUrl;
-      link.type = "text/css";
-      link.rel = "stylesheet";
-      link.media = "screen,print";
+        var link = document.createElement("link");
+        link.href = cssUrl;
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.media = "screen,print";
 
-      document.getElementsByTagName("head")[0].appendChild(link);
-    });
+        document.getElementsByTagName("head")[0].appendChild(link);
+      });
+    }
   });
 </script>
 
