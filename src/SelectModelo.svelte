@@ -18,6 +18,8 @@
 
   $: loading = $proyectos.length == 0 || $modelos.length == 0;
 
+  $: console.log($currentSelection.proyect);
+
   opciones.subscribe((ops) => {
     if (ops.length > 0) loadingOpciones = false;
   });
@@ -35,7 +37,7 @@
   <div class="select-section-title">Mi Casa</div>
   {#if $currentSelection.proyect}
     <SideItem
-      imgUrl={""}
+      imgUrl={$currentSelection.proyect.fields.imágenThumbnail[0].url}
       cat={"Proyect"}
       title={$currentSelection.proyect.fields.Nombre}
       price={""}
@@ -44,7 +46,7 @@
 
   {#if $currentSelection.modelo}
     <SideItem
-      imgUrl={""}
+      imgUrl={$currentSelection.modelo.fields.imágenThumbnail[0].url}
       cat={"Modelo"}
       title={$currentSelection.modelo.fields.Nombre}
       price={""}
@@ -73,9 +75,12 @@
               class="select-proyect"
               class:selected={proyect == $currentSelection.proyect}
             >
-              <div class="proyect-img">
-                {proyect.fields.Nombre} - Image
-              </div>
+              <img
+                class="proyect-img"
+                src={proyect.fields.imágenThumbnail[0].url}
+                alt=""
+              />
+
               <div class="proyect-title">
                 {proyect.fields.Nombre}
               </div>
@@ -96,9 +101,11 @@
                 loadingOpciones = true;
               }}
             >
-              <div class="modelo-img">
-                {modelo.fields.Nombre} - Image
-              </div>
+              <img
+                class="modelo-img"
+                src={modelo.fields.imágenThumbnail[0].url}
+                alt=""
+              />
               <div class="modelo-title">
                 {modelo.fields.Nombre}
               </div>
