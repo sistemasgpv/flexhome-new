@@ -4,14 +4,15 @@
   import SelectModelo from "./SelectModelo.svelte";
   import Listo from "./Listo.svelte";
   import Cart from "./Cart.svelte";
-  import { onMount } from "svelte";
+  import { onMount, tick } from "svelte";
   import axios from "axios";
+
   let showListo = false;
+  let showPopup = false;
 
   //get css link from webflow and append (so we wont have to copy paste every webflow publish)
   //remove before build
   onMount(() => {
-    debugger;
     if (document.location.hostname == "localhost") {
       axios.get("https://flexhome-3be182.webflow.io/").then((res) => {
         let cssUrl = res.data.match(/https:.*\.css/gm);
@@ -25,6 +26,13 @@
         document.getElementsByTagName("head")[0].appendChild(link);
       });
     }
+
+    //remomve this part if sebastian gets back to me
+    setInterval(async () => {
+      showPopup = false;
+      await tick;
+      showPopup = true;
+    }, 5000);
   });
 </script>
 
@@ -38,7 +46,6 @@
       <SelectModelo />
       <Cart
         on:showListo={() => {
-          debugger;
           showListo = true;
         }}
       />
@@ -54,5 +61,21 @@
   />
 {/if}
 
+{#if showPopup}
+  <div class="popup">Under Maintenance</div>
+{/if}
+
 <style>
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
 </style>
