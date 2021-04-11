@@ -7,15 +7,24 @@
   export let opcione;
 
   $: formattedPrecio = formatCurrency(opcione.fields.precio);
+
+  $: cartIdx = $cart.findIndex((item) => {
+    return attName == item.fields.atributo_nombre;
+  });
+
+  $: attName = opcione.fields.atributo_nombre;
+
+  $: selected =
+    cartIdx >= 0 &&
+    $cart[cartIdx].fields.opción_nombre == opcione.fields.opción_nombre;
+
+  function setCartItem() {
+    //find atributo index
+    $cart[cartIdx] = opcione;
+  }
 </script>
 
-<div
-  class="opcione"
-  class:selected={$cart[opcione.fields.atributo_nombre] == opcione}
-  on:click={() => {
-    $cart[opcione.fields.atributo_nombre] = opcione;
-  }}
->
+<div class="opcione" class:selected on:click={setCartItem}>
   <img
     on:load={() => {
       dispatch("img-loaded");

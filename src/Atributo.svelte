@@ -1,5 +1,5 @@
 <script>
-  import { opcionesByAtributo, menuState, categorias } from "./stores.js";
+  import { menuState, categorias } from "./stores.js";
   import Opciones from "./Opciones.svelte";
 
   export let atributo;
@@ -9,13 +9,11 @@
   let isEmpty;
 
   $: {
-    isOpen = $menuState[atributo.fields.Nombre];
+    isOpen = $menuState[atributo.fields.Nombre] && !disabled;
   }
 
   $: {
-    isEmpty =
-      !$opcionesByAtributo[atributo.fields.Nombre] ||
-      $opcionesByAtributo[atributo.fields.Nombre].length == 0;
+    isEmpty = !atributo || atributo.opciones.length == 0;
   }
 
   $: {
@@ -29,16 +27,11 @@
     } else {
       disabled = true;
     }
-
-    // if (disabled) {
-    //   $menuState[atributo.fields.Nombre] = false;
-    // }
-    $menuState[atributo.fields.Nombre] = !disabled;
   }
 </script>
 
 <div
-  id={atributo.fields.Nombre}
+  id={atributo.name}
   class="atributo-title"
   class:disabled
   on:click={() => {
@@ -48,7 +41,7 @@
 >
   {atributo.fields.Nombre}
 </div>
-<Opciones opciones={$opcionesByAtributo[atributo.fields.Nombre]} {isOpen} />
+<Opciones opciones={atributo.opciones} {isOpen} />
 
 <style>
 </style>

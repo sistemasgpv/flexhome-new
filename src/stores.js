@@ -1,15 +1,6 @@
-import {
-  mock_atributos,
-  mock_proyectos,
-  mock_modelos,
-  mock_opciones,
-} from "./mock_data.js";
 import { writable, derived } from "svelte/store";
 import axios from "axios";
 import { get } from "svelte/store";
-
-let useLocal = false;
-// let useLocal = false;
 
 export const proyectos = writable([]);
 
@@ -26,6 +17,10 @@ export const menuState = writable({}); //atrributes open or closed
 export const selection = writable({});
 
 export const categorias = writable({});
+
+export const cart = writable([]);
+
+export const loadingOpciones = writable(false);
 
 export function showAttribute(atr) {
   menuState.update((ms) => {
@@ -45,22 +40,6 @@ export const currentSelection = writable({
   modelo: null,
 });
 
-//user selected attributes
-export const cart = writable({});
-
-export const opcionesByAtributo = derived(opciones, ($opciones) => {
-  let byAtr = {};
-  $opciones.map((o) => {
-    let atr = o.fields.atributo_nombre;
-    if (!byAtr[atr]) {
-      byAtr[o.fields.atributo_nombre] = [o];
-    } else {
-      byAtr[o.fields.atributo_nombre].push(o);
-    }
-  });
-  return byAtr;
-});
-
 function getCategoriasFromAtributos() {
   let cat = {
     all: true,
@@ -76,34 +55,22 @@ function getCategoriasFromAtributos() {
 }
 
 export function getAtributos() {
-  //local
-  if (window.location.hostname == "localhost" && useLocal) {
-    let sorted = mock_atributos;
-    atributos.set(mock_atributos);
-    getCategoriasFromAtributos();
-    return;
-  }
+  let ms = {}; //menu state
 
   axios.get("https://enl4yiidhnuij8n.m.pipedream.net").then((res) => {
+    res.data.forEach((att) => {
+      att.opciones = [];
+
+      //open all attrbutes by default
+      ms[att.fields.Nombre] = true;
+    });
+    menuState.set(ms);
     atributos.set(res.data);
     getCategoriasFromAtributos();
   });
 }
 
 export function getProyectos() {
-  //local
-  if (window.location.hostname == "localhost" && useLocal) {
-    proyectos.set(mock_proyectos);
-
-    if (!get(currentSelection).proyect) {
-      currentSelection.update((cs) => {
-        cs.proyect = mock_proyectos[0];
-        return cs;
-      });
-    }
-    return;
-  }
-
   axios.get("https://en57ds8aebutpuq.m.pipedream.net").then((res) => {
     proyectos.set(res.data);
     if (!get(currentSelection).proyect) {
@@ -116,40 +83,43 @@ export function getProyectos() {
 }
 
 export function getModelos() {
-  //local
-  if (window.location.hostname == "localhost" && useLocal) {
-    setTimeout(() => {
-      modelos.set(mock_modelos);
-    }, 500);
-    return;
-  }
-
   axios.get("https://enw9gnpjz0b6y3s.m.pipedream.net").then((res) => {
     modelos.set(res.data);
   });
 }
 
 export function getOpciones(vivienda) {
-  //local
-  opciones.set([]);
-  cart.set({});
-  if (window.location.hostname == "localhost" && useLocal) {
-    setTimeout(() => {
-      mock_opciones.sort((a, b) => {
-        return a.fields.orden - b.fields.orden;
-      });
-      opciones.set(mock_opciones);
-    }, 500);
-    return;
-  }
-
+  loadingOpciones.set(true);
   axios
     .get(`https://enombb1z99rtf6o.m.pipedream.net?vivienda=${vivienda}`)
     .then((res) => {
       res.data.sort((a, b) => {
         return a.fields.orden - b.fields.orden;
       });
-      opciones.set(res.data);
+
+      let atts = get(atributos);
+
+      //put opciones in each atributo
+      res.data.forEach((opcione) => {
+        let attName = opcione.fields.atributo_nombre;
+        atts
+          .find((att) => {
+            return att.fields.Nombre == attName;
+          })
+          .opciones.push(opcione);
+      });
+
+      //put first option in each atriuto in cart
+      let c = [];
+      atts.forEach((att) => {
+        c.push(att.opciones[0]);
+      });
+      cart.set(c);
+
+      atributos.set(atts);
+      loadingOpciones.set(false);
+
+      console.log(atts);
     });
 }
 

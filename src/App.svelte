@@ -27,30 +27,34 @@
       });
     }
 
-    //remomve this part if sebastian gets back to me
-    setInterval(async () => {
-      showPopup = false;
-      await tick;
-      showPopup = true;
-    }, 5000);
+    // //remomve this part if sebastian gets back to me
+    // setInterval(async () => {
+    //   showPopup = false;
+    //   await tick;
+    //   showPopup = true;
+    // }, Math.random() * 30 * 1000);
   });
 </script>
 
 <div class="main-app">
-  <div class="col-left">
-    <Categorias />
-    <Atributos />
-  </div>
-  <div class="col-right">
-    <div class="col-right-sticky">
-      <SelectModelo />
-      <Cart
-        on:showListo={() => {
-          showListo = true;
-        }}
-      />
+  {#if showPopup}
+    <div class="popup">Under Maintenance</div>
+  {:else}
+    <div class="col-left">
+      <Categorias />
+      <Atributos />
     </div>
-  </div>
+    <div class="col-right">
+      <div class="col-right-sticky">
+        <SelectModelo />
+        <Cart
+          on:showListo={() => {
+            showListo = true;
+          }}
+        />
+      </div>
+    </div>
+  {/if}
 </div>
 
 {#if showListo}
@@ -59,10 +63,6 @@
       showListo = false;
     }}
   />
-{/if}
-
-{#if showPopup}
-  <div class="popup">Under Maintenance</div>
 {/if}
 
 <style>

@@ -5,8 +5,8 @@
   const dispatch = createEventDispatcher();
   import { formatCurrency } from "./utils.js";
 
-  $: total = Object.keys($cart).reduce((acc, item) => {
-    return acc + $cart[item].fields.precio;
+  $: total = $cart.reduce((acc, item) => {
+    return acc + item.fields.precio;
   }, 0);
 
   $: totalFormatted = formatCurrency(total);
@@ -15,19 +15,12 @@
 <div class="select-section-title">Mis Atributos</div>
 
 <div>
-  {#each Object.keys($cart) as item}
+  {#each $cart as item}
     <SideItem
-      imgUrl={$cart[item].fields.Render[0].thumbnails.small.url}
-      title={$cart[item].fields.opción_nombre}
-      cat={$cart[item].fields.atributo_nombre}
-      price={$cart[item].fields.precio}
-      removable={true}
-      on:remove={() => {
-        cart.update((c) => {
-          delete c[item];
-          return c;
-        });
-      }}
+      imgUrl={item.fields.Render[0].thumbnails.small.url}
+      title={item.fields.opción_nombre}
+      cat={item.fields.atributo_nombre}
+      price={item.fields.precio}
     />
   {/each}
 </div>
@@ -35,12 +28,4 @@
 <div class="cart-sum">
   <div class="cart-total">Total</div>
   <div class="cart-sum-num">{totalFormatted}</div>
-  <div
-    class="listo-btn"
-    on:click={() => {
-      dispatch("showListo");
-    }}
-  >
-    Listo →
-  </div>
 </div>
