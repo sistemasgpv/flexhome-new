@@ -24,14 +24,14 @@ export const loadingOpciones = writable(false);
 
 export function showAttribute(atr) {
   menuState.update((ms) => {
-    Object.keys(ms).forEach((_atr) => {
-      ms[_atr] = atr == _atr;
-    });
+    ms[atr] = true;
     return ms;
   });
 
   //scroll into view
-  document.getElementById(atr).scrollIntoView(true, { behavior: "smooth" });
+  document
+    .getElementById(atr)
+    .scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 //proyect and modelo selection
