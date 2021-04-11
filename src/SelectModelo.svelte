@@ -3,8 +3,8 @@
     modelos,
     proyectos,
     currentSelection,
-    opciones,
     getOpciones,
+    loadingOpciones,
   } from "./stores.js";
 
   import { fade } from "svelte/transition";
@@ -13,16 +13,8 @@
 
   let showSelect = true;
 
-  // let loadingModelos = true;
-  let loadingOpciones = false;
-
-  $: loading = $proyectos.length == 0 || $modelos.length == 0;
-
-  $: console.log($currentSelection.proyect);
-
-  opciones.subscribe((ops) => {
-    if (ops.length > 0) loadingOpciones = false;
-  });
+  $: loading =
+    $loadingOpciones || $proyectos.length == 0 || $modelos.length == 0;
 </script>
 
 <div class="mi-casa">
@@ -50,21 +42,20 @@
       cat={"Modelo"}
       title={$currentSelection.modelo.fields.Nombre}
       price={""}
-      removable={false}
     />
   {/if}
 </div>
 
 <!-- Overlay modal-->
-{#if showSelect || loading || loadingOpciones}
+{#if loading || showSelect}
   <div
     class="select-modal"
     on:click={() => {
-      if (!loadingOpciones) showSelect = false;
+      if (!loading) showSelect = false;
     }}
     transition:fade={{ duration: 150 }}
   >
-    {#if loadingOpciones || loading}
+    {#if loading}
       <div class="loading">loading</div>
     {:else}
       <div class="select-modal-bg">
@@ -77,7 +68,7 @@
             >
               <img
                 class="proyect-img"
-                src={proyect.fields.imágenThumbnail[0].url}
+                src={proyect.fields.imágenThumbnail[1].url}
                 alt=""
               />
 
@@ -98,12 +89,11 @@
                 $currentSelection.modelo = modelo;
                 getOpciones(modelo.fields.Nombre);
                 showSelect = false;
-                loadingOpciones = true;
               }}
             >
               <img
                 class="modelo-img"
-                src={modelo.fields.imágenThumbnail[0].url}
+                src={modelo.fields.imágenThumbnail[1].url}
                 alt=""
               />
               <div class="modelo-title">
