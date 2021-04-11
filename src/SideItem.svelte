@@ -6,7 +6,7 @@
   export let price;
 </script>
 
-<div class="select-item">
+<div class="select-item" on:click>
   <div
     class="select-img"
     style="background-image: {imgUrl ? 'url(' + imgUrl + ')' : 'grey'}"
