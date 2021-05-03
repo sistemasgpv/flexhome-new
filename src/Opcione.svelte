@@ -22,6 +22,8 @@
     //find atributo index
     $cart[cartIdx] = opcione;
   }
+
+  $: console.log(opcione);
 </script>
 
 <div class="opcione" class:selected on:click={setCartItem}>
@@ -30,13 +32,15 @@
       dispatch("img-loaded");
     }}
     class="opcione-img"
-    src={opcione.fields.Render[0].thumbnails.large.url}
+    src={opcione?.fields?.rendersAltaDefinición?.[0]?.thumbnails?.large?.url}
     alt=""
   />
   <div class="opcione-title">{opcione.fields.opción_nombre}</div>
   <div class="opcione-description">{opcione.fields.descripción}</div>
   <div class="opcione-price">{formattedPrecio}</div>
-  <div class="opcione-plus-btn">+</div>
+  <a href={opcione.fields.webflowURL} target="_blank">
+    <div class="ver-mas">Ver más →</div>
+  </a>
 </div>
 
 <style>

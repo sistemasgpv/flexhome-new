@@ -1,5 +1,6 @@
 <script>
   import { categorias } from "./stores.js";
+  import IoIosClose from "svelte-icons/io/IoIosClose.svelte";
 
   function switchClicked(categoria) {
     $categorias[categoria] = !$categorias[categoria];
@@ -17,19 +18,17 @@
   {#each Object.keys($categorias) as categoria}
     <div
       class="switch"
+      class:switch-off={!$categorias[categoria]}
       on:click={() => {
         switchClicked(categoria);
       }}
     >
-      <div class="switch-bg" class:switch-bg-on={$categorias[categoria]}>
-        <div
-          class="switch-thumb"
-          class:switch-thumb-on={$categorias[categoria]}
-        />
-      </div>
       <div class="switch-title">
         {categoria}
       </div>
+      {#if $categorias[categoria]}
+        <div class="switch-x">X</div>
+      {/if}
     </div>
   {/each}
 </div>

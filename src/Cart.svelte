@@ -1,34 +1,45 @@
 <script>
   import { cart, showAttribute } from "./stores.js";
   import SideItem from "./SideItem.svelte";
-  import { formatCurrency } from "./utils.js";
 
-  $: total = $cart.reduce((acc, item) => {
-    return acc + item.fields.precio;
-  }, 0);
+  let open = true;
 
-  $: totalFormatted = formatCurrency(total);
+  let list;
 </script>
 
-<div class="select-section-title">Mis Atributos</div>
-
-<div>
-  {#each $cart as item}
-    <div class="select-item clickable">
-      <SideItem
-        imgUrl={item.fields.Render[0].thumbnails.small.url}
-        title={item.fields.opción_nombre}
-        cat={item.fields.atributo_nombre}
-        price={item.fields.precio}
+<div class="cart">
+  <div class="sticky">
+    <div>
+      <div class="list" class:closed={!open} bind:this={list}>
+        <div class="select-section-title">Resumen</div>
+        {#each $cart as item}
+          <div class="select-item clickable">
+            <SideItem
+              imgUrl={item.fields?.rendersAltaDefinición?.[0]?.thumbnails?.small
+                ?.url}
+              title={item.fields.opción_nombre}
+              cat={item.fields.atributo_nombre}
+              price={item.fields.precio}
+              on:click={() => {
+                showAttribute(item.fields.atributo_nombre);
+              }}
+            />
+          </div>
+        {/each}
+      </div>
+      <div
+        class="arrow-btn"
         on:click={() => {
-          showAttribute(item.fields.atributo_nombre);
+          open = !open;
+          list.scrollTop = 0;
         }}
-      />
+      >
+        {#if open}
+          ↑
+        {:else}
+          ↓
+        {/if}
+      </div>
     </div>
-  {/each}
-</div>
-
-<div class="cart-sum">
-  <div class="cart-total">Total</div>
-  <div class="cart-sum-num">{totalFormatted}</div>
+  </div>
 </div>

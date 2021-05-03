@@ -89,6 +89,11 @@ export function getModelos() {
 }
 
 export function getOpciones(vivienda) {
+  let atts = get(atributos);
+
+  //clear opciones from atributos
+  atts.forEach((att) => (att.opciones = []));
+
   loadingOpciones.set(true);
   axios
     .get(`https://enombb1z99rtf6o.m.pipedream.net?vivienda=${vivienda}`)
@@ -96,8 +101,6 @@ export function getOpciones(vivienda) {
       res.data.sort((a, b) => {
         return a.fields.orden - b.fields.orden;
       });
-
-      let atts = get(atributos);
 
       //put opciones in each atributo
       res.data.forEach((opcione) => {
