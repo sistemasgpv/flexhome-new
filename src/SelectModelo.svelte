@@ -5,7 +5,14 @@
     currentSelection,
     getOpciones,
     loadingOpciones,
+    cart,
   } from "./stores.js";
+
+  import { formatCurrency } from "./utils.js";
+
+  $: total = $cart.reduce((acc, item) => {
+    return acc + item.fields.precio;
+  }, 0);
 
   import { fade } from "svelte/transition";
 
@@ -15,6 +22,8 @@
 
   $: loading =
     $loadingOpciones || $proyectos.length == 0 || $modelos.length == 0;
+
+  $: totalFormatted = formatCurrency(total);
 </script>
 
 <div class="mi-casa">
@@ -26,10 +35,10 @@
   >
     Editar
   </div>
-  <div class="select-section-title">Mi Casa</div>
+  <div class="select-section-title">Mi casa</div>
   {#if $currentSelection.proyect}
     <SideItem
-      imgUrl={$currentSelection.proyect.fields.imágenThumbnail[0].url}
+      imgUrl={$currentSelection?.proyect?.fields?.imágenThumbnail?.[1]?.url}
       cat={"Proyect"}
       title={$currentSelection.proyect.fields.Nombre}
       price={""}
@@ -38,12 +47,22 @@
 
   {#if $currentSelection.modelo}
     <SideItem
-      imgUrl={$currentSelection.modelo.fields.imágenThumbnail[0].url}
+      imgUrl={$currentSelection?.modelo?.fields?.imágenThumbnail?.[1]?.url}
       cat={"Modelo"}
       title={$currentSelection.modelo.fields.Nombre}
       price={""}
     />
   {/if}
+
+  <div class="divider" />
+
+  <div class="cart-sum">
+    <div class="cart-total">Total</div>
+    <div class="cart-sum-num">{totalFormatted}</div>
+  </div>
+  <div class="listo-btn-container">
+    <div class="listo-btn">Listo →</div>
+  </div>
 </div>
 
 <!-- Overlay modal-->
@@ -68,7 +87,7 @@
             >
               <img
                 class="proyect-img"
-                src={proyect.fields.imágenThumbnail[1].url}
+                src={proyect?.fields?.imágenThumbnail?.[1]?.url}
                 alt=""
               />
 
@@ -93,7 +112,7 @@
             >
               <img
                 class="modelo-img"
-                src={modelo.fields.imágenThumbnail[1].url}
+                src={modelo?.fields?.imágenThumbnail?.[1]?.url}
                 alt=""
               />
               <div class="modelo-title">
