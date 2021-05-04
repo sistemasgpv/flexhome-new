@@ -121,8 +121,6 @@ export function getOpciones(vivienda) {
 
       atributos.set(atts);
       loadingOpciones.set(false);
-
-      console.log(atts);
     });
 }
 

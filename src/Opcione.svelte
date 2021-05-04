@@ -22,8 +22,6 @@
     //find atributo index
     $cart[cartIdx] = opcione;
   }
-
-  $: console.log(opcione);
 </script>
 
 <div class="opcione" class:selected on:click={setCartItem}>
