@@ -8,22 +8,32 @@
     cart,
   } from "./stores.js";
 
-  import { formatCurrency } from "./utils.js";
+  import { createEventDispatcher, onMount } from "svelte";
 
-  $: total = $cart.reduce((acc, item) => {
-    return acc + item.fields.precio;
-  }, 0);
+  import { formatCurrency } from "./utils.js";
 
   import { fade } from "svelte/transition";
 
   import SideItem from "./SideItem.svelte";
 
-  let showSelect = true;
+  const dispatch = createEventDispatcher();
+
+  let showSelect = false;
+
+  $: total = $cart.reduce((acc, item) => {
+    return acc + item.fields.precio;
+  }, 0);
 
   $: loading =
     $loadingOpciones || $proyectos.length == 0 || $modelos.length == 0;
 
   $: totalFormatted = formatCurrency(total);
+
+  onMount(() => {
+    if ($proyectos.length == 0 || $modelos.length == 0) {
+      showSelect = true;
+    }
+  });
 </script>
 
 <div class="mi-casa">
@@ -61,7 +71,14 @@
     <div class="cart-sum-num">{totalFormatted}</div>
   </div>
   <div class="listo-btn-container">
-    <div class="listo-btn">Listo →</div>
+    <div
+      class="listo-btn"
+      on:click={() => {
+        dispatch("showForm");
+      }}
+    >
+      Listo →
+    </div>
   </div>
 </div>
 
