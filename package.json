@@ -17,6 +17,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "@lottiefiles/svelte-lottie-player": "^0.2.0",
     "axios": "^0.21.1",
     "sirv-cli": "^1.0.0",
     "svelte-icons": "^2.1.0"

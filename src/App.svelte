@@ -15,7 +15,7 @@
   onMount(() => {
     if (document.location.hostname == "localhost") {
       axios
-        .get("https://www.flexhome.mx/app-v2") //my webflow project
+        .get("https://flexhome-v2.webflow.io/personaliza") //my webflow project
         .then((res) => {
           let cssUrl = res.data.match(/https:.*\.css/gm);
 
@@ -38,19 +38,21 @@
         showForm = false;
       }}
     />
-  {:else}
-    <div class="col-left">
-      <Header />
-      <Categorias />
-      <Atributos />
-    </div>
-    <div class="col-right">
-      <SelectModelo
-        on:showForm={() => {
-          showForm = true;
-        }}
-      />
-      <Cart />
-    </div>
   {/if}
+  <div class="col-left">
+    <Header />
+    <Categorias />
+    <Atributos />
+  </div>
+  <div class="col-right">
+    <SelectModelo
+      on:showForm={() => {
+        showForm = true;
+      }}
+    />
+    <Cart />
+  </div>
 </div>
+
+<style>
+</style>
