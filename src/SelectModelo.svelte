@@ -8,7 +8,9 @@
     cart,
   } from "./stores.js";
 
-  import { createEventDispatcher, onMount } from "svelte";
+  import { LottiePlayer } from "@lottiefiles/svelte-lottie-player";
+
+  import { createEventDispatcher, onMount, tick } from "svelte";
 
   import { formatCurrency } from "./utils.js";
 
@@ -18,20 +20,40 @@
 
   const dispatch = createEventDispatcher();
 
-  let showSelect = false;
+  let showSelect = true;
+
+  let pageLoading = true;
 
   $: total = $cart.reduce((acc, item) => {
     return acc + item.fields.precio;
   }, 0);
 
   $: loading =
-    $loadingOpciones || $proyectos.length == 0 || $modelos.length == 0;
+    $loadingOpciones ||
+    $proyectos.length == 0 ||
+    $modelos.length == 0 ||
+    pageLoading;
+
+  $: console.log(
+    $loadingOpciones,
+    $proyectos.length,
+    $modelos.length,
+    pageLoading
+  );
 
   $: totalFormatted = formatCurrency(total);
 
   onMount(() => {
     if ($proyectos.length == 0 || $modelos.length == 0) {
       showSelect = true;
+    }
+
+    if (document.readyState != "complete") {
+      window.addEventListener("load", async () => {
+        pageLoading = false;
+      });
+    } else {
+      pageLoading = false;
     }
   });
 </script>
@@ -92,7 +114,19 @@
     transition:fade={{ duration: 150 }}
   >
     {#if loading}
-      <div class="loading">loading</div>
+      <div class="loading">
+        <LottiePlayer
+          src="https://uploads-ssl.webflow.com/608c5f50fdfe54234b3648a3/6097918e403c478fc98a89ac_lottieflow-loading-08-000000-easey.json"
+          autoplay={true}
+          loop={true}
+          controls={false}
+          renderer="svg"
+          background="transparent"
+          height={50}
+          width={50}
+          controlsLayout={[]}
+        />
+      </div>
     {:else}
       <div class="select-modal-bg">
         <div class="modal-title">Select Project</div>
