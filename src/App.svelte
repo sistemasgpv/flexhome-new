@@ -39,18 +39,20 @@
       }}
     />
   {/if}
-  <div class="col-left">
-    <Header />
-    <Categorias />
-    <Atributos />
-  </div>
-  <div class="col-right">
-    <SelectModelo
-      on:showForm={() => {
-        showForm = true;
-      }}
-    />
-    <Cart />
+  <div class="content" class:hidden={showForm}>
+    <div class="col-left">
+      <Header />
+      <Categorias />
+      <Atributos />
+    </div>
+    <div class="col-right">
+      <SelectModelo
+        on:showForm={() => {
+          showForm = true;
+        }}
+      />
+      <Cart />
+    </div>
   </div>
 </div>
 
