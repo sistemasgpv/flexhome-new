@@ -30,7 +30,7 @@
       dispatch("img-loaded");
     }}
     class="opcione-img"
-    src={opcione?.fields?.rendersAltaDefinición?.[0]?.thumbnails?.large?.url}
+    src={opcione?.fields?.imágenPrincipal?.[0]?.thumbnails?.large?.url}
     alt=""
   />
   <div class="opcione-title">{opcione.fields.opción_nombre}</div>

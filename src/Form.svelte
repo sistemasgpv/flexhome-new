@@ -8,9 +8,6 @@
   // $: total = Object.keys($cart).reduce((acc, item) => {
   //   return acc + $cart[item].fields.precio;
   // }, 0);
-
-  $: console.log($currentSelection);
-  $: console.log($cart);
 </script>
 
 <div class="form">

@@ -4,7 +4,11 @@
 
   export let opciones = [];
   export let isOpen = false;
+  export let open = false;
 
+  $: {
+    open = isOpen && opciones.length > 0;
+  }
   let opcionesDiv;
   let maxHeight = 0;
 
@@ -25,12 +29,12 @@
 
   $: {
     if (opcionesDiv) {
-      opcionesDiv.style.maxHeight = isOpen ? maxHeight + "px" : "0px";
+      opcionesDiv.style.maxHeight = open ? maxHeight + "px" : "0px";
     }
   }
 </script>
 
-<div class="opciones" bind:this={opcionesDiv}>
+<div class="opciones" bind:this={opcionesDiv} class:open>
   {#if opciones}
     {#each opciones as opcione}
       <Opcione {opcione} on:img-loaded={opcioneLoaded} />

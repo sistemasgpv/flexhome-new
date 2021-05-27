@@ -60,12 +60,16 @@ export function getAtributos() {
   axios.get("https://enl4yiidhnuij8n.m.pipedream.net").then((res) => {
     res.data.forEach((att) => {
       att.opciones = [];
-
       //open all attrbutes by default
       ms[att.fields.Nombre] = true;
     });
     menuState.set(ms);
+
+    res.data.sort((a, b) => {
+      return +a.fields.Prioridad - +b.fields.Prioridad;
+    });
     atributos.set(res.data);
+
     getCategoriasFromAtributos();
   });
 }
@@ -73,6 +77,7 @@ export function getAtributos() {
 export function getProyectos() {
   axios.get("https://en57ds8aebutpuq.m.pipedream.net").then((res) => {
     proyectos.set(res.data);
+    // auto select first project
     if (!get(currentSelection).proyect) {
       currentSelection.update((cs) => {
         cs.proyect = res.data[0];
