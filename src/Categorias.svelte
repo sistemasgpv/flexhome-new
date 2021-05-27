@@ -27,7 +27,10 @@
         {categoria}
       </div>
       {#if $categorias[categoria]}
-        <div class="switch-x">X</div>
+        <div class="switch-x">
+          <div class="bar" />
+          <div class="bar mirrored" />
+        </div>
       {/if}
     </div>
   {/each}

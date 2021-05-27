@@ -34,13 +34,6 @@
     $modelos.length == 0 ||
     pageLoading;
 
-  $: console.log(
-    $loadingOpciones,
-    $proyectos.length,
-    $modelos.length,
-    pageLoading
-  );
-
   $: totalFormatted = formatCurrency(total);
 
   onMount(() => {
@@ -56,6 +49,8 @@
       pageLoading = false;
     }
   });
+
+  $: console.log($currentSelection);
 </script>
 
 <div class="mi-casa">
@@ -105,7 +100,7 @@
 </div>
 
 <!-- Overlay modal-->
-{#if loading || showSelect}
+{#if loading || showSelect || !$currentSelection.proyect || !$currentSelection.modelo}
   <div
     class="select-modal"
     on:click={() => {
@@ -128,8 +123,11 @@
         />
       </div>
     {:else}
-      <div class="select-modal-bg">
-        <div class="modal-title">Select Project</div>
+      <div class="select-modal-bg" on:click|stopPropagation>
+        <div class="modal-instruction">
+          <span class="blue-text">Selecciona</span> tu hogar preferido
+        </div>
+        <div class="modal-title">Proyectos</div>
         <div class="select-proyectos">
           {#each $proyectos as proyect}
             <div
@@ -149,7 +147,7 @@
           {/each}
         </div>
 
-        <div class="modal-title">Select Model</div>
+        <div class="modal-title">Modelos</div>
         <div class="select-modelos">
           {#each $modelos as modelo}
             <div
