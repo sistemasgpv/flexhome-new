@@ -118,6 +118,7 @@ export function getOpciones(vivienda) {
       });
 
       //put first option in each atriuto in cart
+      debugger;
       let c = [];
       atts.forEach((att) => {
         c.push(att.opciones[0]);
