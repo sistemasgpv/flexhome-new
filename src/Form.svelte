@@ -82,7 +82,23 @@
         placeholder="Me gustaría ver esta funcionalidad en la app."
         id="Dudas"
       />
+
       <!-- hidden inputs-->
+      <input
+        id="fraccionamiento"
+        name="Fraccionamiento"
+        type="hidden"
+        value={$currentSelection.proyect.fields.Nombre}
+      />
+
+      <!-- Vivienda -->
+      <input
+        id="vivienda"
+        name="Vivienda"
+        type="hidden"
+        value={$currentSelection.modelo.fields.Nombre}
+      />
+
       {#each $cart as atributo, index}
         <input
           id="atributo-{index}"
