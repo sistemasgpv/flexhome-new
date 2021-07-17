@@ -92,7 +92,6 @@ export async function getModelos() {
 }
 
 export async function getOpciones(vivienda) {
-  debugger;
   let atts = get(atributos);
 
   //clear opciones from atributos
