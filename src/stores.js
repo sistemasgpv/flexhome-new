@@ -54,24 +54,23 @@ function getCategoriasFromAtributos() {
   categorias.set(cat);
 }
 
-export function getAtributos() {
+export async function getAtributos() {
   let ms = {}; //menu state
 
-  axios.get("https://enl4yiidhnuij8n.m.pipedream.net").then((res) => {
-    res.data.forEach((att) => {
-      att.opciones = [];
-      //open all attrbutes by default
-      ms[att.fields.Nombre] = true;
-    });
-    menuState.set(ms);
-
-    res.data.sort((a, b) => {
-      return +a.fields.Prioridad - +b.fields.Prioridad;
-    });
-    atributos.set(res.data);
-
-    getCategoriasFromAtributos();
+  let res = await axios.get("https://enl4yiidhnuij8n.m.pipedream.net");
+  res.data.forEach((att) => {
+    att.opciones = [];
+    //open all attrbutes by default
+    ms[att.fields.Nombre] = true;
   });
+  menuState.set(ms);
+
+  res.data.sort((a, b) => {
+    return +a.fields.Prioridad - +b.fields.Prioridad;
+  });
+  atributos.set(res.data);
+
+  getCategoriasFromAtributos();
 }
 
 export function getProyectos() {
@@ -87,49 +86,47 @@ export function getProyectos() {
   });
 }
 
-export function getModelos() {
-  axios.get("https://enw9gnpjz0b6y3s.m.pipedream.net").then((res) => {
-    modelos.set(res.data);
-  });
+export async function getModelos() {
+  let res = await axios.get(`https://enw9gnpjz0b6y3s.m.pipedream.net`);
+  modelos.set(res.data);
 }
 
-export function getOpciones(vivienda) {
+export async function getOpciones(vivienda) {
+  debugger;
   let atts = get(atributos);
 
   //clear opciones from atributos
   atts.forEach((att) => (att.opciones = []));
 
   loadingOpciones.set(true);
-  axios
-    .get(`https://enombb1z99rtf6o.m.pipedream.net?vivienda=${vivienda}`)
-    .then((res) => {
-      res.data.sort((a, b) => {
-        return a.fields.orden - b.fields.orden;
-      });
+  let res = await axios.get(
+    `https://enombb1z99rtf6o.m.pipedream.net?vivienda=${vivienda}`
+  );
 
-      //put opciones in each atributo
-      res.data.forEach((opcione) => {
-        let attName = opcione.fields.atributo_nombre;
-        atts
-          .find((att) => {
-            return att.fields.Nombre == attName;
-          })
-          .opciones.push(opcione);
-      });
+  res.data.sort((a, b) => {
+    return a.fields.orden - b.fields.orden;
+  });
 
-      //put first option in each atriuto in cart
-      debugger;
-      let c = [];
-      atts.forEach((att) => {
-        c.push(att.opciones[0]);
-      });
-      cart.set(c);
-
-      atributos.set(atts);
-      loadingOpciones.set(false);
+  //put opciones in each atributo
+  res.data.forEach((opcione) => {
+    let attName = opcione.fields.atributo_nombre;
+    let att = atts.find((att) => {
+      return att.fields.Nombre == attName;
     });
+    att.opciones.push(opcione);
+  });
+
+  //put first option in each atriuto in cart
+  let c = [];
+  atts.forEach((att) => {
+    if (att.opciones.length > 0) c.push(att.opciones[0]);
+  });
+  cart.set(c);
+
+  atributos.set(atts);
+  loadingOpciones.set(false);
 }
 
 getProyectos();
-getAtributos();
 getModelos();
+getAtributos();

@@ -6,8 +6,6 @@
   let open = false;
 
   let list;
-
-  $: console.log($cart);
 </script>
 
 <div class="cart sticky">
