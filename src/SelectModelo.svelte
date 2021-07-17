@@ -61,6 +61,8 @@
       });
     }
   }
+
+  $: console.log($proyectos);
 </script>
 
 <div class="mi-casa">
@@ -149,7 +151,7 @@
             >
               <img
                 class="proyect-img"
-                src={proyect?.fields?.imágenThumbnail?.[1]?.url}
+                src={proyect?.fields?.imágenThumbnail?.[0]?.url}
                 alt=""
               />
 
@@ -174,7 +176,7 @@
             >
               <img
                 class="modelo-img"
-                src={modelo?.fields?.imágenThumbnail?.[1]?.url}
+                src={modelo?.fields?.imágenThumbnail?.[0]?.url}
                 alt=""
               />
               <div class="modelo-title">
