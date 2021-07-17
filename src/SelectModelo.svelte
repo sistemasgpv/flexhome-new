@@ -24,8 +24,10 @@
 
   let pageLoading = true;
 
+  let modelosByProyect = [];
+
   $: total = $cart.reduce((acc, item) => {
-    return acc + item.fields.precio;
+    return acc + item?.fields?.precio;
   }, 0);
 
   $: loading =
@@ -50,7 +52,15 @@
     }
   });
 
-  $: console.log($currentSelection);
+  $: {
+    if ($currentSelection.proyect) {
+      modelosByProyect = $modelos.filter((modelo) => {
+        return (
+          $currentSelection.proyect.fields.Viviendas.indexOf(modelo.id) >= 0
+        );
+      });
+    }
+  }
 </script>
 
 <div class="mi-casa">
@@ -133,6 +143,9 @@
             <div
               class="select-proyect"
               class:selected={proyect == $currentSelection.proyect}
+              on:click={() => {
+                $currentSelection.proyect = proyect;
+              }}
             >
               <img
                 class="proyect-img"
@@ -149,7 +162,7 @@
 
         <div class="modal-title">Modelos</div>
         <div class="select-modelos">
-          {#each $modelos as modelo}
+          {#each modelosByProyect as modelo}
             <div
               class="select-modelo"
               class:selected={modelo == $currentSelection.modelo}
