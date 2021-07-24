@@ -77,7 +77,8 @@
   <div class="select-section-title">Mi casa</div>
   {#if $currentSelection.proyect}
     <SideItem
-      imgUrl={$currentSelection?.proyect?.fields?.imágenThumbnail?.[1]?.url}
+      imgUrl={$currentSelection?.proyect?.fields?.imágenThumbnail?.[0]
+        ?.thumbnails.large.url}
       cat={"Proyect"}
       title={$currentSelection.proyect.fields.Nombre}
       price={""}
@@ -86,7 +87,8 @@
 
   {#if $currentSelection.modelo}
     <SideItem
-      imgUrl={$currentSelection?.modelo?.fields?.imágenThumbnail?.[1]?.url}
+      imgUrl={$currentSelection?.modelo?.fields?.imágenThumbnail?.[0]
+        ?.thumbnails.large.url}
       cat={"Modelo"}
       title={$currentSelection.modelo.fields.Nombre}
       price={""}
