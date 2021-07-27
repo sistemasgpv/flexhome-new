@@ -91,7 +91,8 @@ export async function getModelos() {
   modelos.set(res.data);
 }
 
-export async function getOpciones(vivienda) {
+export async function getOpciones(vivienda, proyect) {
+  debugger;
   let atts = get(atributos);
 
   //clear opciones from atributos
@@ -99,7 +100,7 @@ export async function getOpciones(vivienda) {
 
   loadingOpciones.set(true);
   let res = await axios.get(
-    `https://enombb1z99rtf6o.m.pipedream.net?vivienda=${vivienda}`
+    `https://enombb1z99rtf6o.m.pipedream.net?vivienda=${vivienda}&proyect=${proyect}`
   );
 
   res.data.sort((a, b) => {

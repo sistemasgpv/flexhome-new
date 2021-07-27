@@ -172,7 +172,10 @@
               class:selected={modelo == $currentSelection.modelo}
               on:click|stopPropagation={() => {
                 $currentSelection.modelo = modelo;
-                getOpciones(modelo.fields.Nombre);
+                getOpciones(
+                  modelo.fields.Nombre,
+                  $currentSelection.proyect.fields.Nombre
+                );
                 showSelect = false;
               }}
             >
